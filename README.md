@@ -1,10 +1,10 @@
 # Template for Seedcase Python packages
 
-This repository contains a template for setting up new Python package projects in Seedcase. The first step is to create a new repository using this template. This can easily be done by clicking the "Use this template" button on the repository page or by using the GitHub CLI:
+This repository contains a template for setting up new data example repos in Seedcase. The first step is to create a new repository using this template. This can easily be done by clicking the "Use this template" button on the repository page or by using the GitHub CLI:
 
 ``` bash
 # NAME is the name to give the new repository
-gh repo create NAME --template seedcase-project/template-python-project
+gh repo create NAME --template seedcase-project/template-example-repo
 ```
 
 ## Setting things up after cloning
