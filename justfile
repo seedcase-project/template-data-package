@@ -31,4 +31,4 @@ check-commits:
 
 # Update all dependencies in lockfile
 update-deps:
-  poetry update --lock
+  poetry update
