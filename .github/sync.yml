@@ -25,18 +25,12 @@ group:
       # Actions
       - source: .github/workflows/add-to-project.yml
         dest: .github/workflows/add-to-project.yml
-      - source: .github/workflows/build-package.yml
-        dest: .github/workflows/build-package.yml
-      - source: .github/workflows/build-website.yml
-        dest: .github/workflows/build-website.yml
-      - source: .github/workflows/update-version.yml
-        dest: .github/workflows/update-version.yml
-      - source: .github/_project-dependabot.yml
-        dest: .github/dependabot.yml
 
       # VSCode Settings
       - source: .vscode/
         dest: .vscode/
         deleteOrphaned: true
     repos: |
-      seedcase-project/seedcase-sprout
+      seedcase-project/example-seed-beetle
+      seedcase-project/example-rhesus-monkey
+      seedcase-project/example-rainforest
