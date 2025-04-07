@@ -32,5 +32,5 @@ group:
         deleteOrphaned: true
     repos: |
       seedcase-project/example-seed-beetle
-      seedcase-project/example-rhesus-monkey
+      seedcase-project/example-rhesus-monkeys
       seedcase-project/example-rainforest
