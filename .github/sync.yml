@@ -11,8 +11,6 @@ group:
         dest: .gitignore
       - source: justfile
         dest: justfile
-      - source: poetry.toml
-        dest: poetry.toml
       - source: .cz.toml
         dest: .cz.toml
       - source: ruff.toml
