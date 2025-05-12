@@ -9,14 +9,19 @@ gh repo create NAME --template seedcase-project/template-example-repo
 
 ## Setting things up after cloning
 
-To add Poetry:
+To add uv:
+
+1. Delete the `pyproject.toml` file.
+2. In the terminal run `uv init`.
+3. Look at the Git pane and take what was removed and move it over into the new `pyproject.toml` file. You can mimic what was done in `example-seed-beetle` repo.
+
+Then, in the terminal, run:
 
 ``` bash
-cd new-project
-poetry init
+uv add polars pyjanitor
+uv add "seedcase-sprout @ git+<https://github.com/seedcase-project/seedcase-sprout>"
+uv add --dev ruff commitizen pre-commit
 ```
-
-Search for `NAME` and `REPO` and replace them with the name of your project and the repository name. Then look for any `TODO` items.
 
 ## Setting things up
 
