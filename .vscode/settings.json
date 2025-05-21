@@ -32,3 +32,4 @@
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "python.languageServer": "Pylance",
   "files.insertFinalNewline": true
+}
