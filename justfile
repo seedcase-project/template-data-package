@@ -2,11 +2,11 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-python check-python check-commits
+run-all: install-deps format-python check-python check-spelling check-commits
 
 # Install Python package dependencies
 install-deps:
-  uv sync --upgrade --dev
+  uv sync --upgrade --dev --all-extras
 
 # Check Python code with the linter for any errors that need manual attention
 check-python:
@@ -32,3 +32,7 @@ check-commits:
   else
     echo "Not on main or haven't committed yet."
   fi
+
+# Check for spelling errors in files
+check-spelling:
+  uv run typos
