@@ -12,10 +12,6 @@ install-deps:
 check-python:
   uv run ruff check .
 
-# Check for spelling errors in files
-check-spelling:
-  uv run typos
-
 # Reformat Python code to match coding style and general structure
 format-python:
   uv run ruff check --fix .
