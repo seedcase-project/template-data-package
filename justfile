@@ -4,6 +4,15 @@
 # Run all build-related recipes in the justfile
 run-all: install-deps format-python check-python check-spelling check-commits
 
+# Install the pre-commit hooks
+install-precommit:
+  # Install pre-commit hooks
+  uvx pre-commit install
+  # Run pre-commit hooks on all files
+  uvx pre-commit run --all-files
+  # Update versions of pre-commit hooks
+  uvx pre-commit autoupdate
+
 # Install Python package dependencies
 install-deps:
   uv sync --upgrade --dev --all-extras
