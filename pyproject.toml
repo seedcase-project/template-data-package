@@ -17,7 +17,7 @@ requires-python = ">=3.12"
 dependencies = [
     "polars>=1.27.0",
     "pyjanitor>=0.31.0",
-    "seedcase-sprout",
+    "seedcase-sprout>=0.46.2",
 ]
 
 [project.urls]
@@ -31,6 +31,3 @@ dev = [
     "ruff>=0.11.4",
     "typos>=1.32.0",
 ]
-
-[tool.uv.sources]
-seedcase-sprout = { git = "https://github.com/seedcase-project/seedcase-sprout" }
