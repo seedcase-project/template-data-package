@@ -23,8 +23,7 @@ To add uv:
 Then, in the terminal, run:
 
 ``` bash
-uv add polars pyjanitor
-uv add seedcase-sprout@git+https://github.com/seedcase-project/seedcase-sprout
+uv add polars pyjanitor seedcase-sprout
 uv add --dev ruff commitizen pre-commit typos
 ```
 
