@@ -14,17 +14,16 @@ gh repo create NAME --template seedcase-project/template-data-package
 
 To add uv:
 
-1.  Delete the `pyproject.toml` file.
-2.  In the terminal run `uv init`.
-3.  Look at the Git pane and take what was removed and move it over into
+1. Delete the `pyproject.toml` file.
+2. In the terminal run `uv init`.
+3. Look at the Git pane and take what was removed and move it over into
     the new `pyproject.toml` file. You can mimic what was done in
     `example-seed-beetle` repo.
 
 Then, in the terminal, run:
 
 ``` bash
-uv add polars pyjanitor
-uv add "seedcase-sprout @ git+<https://github.com/seedcase-project/seedcase-sprout>"
+uv add polars pyjanitor seedcase-sprout
 uv add --dev ruff commitizen pre-commit typos
 ```
 
