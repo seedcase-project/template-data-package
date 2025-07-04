@@ -1,5 +1,5 @@
 title: "Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages"
-abstract: "A template for making a Git repository that follows some strongly opinionated practices for building and managing a data package. These practices include using Seedcase Python packages, such as Seedcase Sprout, and the Frictionless Data Package standard."
+abstract: "A template for making a Git repository that follows strongly opinionated practices for building and managing a data package. These practices include using Seedcase Python packages, such as Seedcase Sprout, and the Frictionless Data Package standard."
 authors:
   - family-names: Johnston
     given-names: Luke William
