@@ -642,14 +642,18 @@ wheels = [
 
 [[package]]
 name = "seedcase-sprout"
-version = "0.46.2"
-source = { git = "https://github.com/seedcase-project/seedcase-sprout#0fff19c41be5cbc84429b5a92a6627c4a0cdc43c" }
+version = "0.46.3"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dacite" },
     { name = "deepmerge" },
     { name = "jinja2" },
     { name = "jsonschema" },
     { name = "polars" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/88/3f/f748a2354b974dc738de88bec6970882df278d14d1616e084314d05daa46/seedcase_sprout-0.46.3.tar.gz", hash = "sha256:8e08035bd0a0b6b7fc8b4411faf3b42372568db7e726c3db163d3513d2bb767f", size = 1176598 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/63/e9/16bf47da8015f415f2b2f57954421dc57c7f112489fa46a61045a2aaef87/seedcase_sprout-0.46.3-py3-none-any.whl", hash = "sha256:f9ca7bd766f4991f653d5fed9104301c00627386c77b0d565c1bf4b1552bcc3a", size = 68707 },
 ]
 
 [[package]]
@@ -683,7 +687,7 @@ dev = [
 requires-dist = [
     { name = "polars", specifier = ">=1.27.0" },
     { name = "pyjanitor", specifier = ">=0.31.0" },
-    { name = "seedcase-sprout", git = "https://github.com/seedcase-project/seedcase-sprout" },
+    { name = "seedcase-sprout", specifier = ">=0.46.3" },
 ]
 
 [package.metadata.requires-dev]
