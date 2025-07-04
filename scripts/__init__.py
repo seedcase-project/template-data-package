@@ -1,1 +1,1 @@
-"""Properties scripts."""
+"""Processing and build pipeline scripts."""
