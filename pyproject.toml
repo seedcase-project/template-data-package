@@ -1,7 +1,7 @@
 [project]
-name = "template-data-package"
-version = "0.1.0"
-description = "A template for structuring all the pieces for a data package."
+name = "{{ project_name }}"
+version = "{{ version }}"
+description = "{{ description }}"
 authors = [
   {name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
   {name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },

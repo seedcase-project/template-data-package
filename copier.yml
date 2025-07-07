@@ -1,0 +1,28 @@
+_template:
+  repo: https://github.com/seedcase-project/template-data-package.git
+  checkout: feat/copier
+
+project_name:
+  type: str
+  help: "Name of your new project"
+  default: "template-data-package"
+
+version:
+  type: str
+  help: "Version of your new project"
+  default: "0.1.0"
+
+description:
+  type: str
+  help: "Short description of your project"
+  default: "A template for structuring all the pieces for a data package."
+
+author_name:
+  type: str
+  help: "Author's name"
+  default: "Luke W. Johnston"
+
+author_email:
+  type: str
+  help: "Author's email"
+  default: "lwjohnst@gmail.com"
