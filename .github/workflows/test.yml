@@ -1,0 +1,52 @@
+name: Test template creation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test-copier:
+    runs-on: ubuntu-latest
+    env:
+      TEMPLATE_NAME: template-data-package
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          # Clone template to a subdirectory
+          path: ${{ env.TEMPLATE_NAME }}
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@bd01e18f51369d5a26f1651c3cb451d3417e3bba
+        with:
+          enable-cache: true
+          cache-dependency-glob: "**/uv.lock"
+
+      - name: Generate a data package
+        # TODO: Add other pre/post setup steps here.
+        run: |
+          # List options with `--data`
+          uvx copier copy --vcs-ref=HEAD ${{ env.TEMPLATE_NAME }} test-data-package \
+            --defaults \
+            --data project_name="My Project" \
+            --data project_description="." \
+            --data project_url="https://github.com/user/repo" \
+            --data author_name="John Smith" \
+            --data author_email="john@example.com"
+          cd test-data-package
+          git config --global init.defaultBranch main
+          # Test that it gets added as Git repo.
+          git init
+          git checkout -b test
+          git add .
+
+      - name: Lint and check
+        # TODO: Other checks?
+        run: |
+          cd test-data-package
+          uvx ruff check .
+          uvx mypy .
+          uvx typos
+
