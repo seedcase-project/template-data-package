@@ -52,4 +52,3 @@ jobs:
           uvx ruff check .
           uvx mypy .
           uvx typos
-
