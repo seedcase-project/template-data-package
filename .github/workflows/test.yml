@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+# Least privilege permissions
+permissions: read-all
+
 jobs:
   test-copier:
     runs-on: ubuntu-latest
