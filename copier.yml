@@ -1,28 +1,34 @@
-_template:
-  repo: https://github.com/seedcase-project/template-data-package.git
-  checkout: feat/copier
+repo_url: 
+  type: str
+  help: URL to your project's repository
 
 project_name:
   type: str
-  help: "Name of your new project"
-  default: "template-data-package"
+  help: Name of your new project
+  default: "{{ _copier_conf.dst_path | basename }}"
 
 version:
   type: str
-  help: "Version of your new project"
-  default: "0.1.0"
+  help: Version of your new project
+  default: 0.1.0
 
 description:
   type: str
-  help: "Short description of your project"
-  default: "A template for structuring all the pieces for a data package."
+  help: Short description of your project
 
 author_name:
   type: str
-  help: "Author's name"
-  default: "Luke W. Johnston"
-
+  help: Name of project author
 author_email:
   type: str
-  help: "Author's email"
-  default: "lwjohnst@gmail.com"
+  help: Email address of project author
+
+maintainer_name:
+  type: str
+  help: Name of project maintainer
+  default: "{{ author_name }}"
+maintainer_email:
+  type: str
+  help: Email address of project maintainer
+  default: "{{ author_email if maintainer_name == author_name else '' }}"
+

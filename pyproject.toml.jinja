@@ -1,0 +1,33 @@
+[project]
+name = "{{ project_name }}"
+version = "{{ version }}"
+description = "{{ description }}"
+authors = [
+  {name = "{{ author_name }}", email = "{{ author_email }}" },
+  # Add more authors here if needed
+]
+maintainers = [
+  {name = "{{ maintainer_name }}", email = "{{ maintainer_email }}" },
+  # Add more maintainers here if needed
+]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE.md"]
+requires-python = ">=3.12"
+dependencies = [
+  "polars>=1.27.0",
+  "pyjanitor>=0.31.0",
+  "seedcase-sprout>=0.46.3",
+]
+
+[project.urls]
+issues = "{{ repo_url }}/issues"
+repository = "{{ repo_url }}"
+
+[dependency-groups]
+dev = [
+  "commitizen>=4.5.1",
+  "pre-commit>=4.2.0",
+  "ruff>=0.11.4",
+  "typos>=1.32.0",
+]
