@@ -13,7 +13,7 @@ repository page or by using the GitHub CLI:
     create and modify the data package.
 -   Licensed under the open data license TODO. This is added by default,
     but you can delete it if it isn't what you want or can use.
--   Build management with [justfile](https://justfile.dev/).
+-   Build management with [justfile](https://just.systems/man/en/).
 -   Check typos with [typos](https://github.com/crate-ci/typos).
 -   Code formatting and linting with
     [ruff](https://docs.astral.sh/ruff/).
