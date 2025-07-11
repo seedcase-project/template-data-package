@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TEMPLATE_NAME: template-data-package
+      TEST_PACKAGE: test-data-package
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -28,27 +29,25 @@ jobs:
           cache-dependency-glob: "**/uv.lock"
 
       - name: Generate a data package
-        # TODO: Add other pre/post setup steps here.
+        # TODO: Switch to using the justfile recipe and have install justfile step
         run: |
           # List options with `--data`
-          uvx copier copy --vcs-ref=HEAD ${{ env.TEMPLATE_NAME }} test-data-package \
+          uvx copier copy --vcs-ref=HEAD ${{ env.TEMPLATE_NAME }} ${{ env.TEST_PACKAGE }} \
             --defaults \
             --data project_name="My Project" \
             --data project_description="." \
             --data project_url="https://github.com/user/repo" \
             --data author_name="John Smith" \
             --data author_email="john@example.com"
-          cd test-data-package
-          git config --global init.defaultBranch main
+          cd ${{ env.TEST_PACKAGE }}
           # Test that it gets added as Git repo.
           git init
-          git checkout -b test
           git add .
 
       - name: Lint and check
         # TODO: Other checks?
         run: |
-          cd test-data-package
+          cd ${{ env.TEST_PACKAGE }}
           uvx ruff check .
           uvx mypy .
           uvx typos
