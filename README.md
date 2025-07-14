@@ -1,9 +1,9 @@
 # An opinionated template for data packages built with Seedcase packages
 
-This repository contains a template for setting up new data packages.
+This repository contains a template for setting up a new [data package](https://datapackage.org/) following the Seedcase structure.
 The first step is to create a new repository using this template. This
 can easily be done by clicking the "Use this template" button on the
-repository page or by using the GitHub CLI:
+repository page or by using the GitHub CLI.
 
 ## Features
 
@@ -12,7 +12,7 @@ repository page or by using the GitHub CLI:
 -   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
     create and modify the data package.
 -   Licensed under the open data license TODO. This is added by default,
-    but you can delete it if it isn't what you want or can use.
+    but you can delete or modify it if it isn't what you want or can use.
 -   Build management with [justfile](https://just.systems/man/en/).
 -   Check typos with [typos](https://github.com/crate-ci/typos).
 -   Code formatting and linting with
