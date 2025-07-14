@@ -1,9 +1,37 @@
 # An opinionated template for data packages built with Seedcase packages
 
-This repository contains a template for setting up a new [data package](https://datapackage.org/) following the Seedcase structure.
-The first step is to create a new repository using this template. This
-can easily be done by clicking the "Use this template" button on the
-repository page or by using the GitHub CLI.
+This repository contains a template for setting up a new [data
+package](https://datapackage.org/) following the Seedcase structure.
+Use this template to quickly get started with a new data package with
+all the necessary files and configurations in place, including for
+developing the data package. See the features section below for
+details on what is included in this template.
+
+## Using this template
+
+To use this template, we strongly recommend using it with
+[uv](https://docs.astral.sh/uv/). Once you have it installed, move into
+the directory where you want to create the new data package and run the
+following command:
+
+``` bash
+# Copy into the current directory with "."
+uvx copier copy gh:seedcase-project/template-data-package .
+```
+
+### Post-creation setup
+
+These steps are mainly for us in the Seedcase project, but you can
+follow them if you want to set up your data package in a similar way.
+
+Install [`spaid`](https://github.com/seedcase-project/spaid) and use the
+following commands to run the next setup steps:
+
+``` bash
+spaid_gh_create_repo_from_local -h
+spaid_gh_set_repo_settings -h
+spaid_gh_rulset_basic_protect_main -h
+```
 
 ## Features
 
@@ -12,7 +40,8 @@ repository page or by using the GitHub CLI.
 -   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
     create and modify the data package.
 -   Licensed under the open data license TODO. This is added by default,
-    but you can delete or modify it if it isn't what you want or can use.
+    but you can delete or modify it if it isn't what you want or can
+    use.
 -   Build management with [justfile](https://just.systems/man/en/).
 -   Check typos with [typos](https://github.com/crate-ci/typos).
 -   Code formatting and linting with
@@ -28,21 +57,3 @@ repository page or by using the GitHub CLI.
 -   Folder and file structure that mimics a Python package to take
     advantage of Python's packaging ecosystem.
 -   `pyproject.toml` for tracking dependencies and project metadata.
-
-## Using this template
-
-To use this template, we strongly recommend using it with
-[uv](https://docs.astral.sh/uv/). Once you have it installed, move into
-the directory where you want to create the new data package and run the
-following command:
-
-``` bash
-# Copy into the current directory with "."
-uvx copier copy gh:seedcase-project/template-data-package .
-```
-
-## Post-copy, GitHub set up
-
-Use the commands found in
-[`spaid`](https://github.com/seedcase-project/spaid) repo to run the
-next setup steps.
