@@ -1,28 +1,31 @@
 [project]
-name = "template-data-package"
+name = {{ package_abbrev }}
 version = "0.1.0"
-description = "A template for structuring all the pieces for a data package."
+# TODO: Add a description of the package.
+description = ""
 authors = [
-  {name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
-  {name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
+  {name = "{{ author_given_name }} {{ author_family_name }}", email = "{{ author_email }}" },
+  # TODO: Add more authors as needed.
 ]
 maintainers = [
-  {name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
-  {name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
+  {name = "{{ author_given_name }} {{ author_family_name }}", email = "{{ author_email }}" },
+  # TODO: Add more maintainers as needed.
 ]
 readme = "README.md"
-license = "MIT"
-license-files = ["LICENSE.md"]
+# TODO: Update with a license for the data.
+license = "MIT AND "
+license-files = ["LICENSE-MIT.md", ""]
 requires-python = ">=3.12"
 dependencies = [
     "polars>=1.27.0",
-    "pyjanitor>=0.31.0",
     "seedcase-sprout>=0.46.3",
 ]
 
+{{ if package_github != "NA" }}
 [project.urls]
-issues = "https://github.com/seedcase-project/REPO/issues"
-repository = "https://github.com/seedcase-project/REPO"
+issues = "https://github.com/{{ package_github_repo }}/issues"
+repository = "https://github.com/{{ package_github_repo }}"
+{{ endif }}
 
 [dependency-groups]
 dev = [

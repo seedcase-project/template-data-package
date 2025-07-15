@@ -2,7 +2,12 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-python check-python check-spelling check-commits
+run-all: install-deps format-python check-python check-spelling check-commits build
+
+
+# List all TODO items in the repository
+list-todos:
+  grep -R -n --exclude="*.code-snippets" "TODO" *
 
 # Install the pre-commit hooks
 install-precommit:
@@ -41,3 +46,7 @@ check-commits:
 # Check for spelling errors in files
 check-spelling:
   uv run typos
+
+# Re-build the data package
+build:
+  uv run main.py
