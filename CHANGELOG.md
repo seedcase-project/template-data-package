@@ -1,3 +1,15 @@
+## 0.3.2 (2025-07-15)
+
+### Refactor
+
+- :recycle: rename to MIT license (#80)
+
+## 0.3.1 (2025-07-15)
+
+### Refactor
+
+- :recycle: ignore csv files when running typos (#84)
+
 ## 0.3.0 (2025-07-15)
 
 ### Feat
