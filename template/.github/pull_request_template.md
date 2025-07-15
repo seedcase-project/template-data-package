@@ -1,6 +1,5 @@
 # Description
 
-DESCRIBE CHANGES
 
 Closes #
 
