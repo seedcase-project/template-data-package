@@ -1,3 +1,9 @@
+## 0.5.0 (2025-07-15)
+
+### Feat
+
+- :sparkles: add Commitizen version bump with GitHub workflow (#71)
+
 ## 0.4.1 (2025-07-15)
 
 ### Refactor
