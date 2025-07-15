@@ -23,8 +23,8 @@ dependencies = [
 
 {{ if package_github != "NA" }}
 [project.urls]
-issues = "https://github.com/{{ package_github }}/issues"
-repository = "https://github.com/{{ package_github }}"
+issues = "https://github.com/{{ package_github_repo }}/issues"
+repository = "https://github.com/{{ package_github_repo }}"
 {{ endif }}
 
 [dependency-groups]
