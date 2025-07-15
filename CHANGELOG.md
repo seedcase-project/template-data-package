@@ -1,3 +1,9 @@
+## 0.4.0 (2025-07-15)
+
+### Feat
+
+- :sparkles: add recipe to template justfile to list all `TODO` items (#79)
+
 ## 0.3.2 (2025-07-15)
 
 ### Refactor
