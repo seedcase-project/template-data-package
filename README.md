@@ -1,7 +1,7 @@
 # An opinionated template for data packages built with Seedcase packages
 
-This repository contains a template for setting up a new [data
-package](https://datapackage.org/) following the Seedcase structure.
+This repository contains a template for setting up a new [Data
+Package](https://datapackage.org/) following the Seedcase structure.
 Use this template to quickly get started with a new data package with
 all the necessary files and configurations in place, including for
 developing the data package. See the features section below for
@@ -9,7 +9,7 @@ details on what is included in this template.
 
 ## Using this template
 
-To use this template, we strongly recommend using it with
+We strongly recommend using this template with
 [uv](https://docs.astral.sh/uv/). Once you have it installed, move into
 the directory where you want to create the new data package and run the
 following command:
@@ -21,7 +21,7 @@ uvx copier copy gh:seedcase-project/template-data-package .
 
 ### Post-creation setup
 
-These steps are mainly for us in the Seedcase project, but you can
+These steps are mainly for us in the Seedcase Project to set up the repository with the settings we use, but you can
 follow them if you want to set up your data package in a similar way.
 
 Install [`spaid`](https://github.com/seedcase-project/spaid) and use the
@@ -30,13 +30,13 @@ following commands to run the next setup steps:
 ``` bash
 spaid_gh_create_repo_from_local -h
 spaid_gh_set_repo_settings -h
-spaid_gh_rulset_basic_protect_main -h
+spaid_gh_ruleset_basic_protect_main -h
 ```
 
 ## Features
 
 -   Use [uv](https://docs.astral.sh/uv/) to manage the data package.
--   Use [polars](https://www.pola.rs/) for data manipulation.
+-   Use [Polars](https://www.pola.rs/) for data manipulation.
 -   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
     create and modify the data package.
 -   Licensed under the open data license TODO. This is added by default,
