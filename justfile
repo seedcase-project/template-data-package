@@ -13,7 +13,7 @@ install-precommit:
   # Update versions of pre-commit hooks
   uvx pre-commit autoupdate
 
-# Run checks on commits with non-main branches
+# Run checks on all commits in the current branch up to the main branch
 check-commits:
   #!/bin/zsh
   branch_name=$(git rev-parse --abbrev-ref HEAD)
