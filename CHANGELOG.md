@@ -1,3 +1,13 @@
+## 0.3.0 (2025-07-15)
+
+### Feat
+
+- :sparkles: add recipe to justfile template to (re)build the data package (#77)
+
+### Refactor
+
+- :recycle: Remove Ruff ignore tests option (#83)
+
 ## 0.2.0 (2025-07-15)
 
 ### Feat
