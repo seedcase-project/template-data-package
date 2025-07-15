@@ -13,7 +13,7 @@ install-precommit:
   # Update versions of pre-commit hooks
   uvx pre-commit autoupdate
 
-# Run checks on all commits in the current branch up to the main branch
+# Check the commit messages on the current branch that are not on the main branch
 check-commits:
   #!/bin/zsh
   branch_name=$(git rev-parse --abbrev-ref HEAD)
@@ -22,7 +22,7 @@ check-commits:
   then
     uvx --from commitizen cz check --rev-range main..HEAD
   else
-    echo "Not on main or haven't committed yet."
+    echo "On `main` or current branch doesn't have any commits."
   fi
 
 # Check for spelling errors in files
