@@ -6,7 +6,7 @@ run-all: install-deps format-python check-python check-spelling check-commits
 
 # List all TODO items in the repository
 list-todos:
-  grep -R -n --exclude="*.code-snippets" "TODO:" *
+  grep -R -n --exclude="*.code-snippets" "TODO" *
 
 # Install the pre-commit hooks
 install-precommit:
