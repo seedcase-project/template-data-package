@@ -31,15 +31,15 @@ check-spelling:
 
 test:
   #!/bin/zsh
-  temp_dir="_temp/test-data-package"
-  rm -rf $temp_dir
-  mkdir -p $temp_dir
+  test_dir="$(pwd)/_temp"
+  test_name="test-data-package"
+  rm -rf $test_dir
   # vcs-ref means the current commit/head, not a tag.
   # `.` means the current directory contains the template.
-  uvx copier copy --vcs-ref=HEAD . $temp_dir \
+  uvx copier copy --vcs-ref=HEAD . $test_dir/$test_name \
     --defaults \
-    --data package_abbrev= "test-data-package" \
-    --data package_github="first-last/test-data-package" \
+    --data package_abbrev=$test_name \
+    --data package_github_repo="first-last/${test_name}" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
     --data author_email="first.last@example.com"
@@ -47,5 +47,4 @@ test:
 
 cleanup:
   #!/bin/zsh
-  temp_dir=$("_temp/test-data-package"))
-  rm -rf $temp_dir
+  rm -rf _temp

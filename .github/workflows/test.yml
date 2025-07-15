@@ -21,8 +21,8 @@ jobs:
         with:
           enable-cache: true
 
-      - name: Install justfile
-        run: sudo apt-get install -y just
+      - name: Install justfile and zsh
+        run: sudo apt install -y just zsh
 
       - name: Test and check template creation
         run: just test

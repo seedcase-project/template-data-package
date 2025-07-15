@@ -34,6 +34,18 @@ spaid_gh_set_repo_settings -h
 spaid_gh_ruleset_basic_protect_main -h
 ```
 
+Some configuration is needed after copying this template to a new
+repository, including configuration external to the repository.
+
+-   The template file `.github/workflows/release-package.yml` requires
+    installing the
+    [auto-release-token](https://github.com/apps/auto-release-token)
+    GitHub App to be installed, as well as a GitHub secret called
+    `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
+    to be set up in the repository (or organization) settings. See this
+    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
+    for more details on how to set this up.
+
 ## Features
 
 -   Use [uv](https://docs.astral.sh/uv/) to manage the Data Package.

@@ -1,7 +1,6 @@
 _subdirectory: template
 
 # Questions:
-
 package_github_repo:
   type: str
   default: "NA"
