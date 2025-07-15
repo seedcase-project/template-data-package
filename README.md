@@ -14,9 +14,9 @@ gh repo create NAME --template seedcase-project/template-data-package
 
 To add uv:
 
-1. Delete the `pyproject.toml` file.
-2. In the terminal run `uv init`.
-3. Look at the Git pane and take what was removed and move it over into
+1.  Delete the `pyproject.toml` file.
+2.  In the terminal run `uv init`.
+3.  Look at the Git pane and take what was removed and move it over into
     the new `pyproject.toml` file. You can mimic what was done in
     `example-seed-beetle` repo.
 
@@ -32,3 +32,17 @@ uv add --dev ruff commitizen pre-commit typos
 Use the commands found in
 [`spaid`](https://github.com/seedcase-project/spaid) repo to run the
 next setup steps.
+
+## Post-copy setup
+
+Some configuration is needed after copying this template to a new
+repository, including configuration external to the repository.
+
+-   The template file `.github/workflows/release-package.yml` requires
+    installing the
+    [auto-release-token](https://github.com/apps/auto-release-token)
+    GitHub App to be installed, as well as a GitHub secret called
+    `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
+    to be set up in the repository (or organization) settings. See this
+    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
+    for more details on how to set this up.
