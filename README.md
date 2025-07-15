@@ -1,17 +1,17 @@
-# An opinionated template for data packages built with Seedcase packages
+# An opinionated template for Data Packages built with Seedcase packages
 
 This repository contains a template for setting up a new [Data
 Package](https://datapackage.org/) following the Seedcase structure.
-Use this template to quickly get started with a new data package with
+Use this template to quickly get started with a new Data Package with
 all the necessary files and configurations in place, including for
-developing the data package. See the features section below for
+developing the Data Package. See the features section below for
 details on what is included in this template.
 
 ## Using this template
 
 We strongly recommend using this template with
 [uv](https://docs.astral.sh/uv/). Once you have it installed, move into
-the directory where you want to create the new data package and run the
+the directory where you want to create the new Data Package and run the
 following command:
 
 ``` bash
@@ -22,7 +22,7 @@ uvx copier copy gh:seedcase-project/template-data-package .
 ### Post-creation setup
 
 These steps are mainly for us in the Seedcase Project to set up the repository with the settings we use, but you can
-follow them if you want to set up your data package in a similar way.
+follow them if you want to set up your Data Package in a similar way.
 
 Install [`spaid`](https://github.com/seedcase-project/spaid) and use the
 following commands to run the next setup steps:
@@ -35,10 +35,10 @@ spaid_gh_ruleset_basic_protect_main -h
 
 ## Features
 
--   Use [uv](https://docs.astral.sh/uv/) to manage the data package.
+-   Use [uv](https://docs.astral.sh/uv/) to manage the Data Package.
 -   Use [Polars](https://www.pola.rs/) for data manipulation.
 -   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
-    create and modify the data package.
+    create and modify the Data Package.
 -   Licensed under the open data license TODO. This is added by default,
     but you can delete or modify it if it isn't what you want or can
     use.
