@@ -1,11 +1,11 @@
 # An opinionated template for Data Packages built with Seedcase packages
 
 This repository contains a template for setting up a new [Data
-Package](https://datapackage.org/) following the Seedcase structure.
-Use this template to quickly get started with a new Data Package with
-all the necessary files and configurations in place, including for
-developing the Data Package. See the features section below for
-details on what is included in this template.
+Package](https://datapackage.org/) following the Seedcase structure. Use
+this template to quickly get started with a new Data Package with all
+the necessary files and configurations in place, including for
+developing the Data Package. See the features section below for details
+on what is included in this template.
 
 ## Using this template
 
@@ -21,8 +21,9 @@ uvx copier copy gh:seedcase-project/template-data-package .
 
 ### Post-creation setup
 
-These steps are mainly for us in the Seedcase Project to set up the repository with the settings we use, but you can
-follow them if you want to set up your Data Package in a similar way.
+These steps are mainly for us in the Seedcase Project to set up the
+repository with the settings we use, but you can follow them if you want
+to set up your Data Package in a similar way.
 
 Install [`spaid`](https://github.com/seedcase-project/spaid) and use the
 following commands to run the next setup steps:
