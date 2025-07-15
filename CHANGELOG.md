@@ -1,3 +1,9 @@
+## 0.4.1 (2025-07-15)
+
+### Refactor
+
+- :recycle: revise `CITATION.cff.jinja` to use Jinja variables (#81)
+
 ## 0.4.0 (2025-07-15)
 
 ### Feat
