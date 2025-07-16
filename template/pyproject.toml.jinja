@@ -1,0 +1,36 @@
+[project]
+name = {{ package_abbrev }}
+version = "0.1.0"
+# TODO: Add a description of the package.
+description = ""
+authors = [
+  {name = "{{ author_given_name }} {{ author_family_name }}", email = "{{ author_email }}" },
+  # TODO: Add more authors as needed.
+]
+maintainers = [
+  {name = "{{ author_given_name }} {{ author_family_name }}", email = "{{ author_email }}" },
+  # TODO: Add more maintainers as needed.
+]
+readme = "README.md"
+# TODO: Update with a license for the data.
+license = "MIT AND "
+license-files = ["LICENSE-MIT.md", ""]
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=1.27.0",
+    "seedcase-sprout>=0.46.3",
+]
+
+{% if package_github_repo != "NA" %}
+[project.urls]
+issues = "https://github.com/{{ package_github_repo }}/issues"
+repository = "https://github.com/{{ package_github_repo }}"
+{% endif %}
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.5.1",
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.4",
+    "typos>=1.32.0",
+]

@@ -1,0 +1,24 @@
+_subdirectory: template
+
+# Questions:
+package_github_repo:
+  type: str
+  default: "NA"
+  help: "What is the GitHub repository spec for the package (in the form of 'user/repo'))?"
+  placeholder: "user/repo"
+
+author_given_name:
+  type: str
+  help: "What is your first/given name?"
+
+author_family_name:
+  type: str
+  help: "What is your last/family name?"
+
+author_email:
+  type: str
+  help: "What is your email address?"
+
+package_abbrev:
+  type: str
+  help: "What is the abbreviated name of the package? This could be the name of your GitHub repository and should be a short, lowercase name without spaces or special characters. For example, 'template-data-package'."
