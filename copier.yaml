@@ -22,3 +22,5 @@ author_email:
 package_abbrev:
   type: str
   help: "What is the abbreviated name of the package? This could be the name of your GitHub repository and should be a short, lowercase name without spaces or special characters. For example, 'template-data-package'."
+  default: "{{ _copier_conf.dst_path | basename }}"
+
