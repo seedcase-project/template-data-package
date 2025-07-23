@@ -3,8 +3,12 @@ _subdirectory: template
 # Questions:
 package_github_repo:
   type: str
-  help: "What is the GitHub repository spec for the package (in the form of 'user/repo'))?"
+  help: "What is the GitHub repository spec for the package?"
   placeholder: "user/repo"
+  validator: |
+    {% if package_github_repo and not (package_github_repo | regex_search('^[\w.-]+\/[\w.-]+$')) %}
+    Must be in the format `user/repo` and contain only alphanumeric characters and `_`, `-`, or `.`.
+    {% endif %}
 
 author_given_name:
   type: str
