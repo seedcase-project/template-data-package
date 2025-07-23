@@ -1,3 +1,9 @@
+## 0.5.1 (2025-07-23)
+
+### Refactor
+
+- :recycle: tweak copier settings (#91)
+
 ## 0.5.0 (2025-07-15)
 
 ### Feat
