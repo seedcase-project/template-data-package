@@ -1,3 +1,9 @@
+## 0.6.0 (2025-07-23)
+
+### Feat
+
+- :sparkles: add validator for `package_github_repo` (#93)
+
 ## 0.5.1 (2025-07-23)
 
 ### Refactor
