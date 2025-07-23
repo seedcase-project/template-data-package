@@ -29,6 +29,11 @@ review_team:
   default: >-
     {{ "@%s/developers" % package_github_repo.split('/')[0] if package_github_repo else "" }}
 
-board_number:
-  type: int
+github_board_number:
+  type: yaml
   help: "What is the number of the GitHub project board to add issues and PRs to?"
+  default: null
+  validator: |
+    {% if github_board_number is not none and github_board_number is not number %}
+    The board number must be an integer.
+    {% endif %}
