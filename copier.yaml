@@ -3,7 +3,6 @@ _subdirectory: template
 # Questions:
 package_github_repo:
   type: str
-  default: "NA"
   help: "What is the GitHub repository spec for the package (in the form of 'user/repo'))?"
   placeholder: "user/repo"
 
@@ -22,3 +21,18 @@ author_email:
 package_abbrev:
   type: str
   help: "What is the abbreviated name of the package? This could be the name of your GitHub repository and should be a short, lowercase name without spaces or special characters. For example, 'template-data-package'."
+  default: "{{ _copier_conf.dst_path | basename }}"
+
+review_team:
+  type: str
+  help: What GitHub team is responsible for reviewing pull requests?
+  default: >-
+    {{ "@%s/developers" % package_github_repo.split('/')[0] if package_github_repo else "" }}
+
+github_board_number:
+  type: str
+  help: "What is the number of the GitHub project board to add issues and PRs to?"
+  validator: |
+    {% if github_board_number and not github_board_number.isdigit() %}
+    The board number must be an integer.
+    {% endif %}

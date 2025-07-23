@@ -42,7 +42,9 @@ test:
     --data package_github_repo="first-last/${test_name}" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
-    --data author_email="first.last@example.com"
+    --data author_email="first.last@example.com" \
+    --data review_team="@first-last/developers" \
+    --data github_board_number=22
   # TODO: Other checks/tests?
 
 cleanup:
