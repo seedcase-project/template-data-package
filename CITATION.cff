@@ -8,6 +8,7 @@ authors:
   - family-names: Brødbæk
     given-names: Signe Kirk
     affiliation: "Steno Diabetes Center Aarhus"
+    orcid: "https://orcid.org/0009-0000-2208-7088"
   - family-names: Beicher
     given-names: Kristiane
     affiliation: "Steno Diabetes Center Aarhus"
@@ -17,6 +18,8 @@ authors:
 cff-version: 1.2.0
 # doi:
 keywords:
+  - "copier template"
+  - "template"
   - "template repository"
   - "template project"
   - "template data package"
