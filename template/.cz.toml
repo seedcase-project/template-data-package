@@ -5,6 +5,7 @@ version_provider = "uv"
 version_files = [
   "pyproject.toml:version",
   "scripts/properties.py:version"
+  "datapackage.json:version"
 ]
 # Don't regenerate the changelog on every update
 changelog_incremental = true
