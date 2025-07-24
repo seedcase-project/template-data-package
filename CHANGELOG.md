@@ -1,3 +1,15 @@
+## 0.8.1 (2025-07-24)
+
+### Refactor
+
+- :recycle: limit permissions used in workflow (#105)
+
+## 0.8.0 (2025-07-24)
+
+### Feat
+
+- :sparkles: pre-commit hook to check for conflicts (#102)
+
 ## 0.7.0 (2025-07-24)
 
 ### Feat
