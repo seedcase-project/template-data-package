@@ -1,3 +1,9 @@
+## 0.7.0 (2025-07-24)
+
+### Feat
+
+- :sparkles: increase version in `datapackage.json` file on version update (#109)
+
 ## 0.6.0 (2025-07-23)
 
 ### Feat
