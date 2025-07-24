@@ -59,12 +59,12 @@ follows:
 
 Johnston L.W., Brødbæk S.K., Beicher K., Vago M. Template Data Package:
 An opinionated setup for making FAIR and structured data using Seedcase
-Python packages URL: https://template-data-package.seedcase-project.org
+Python packages. URL: https://template-data-package.seedcase-project.org
 
 Or as a BibTeX entry:
 
     @misc{YourReferenceHere,
     author = {Johnston, Luke William and Brødbæk, Signe Kirk and Beicher, Kristiane and Vago, Marton},
-    title = {Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages},
+    title = {Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages.},
     url = {https://template-data-package.seedcase-project.org}
     }
