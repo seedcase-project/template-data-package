@@ -1,0 +1,62 @@
+---
+title: "Guide"
+---
+
+This guide provides an overview of how to use this template for creating
+a new Data Package. It includes instructions for using the template and
+post-creation tasks.
+
+## Installing
+
+In order to use this template, you need to install a few programs:
+
+-   [copier](https://copier.readthedocs.io/en/stable/#quick-start): A
+    template tool for making new projects in a standardised and
+    structured way.
+
+If you use [`pipx`](https://pipxproject.github.io/pipx/)---which we
+strongly recommend---you can install everything with the following
+command:
+
+``` bash
+pipx install copier
+```
+
+## Using this template
+
+When you are ready to create a new Data Package, you can use this
+template to set up the initial structure and files. First, open a
+Terminal and move into the directory where you want to create the new
+Data Package. Then run the following command:
+
+``` bash
+# Copy into the current directory with "."
+uvx copier copy gh:seedcase-project/template-data-package .
+```
+
+## Post-creation setup
+
+These steps are mainly for us in the Seedcase Project to set up the
+repository with the settings we use, but you can follow them if you want
+to set up your Data Package in a similar way.
+
+Install [`spaid`](https://github.com/seedcase-project/spaid) and use the
+following commands to run the next setup steps:
+
+``` bash
+spaid_gh_create_repo_from_local -h
+spaid_gh_set_repo_settings -h
+spaid_gh_ruleset_basic_protect_main -h
+```
+
+Some configuration is needed after copying this template to a new
+repository, including configuration external to the repository.
+
+-   The template file `.github/workflows/release-package.yml` requires
+    installing the
+    [auto-release-token](https://github.com/apps/auto-release-token)
+    GitHub App to be installed, as well as a GitHub secret called
+    `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
+    to be set up in the repository (or organization) settings. See this
+    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
+    for more details on how to set this up.
