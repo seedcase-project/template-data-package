@@ -39,6 +39,7 @@ test:
   # `.` means the current directory contains the template.
   uvx copier copy --vcs-ref=HEAD . $test_dir/$test_name \
     --defaults \
+    --trust \
     --data package_abbrev=$test_name \
     --data package_github_repo="first-last/${test_name}" \
     --data author_given_name="First" \
