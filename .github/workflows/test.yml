@@ -24,5 +24,10 @@ jobs:
       - name: Install justfile and zsh
         run: sudo apt install -y just zsh
 
+      - name: Set Git user
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "fake@example.com"
+
       - name: Test and check template creation
         run: just test
