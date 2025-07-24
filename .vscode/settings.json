@@ -8,7 +8,6 @@
   "git.autofetch": false,
   "quarto.visualEditor.markdownWrap": "column",
   "quarto.visualEditor.markdownWrapColumn": 72,
-  "autoDocstring.customTemplatePath": ".vscode/google-notypes.mustache",
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "inline",
   "conventional-branch.type": [
@@ -30,6 +29,7 @@
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "files.associations": {
+    "*.yml.jinja": "jinja-yaml",
     "*.cff.jinja": "jinja-yaml",
     "*.toml.jinja": "jinja-toml"
   },
