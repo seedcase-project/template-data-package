@@ -1,3 +1,9 @@
+## 0.8.0 (2025-07-24)
+
+### Feat
+
+- :sparkles: pre-commit hook to check for conflicts (#102)
+
 ## 0.7.0 (2025-07-24)
 
 ### Feat
