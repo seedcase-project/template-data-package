@@ -1,0 +1,9 @@
+<!-- [![DOI]()]() -->
+[![GitHub License](https://img.shields.io/github/license/seedcase-project/{{< meta repo >}})](https://github.com/seedcase-project/{{< meta repo >}}/blob/main/LICENSE.md)
+[![GitHub Release](https://img.shields.io/github/v/release/seedcase-project/{{< meta repo >}})](https://github.com/seedcase-project/{{< meta repo >}}/releases/latest)
+[![Test](https://github.com/seedcase-project/{{< meta repo >}}/actions/workflows/test.yml/badge.svg)](https://github.com/seedcase-project/{{< meta repo >}}/actions/workflows/build-package.yml)
+[![Build documentation](https://github.com/seedcase-project/{{< meta repo >}}/actions/workflows/build-website.yml/badge.svg)](https://github.com/seedcase-project/{{< meta repo >}}/actions/workflows/build-website.yml)
+[![CodeQL](https://github.com/seedcase-project/{{< meta repo >}}/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/seedcase-project/{{< meta repo >}}/actions/workflows/github-code-scanning/codeql)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/seedcase-project/{{< meta repo >}}/main.svg)](https://results.pre-commit.ci/latest/github/seedcase-project/{{< meta repo >}}/main)
+[![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)

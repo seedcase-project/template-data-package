@@ -1,4 +1,23 @@
+
+
 # An opinionated template for Data Packages built with Seedcase packages
+
+<!-- [![DOI]()]() -->
+
+[![GitHub
+License](https://img.shields.io/github/license/seedcase-project/template-data-package)](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md)
+[![GitHub
+Release](https://img.shields.io/github/v/release/seedcase-project/template-data-package)](https://github.com/seedcase-project/template-data-package/releases/latest)
+[![Test](https://github.com/seedcase-project/template-data-package/actions/workflows/test.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/build-package.yml)
+[![Build
+documentation](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml)
+[![CodeQL](https://github.com/seedcase-project/template-data-package/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/seedcase-project/template-data-package/actions/workflows/github-code-scanning/codeql)
+[![pre-commit.ci
+status](https://results.pre-commit.ci/badge/github/seedcase-project/template-data-package/main.svg)](https://results.pre-commit.ci/latest/github/seedcase-project/template-data-package/main)
+[![lifecycle](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 This repository contains a template for setting up a new [Data
 Package](https://datapackage.org/) following the Seedcase structure. Use
@@ -7,66 +26,45 @@ the necessary files and configurations in place, including for
 developing the Data Package. See the features section below for details
 on what is included in this template.
 
-## Using this template
+Check out our
+[website](https://template-data-package.seedcase-project.org/) for more
+information, such as an how to use it
+[guide](https://template-data-package.seedcase-project.org/docs/guide/).
+For a list of changes, see our
+[changelog](https://template-data-package.seedcase-project.org/docs/releases/)
+page.
 
-We strongly recommend using this template with
-[uv](https://docs.astral.sh/uv/). Once you have it installed, move into
-the directory where you want to create the new Data Package and run the
-following command:
+## Contributing
 
-``` bash
-# Copy into the current directory with "."
-uvx copier copy gh:seedcase-project/template-data-package .
-```
+Check out our [contributing
+page](https://template-data-package.seedcase-project.org/CONTRIBUTING/)
+for information on how to contribute to the project, including how to
+set up your development environment.
 
-### Post-creation setup
+Please note that this project is released with a [Contributor Code of
+Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
 
-These steps are mainly for us in the Seedcase Project to set up the
-repository with the settings we use, but you can follow them if you want
-to set up your Data Package in a similar way.
+## Licensing
 
-Install [`spaid`](https://github.com/seedcase-project/spaid) and use the
-following commands to run the next setup steps:
+This project is licensed under the [MIT
+License](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md).
 
-``` bash
-spaid_gh_create_repo_from_local -h
-spaid_gh_set_repo_settings -h
-spaid_gh_ruleset_basic_protect_main -h
-```
+## Citing
 
-Some configuration is needed after copying this template to a new
-repository, including configuration external to the repository.
+This project is part of the Seedcase Project, which is a collaborative
+effort to create a framework for data management and analysis in
+research. If you use this project in your work, please cite it as
+follows:
 
--   The template file `.github/workflows/release-package.yml` requires
-    installing the
-    [auto-release-token](https://github.com/apps/auto-release-token)
-    GitHub App to be installed, as well as a GitHub secret called
-    `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
-    to be set up in the repository (or organization) settings. See this
-    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
-    for more details on how to set this up.
+Johnston L.W., Brødbæk S.K., Beicher K., Vago M. Template Data Package:
+An opinionated setup for making FAIR and structured data using Seedcase
+Python packages URL: https://template-data-package.seedcase-project.org
 
-## Features
+Or as a BibTeX entry:
 
--   Use [uv](https://docs.astral.sh/uv/) to manage the Data Package.
--   Use [Polars](https://www.pola.rs/) for data manipulation.
--   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
-    create and modify the Data Package.
--   Licensed under the open data license TODO. This is added by default,
-    but you can delete or modify it if it isn't what you want or can
-    use.
--   Build management with [justfile](https://just.systems/man/en/).
--   Check typos with [typos](https://github.com/crate-ci/typos).
--   Code formatting and linting with
-    [ruff](https://docs.astral.sh/ruff/).
--   Pre-commit hooks with [pre-commit](https://pre-commit.com/).
--   GitHub workflows for automatically adding Pull Requests and Issues
-    to a project board.
--   Pull Request template for easy creation of new Pull Requests.
--   VS Code settings for common settings for contributors using VS Code.
--   EditorConfig for common cross-editor settings for contributors.
--   `CITATION.cff` file for citation information.
--   Website generation with [Quarto](https://quarto.org/).
--   Folder and file structure that mimics a Python package to take
-    advantage of Python's packaging ecosystem.
--   `pyproject.toml` for tracking dependencies and project metadata.
+    @misc{YourReferenceHere,
+    author = {Johnston, Luke William and Brødbæk, Signe Kirk and Beicher, Kristiane and Vago, Marton},
+    title = {Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages},
+    url = {https://template-data-package.seedcase-project.org}
+    }
