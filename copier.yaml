@@ -1,5 +1,19 @@
 _subdirectory: template
 
+# Post-copy commands:
+_tasks:
+  # Only run these commands when copying the template
+  - command: "git init -b main"
+    when: "{{ _copier_operation == 'copy' }}"
+  - command: "uv add --dev pre-commit commitizen ruff typos"
+    when: "{{ _copier_operation == 'copy' }}"
+  - command: "uv add polars seedcase-sprout"
+    when: "{{ _copier_operation == 'copy' }}"
+  - command: "git add ."
+    when: "{{ _copier_operation == 'copy' }}"
+  - command: "git commit -m 'chore: :tada: setup a new data package from the template'"
+    when: "{{ _copier_operation == 'copy' }}"
+
 # Questions:
 package_github_repo:
   type: str
@@ -40,3 +54,8 @@ github_board_number:
     {% if github_board_number and not github_board_number.isdigit() %}
     The board number must be an integer.
     {% endif %}
+
+copyright_year:
+  type: str
+  default: "{{ copyright_year | default('%Y' | strftime) }}"
+  when: false

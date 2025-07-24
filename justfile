@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: check-spelling check-commits test
+run-all: check-spelling check-commits test build-website
 
 # Install the pre-commit hooks
 install-precommit:
@@ -39,6 +39,7 @@ test:
   # `.` means the current directory contains the template.
   uvx copier copy --vcs-ref=HEAD . $test_dir/$test_name \
     --defaults \
+    --trust \
     --data package_abbrev=$test_name \
     --data package_github_repo="first-last/${test_name}" \
     --data author_given_name="First" \
@@ -46,9 +47,14 @@ test:
     --data author_email="first.last@example.com" \
     --data review_team="@first-last/developers" \
     --data github_board_number=22
-  # TODO: Other checks/tests?
+  # Run checks in the generated test data package
+  (cd $test_dir/$test_name && just check-python check-spelling)
 
 # Clean up any leftover and temporary build files
 cleanup:
   #!/bin/zsh
   rm -rf _temp
+
+# Build the website using Quarto
+build-website:
+  uvx --from quarto quarto render

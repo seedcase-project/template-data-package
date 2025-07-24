@@ -1,3 +1,15 @@
+## 0.10.0 (2025-07-24)
+
+### Feat
+
+- :sparkles: add locked var for copyright year (#115)
+
+## 0.9.0 (2025-07-24)
+
+### Feat
+
+- :sparkles: add post-copy commands to run (#101)
+
 ## 0.8.1 (2025-07-24)
 
 ### Refactor
