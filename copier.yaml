@@ -3,7 +3,7 @@ _subdirectory: template
 # Post-copy commands:
 _tasks:
   # Only run these commands when copying the template
-  - command: "git init"
+  - command: "git init -b main"
     when: "{{ _copier_operation == 'copy' }}"
   - command: "uv add --dev pre-commit commitizen ruff typos"
     when: "{{ _copier_operation == 'copy' }}"
