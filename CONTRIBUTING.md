@@ -37,7 +37,7 @@ just
 
 As you contribute, make sure your changes will pass our tests by opening
 a terminal so that the working directory is the root of this project
-(`template-data-package/`) and run:
+(`template-data-package/`) and running:
 
 ``` bash
 just run-all
