@@ -9,15 +9,28 @@ on what is included in this template.
 
 ## Using this template
 
-We strongly recommend using this template with
-[uv](https://docs.astral.sh/uv/). Once you have it installed, move into
-the directory where you want to create the new Data Package and run the
-following command:
+You need these programs installed in order to use this template.
+
+- [Git](https://git-scm.com/)
+- [Python](https://www.python.org/)
+- [uv](https://docs.astral.sh/uv/)
+- [just](https://just.systems/man/en/)
+
+Once you have these installed, open a terminal and move into the directory
+where you want to create the new Data Package and run the following command:
 
 ``` bash
 # Copy into the current directory with "."
-uvx copier copy gh:seedcase-project/template-data-package .
+uvx copier copy --trust gh:seedcase-project/template-data-package .
 ```
+
+> [!CAUTION]
+> This template runs some post-copy commands using your terminal. In order
+> to run them, you need to use the `--trust` option. Review the
+> [`copier.yml`](copier.yaml) file, under the `_tasks` key to see what
+> commands will be run after copying the template, so you can know and trust
+> what the commands are doing. Unfortunately, this template can't be used
+> without the `--trust` option.
 
 ### Post-creation setup
 
@@ -25,7 +38,14 @@ These steps are mainly for us in the Seedcase Project to set up the
 repository with the settings we use, but you can follow them if you want
 to set up your Data Package in a similar way.
 
-Install [`spaid`](https://github.com/seedcase-project/spaid) and use the
+After copying the template, while in the directory of the new Data Package,
+run the following:
+
+``` bash
+just install-precommit
+```
+
+Next, install [`spaid`](https://github.com/seedcase-project/spaid) and use the
 following commands to run the next setup steps:
 
 ``` bash
