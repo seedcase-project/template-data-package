@@ -45,7 +45,8 @@ test:
     --data author_email="first.last@example.com" \
     --data review_team="@first-last/developers" \
     --data github_board_number=22
-  # TODO: Other checks/tests?
+  # Run checks in the generated test data package
+  (cd $test_dir/$test_name && just check-python check-spelling)
 
 cleanup:
   #!/bin/zsh
