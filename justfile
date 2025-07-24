@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: check-spelling check-commits test
+run-all: check-spelling check-commits test build-website
 
 # Install the pre-commit hooks
 install-precommit:
@@ -52,3 +52,7 @@ test:
 cleanup:
   #!/bin/zsh
   rm -rf _temp
+
+# Build the website using Quarto
+build-website:
+  uvx --from quarto quarto render
