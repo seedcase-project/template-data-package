@@ -29,6 +29,7 @@ check-commits:
 check-spelling:
   uvx typos
 
+# Test and check that a data package can be created from the template
 test:
   #!/bin/zsh
   test_dir="$(pwd)/_temp"
@@ -47,6 +48,7 @@ test:
     --data github_board_number=22
   # TODO: Other checks/tests?
 
+# Clean up any leftover and temporary build files
 cleanup:
   #!/bin/zsh
   rm -rf _temp
