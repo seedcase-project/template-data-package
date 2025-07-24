@@ -5,35 +5,45 @@ title: An opinionated template for Data Packages built with Seedcase packages
 {{< include /docs/includes/_badges.qmd >}}
 
 This is a template for creating a new [Data
-Package](https://datapackage.org/) following the Seedcase structure. Use
-this template to quickly get started with a new Data Package with all
-the necessary files and configurations in place, including for
-developing the Data Package.
+Package](https://decisions.seedcase-project.org/why-frictionless-data/)
+following the Seedcase structure. Use this template to quickly get
+started with a new Data Package with all the necessary files and
+configurations in place, including for developing the Data Package.
 
 ## Features
 
--   Use [uv](https://docs.astral.sh/uv/) to manage the Data Package.
--   Use [Polars](https://www.pola.rs/) for data manipulation.
--   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
-    create and modify the Data Package.
+::: content-hidden
+<!-- TODO: Move this down once a license has been decided on. -->
+
 -   Licensed under the open data license TODO. This is added by default,
     but you can delete or modify it if it isn't what you want or can
     use.
+:::
+
+-   Use [uv](https://decisions.seedcase-project.org/why-uv/) to manage
+    the Data Package.
+-   Use [Polars](https://www.pola.rs/) for data manipulation.
+-   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
+    create and modify the Data Package.
 -   Build management with [justfile](https://just.systems/man/en/).
 -   Check typos with [typos](https://github.com/crate-ci/typos).
 -   Code formatting and linting with
-    [ruff](https://docs.astral.sh/ruff/).
+    [ruff](https://decisions.seedcase-project.org/why-ruff/).
 -   Pre-commit hooks with [pre-commit](https://pre-commit.com/).
 -   GitHub workflows for automatically adding Pull Requests and Issues
     to a project board.
 -   Pull Request template for easy creation of new Pull Requests.
--   VS Code settings for common settings for contributors using VS Code.
--   EditorConfig for common cross-editor settings for contributors.
--   `CITATION.cff` file for citation information.
+-   [VS Code](https://code.visualstudio.com/) settings for common
+    settings for contributors using VS Code.
+-   [EditorConfig](https://editorconfig.org/) for common cross-editor
+    settings for contributors.
+-   [`CITATION.cff`](https://citation-file-format.github.io/) file for
+    citation information.
 -   Website generation with [Quarto](https://quarto.org/).
 -   Folder and file structure that mimics a Python package to take
     advantage of Python's packaging ecosystem.
--   `pyproject.toml` for tracking dependencies and project metadata.
+-   [`pyproject.toml`](https://peps.python.org/pep-0518/) for tracking
+    dependencies and project metadata.
 
 ## Want to contribute?
 

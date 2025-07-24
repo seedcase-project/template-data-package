@@ -65,28 +65,3 @@ repository, including configuration external to the repository.
     to be set up in the repository (or organization) settings. See this
     [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
     for more details on how to set this up.
-
-## Features
-
--   Use [uv](https://docs.astral.sh/uv/) to manage the Data Package.
--   Use [Polars](https://www.pola.rs/) for data manipulation.
--   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
-    create and modify the Data Package.
--   Licensed under the open data license TODO. This is added by default,
-    but you can delete or modify it if it isn't what you want or can
-    use.
--   Build management with [justfile](https://just.systems/man/en/).
--   Check typos with [typos](https://github.com/crate-ci/typos).
--   Code formatting and linting with
-    [ruff](https://docs.astral.sh/ruff/).
--   Pre-commit hooks with [pre-commit](https://pre-commit.com/).
--   GitHub workflows for automatically adding Pull Requests and Issues
-    to a project board.
--   Pull Request template for easy creation of new Pull Requests.
--   VS Code settings for common settings for contributors using VS Code.
--   EditorConfig for common cross-editor settings for contributors.
--   `CITATION.cff` file for citation information.
--   Website generation with [Quarto](https://quarto.org/).
--   Folder and file structure that mimics a Python package to take
-    advantage of Python's packaging ecosystem.
--   `pyproject.toml` for tracking dependencies and project metadata.
