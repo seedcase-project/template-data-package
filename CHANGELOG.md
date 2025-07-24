@@ -1,3 +1,9 @@
+## 0.8.1 (2025-07-24)
+
+### Refactor
+
+- :recycle: limit permissions used in workflow (#105)
+
 ## 0.8.0 (2025-07-24)
 
 ### Feat
