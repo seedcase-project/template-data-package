@@ -16,21 +16,8 @@ readme = "README.md"
 license = "MIT AND "
 license-files = ["LICENSE-MIT.md", ""]
 requires-python = ">=3.12"
-dependencies = [
-    "polars>=1.27.0",
-    "seedcase-sprout>=0.46.3",
-]
-
 {% if package_github_repo %}
 [project.urls]
 issues = "https://github.com/{{ package_github_repo }}/issues"
 repository = "https://github.com/{{ package_github_repo }}"
 {% endif %}
-
-[dependency-groups]
-dev = [
-    "commitizen>=4.5.1",
-    "pre-commit>=4.2.0",
-    "ruff>=0.11.4",
-    "typos>=1.32.0",
-]
