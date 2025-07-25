@@ -26,11 +26,11 @@ _message_after_copy: |
     $ cd {{ _copier_conf.dst_path }}
 
   2. Install the pre-commit hooks:
-    
+
     $ just install-precommit
 
   3. Install [`spaid`](https://github.com/seedcase-project/spaid) and run these setup steps:
-    
+
     $ spaid_gh_create_repo_from_local -h
     $ spaid_gh_set_repo_settings -h
     $ spaid_gh_ruleset_basic_protect_main -h
@@ -44,7 +44,7 @@ _message_after_copy: |
     - Create an `UPDATE_VERSION_APP_ID` variable
 
   5. List and action all TODO items in the repository:
-    
+
     $ just list-todos
 
 # Questions:
