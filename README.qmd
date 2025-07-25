@@ -18,8 +18,8 @@ developing the Data Package. See the features section below for details
 on what is included in this template.
 
 Check out our [website](https://{{< meta repo >}}.seedcase-project.org/) for more
-information, such as an
-how to use it [guide](https://{{< meta repo >}}.seedcase-project.org/docs/guide/).
+information, such as a
+[guide](https://{{< meta repo >}}.seedcase-project.org/docs/guide/) for using the template.
 For a list
 of changes, see our
 [changelog](https://{{< meta repo >}}.seedcase-project.org/docs/releases/) page.
