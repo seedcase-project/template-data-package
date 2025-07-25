@@ -4,6 +4,7 @@
 
 <!-- [![DOI]()]() -->
 
+[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true)](https://github.com/copier-org/copier)
 [![GitHub
 License](https://img.shields.io/github/license/seedcase-project/template-data-package)](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md)
 [![GitHub
