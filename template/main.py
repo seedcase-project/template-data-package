@@ -11,10 +11,10 @@ def main():
     ## PROPERTIES
 
     ## Create the properties script in default location if it doesn't already exist.
-    package_path = sp.PackagePath()
     sp.create_properties_script()
 
     ## Load your raw, but tidy, data into a Polars DataFrame.
+    # package_path = sp.PackagePath()
     # raw_data = pl.read_csv(package_path.root() / "raw" / "data.csv")
     ## Extract field properties from the data.
     # field_properties = sp.extract_field_properties(data=raw_data)
