@@ -1,0 +1,58 @@
+---
+format: gfm
+execute:
+  echo: false
+jupyter: python3
+repo: "template-data-package"
+---
+
+# An opinionated template for Data Packages built with Seedcase packages
+
+{{< include /docs/includes/_badges.qmd >}}
+
+This repository contains a template for setting up a new [Data
+Package](https://datapackage.org/) following the Seedcase structure. Use
+this template to quickly get started with a new Data Package with all
+the necessary files and configurations in place, including for
+developing the Data Package. See the features section below for details
+on what is included in this template.
+
+Check out our [website](https://{{< meta repo >}}.seedcase-project.org/) for more
+information, such as a
+[guide](https://{{< meta repo >}}.seedcase-project.org/docs/guide/) for using the template.
+For a list
+of changes, see our
+[changelog](https://{{< meta repo >}}.seedcase-project.org/docs/releases/) page.
+
+## Contributing
+
+Check out our [contributing page](https://{{< meta repo >}}.seedcase-project.org/CONTRIBUTING/)
+for information on how to contribute to the project, including how to
+set up your development environment.
+
+Please note that this project is released with a [Contributor Code of
+Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
+
+## Licensing
+
+This project is licensed under the [MIT
+License](https://github.com/seedcase-project/{{< meta repo >}}/blob/main/LICENSE.md).
+
+## Citing
+
+This project is part of the Seedcase Project, which is a collaborative
+effort to create a framework for data management and analysis in
+research. If you use this project in your work, please cite it as
+follows:
+
+```{python}
+#| output: asis
+!uvx --quiet cffconvert --format apalike
+```
+
+Or as a BibTeX entry:
+
+```{python}
+!uvx --quiet cffconvert --format bibtex
+```
