@@ -1,3 +1,9 @@
+## 0.10.3 (2025-07-25)
+
+### Refactor
+
+- :recycle: ignore generated `*_files/` from Quarto (#120)
+
 ## 0.10.2 (2025-07-25)
 
 ### Refactor

@@ -41,7 +41,7 @@ __pycache__/
 docs/.quarto/
 *.ipynb
 *.quarto_ipynb
-*.storage
+*_files/
 
 # Website generation
 _site
