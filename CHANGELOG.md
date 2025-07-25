@@ -1,3 +1,9 @@
+## 0.10.2 (2025-07-25)
+
+### Refactor
+
+- :fire: remove content not needed for data packages (#108)
+
 ## 0.10.1 (2025-07-25)
 
 ### Fix
