@@ -11,8 +11,8 @@ post-creation tasks.
 In order to use this template, you need to install a few programs:
 
 -   [Python](https://www.python.org/): Required for installing and using
-    many of the tools in this template, and because the template
-    itself uses Python.
+    many of the tools in this template, and because the template itself
+    uses Python.
 -   [Git](https://git-scm.com/): For version control and setting up Git
     to track the newly created data package.
 -   [copier](https://copier.readthedocs.io/en/stable/#quick-start): A
@@ -24,8 +24,8 @@ In order to use this template, you need to install a few programs:
 -   [just](https://just.systems/man/en/): A build management tool that
     helps with running common build and check tasks.
 
-You will need to install Python and Git yourself, but the other tools can
-be installed using
+You will need to install Python and Git yourself, but the other tools
+can be installed using
 [`pipx`](https://pipxproject.github.io/pipx/)---which we strongly
 recommend---with the following command:
 
@@ -33,7 +33,7 @@ recommend---with the following command:
 pipx install copier uv rust-just
 ```
 
-## Using this template
+## Creating a new data package
 
 You can use this template to create a new Data Package with a standard
 set of files and folders, as well as all the features and configurations
@@ -43,7 +43,7 @@ you want to create the new Data Package. Then run the following command:
 
 ``` bash
 # Copy into the current directory, which is the "."
-uvx copier copy gh:seedcase-project/template-data-package .
+uvx copier copy --trust gh:seedcase-project/template-data-package .
 ```
 
 ::: callout-caution
@@ -56,11 +56,64 @@ doing. Unfortunately, this template can't be used without the `--trust`
 option.
 :::
 
+## Using on an existing Data Package
+
+If you want to use this template on an existing Data Package, you can
+use the `copy` command of `copier` as like above to apply the template
+to the existing Data Package. This will add all the template's files and
+configurations to the existing Data Package the new
+
+``` bash
+uvx copier copy --trust gh:seedcase-project/template-data-package .
+```
+
+It will go through a series of prompts, as in the case of creating a new
+Data Package, including asking if you want to overwrite existing files.
+The Data Package does need to be tracked by Git and in a clean state (no
+changes).
+
+## Updating from the template
+
+There are two ways to update an existing Data Package with the latest
+changes from the template: `update` and `recopy`.
+
+Use `update` if you want to only apply any updates made to the template
+itself. `update` will compare the version of the template you used when
+you first copied the template with the current version of the template,
+and then apply the changes that are different. This also means it won't
+overwrite any changes you made to files in your current Data Package,
+for example, if you deleted a file that was in the template, it won't be
+copied back.
+
+Use `recopy` if you want to reapply the template from scratch, which
+will overwrite any changes you made to the files that were copied from
+the template. This is useful if you want to reset the Data Package to
+the state of the template. For example, if you deleted a file but want
+it back from the template or are simply curious to see if there are any
+new changes that you might want to use.
+
+In both cases, the commands are very similar and also use many of the
+same options as the `copy` command. If you want to use the same answers
+as given when you first copied the template, you can use the
+`--defaults` option. Then it will only prompt you for the questions that
+have changed since the last time you copied the template.
+
+``` bash
+uvx copier update --trust --defaults
+# Or
+uvx copier recopy --trust --defaults
+```
+
+As with the `copy` command, the Data Package needs to be tracked by Git
+and must be in a clean state (no changes) for the `update` and `recopy`
+commands to work.
+
 ## Post-creation setup
 
 These steps are mainly for us in the Seedcase Project to set up the
 repository with the settings we use, but you can follow them if you want
-to set up your Data Package in a similar way.
+to set up your Data Package in a similar way. They are also included in
+a message after you've copied the template.
 
 After copying the template, while in the directory of the new Data
 Package, run the following:
@@ -82,8 +135,7 @@ Some configuration is needed after copying this template to a new
 repository, including configuration external to the repository.
 
 -   The template file `.github/workflows/release-package.yml` requires
-    the
-    [auto-release-token](https://github.com/apps/auto-release-token)
+    the [auto-release-token](https://github.com/apps/auto-release-token)
     GitHub App to be installed, as well as a GitHub secret called
     `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
     to be set up in the repository (or organization) settings. See this
