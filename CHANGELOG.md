@@ -1,3 +1,9 @@
+## 0.10.4 (2025-07-25)
+
+### Fix
+
+- :bug: don't commit and add, leave that to the user (#124)
+
 ## 0.10.3 (2025-07-25)
 
 ### Refactor
