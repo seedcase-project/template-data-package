@@ -1,0 +1,91 @@
+---
+title: "Guide"
+---
+
+This guide provides an overview of how to use this template for creating
+a new Data Package. It includes instructions for using the template and
+post-creation tasks.
+
+## Installing
+
+In order to use this template, you need to install a few programs:
+
+-   [Python](https://www.python.org/): Required for installing and using
+    many of the tools in this template, and because the template
+    itself uses Python.
+-   [Git](https://git-scm.com/): For version control and setting up Git
+    to track the newly created data package.
+-   [copier](https://copier.readthedocs.io/en/stable/#quick-start): A
+    template tool for making new projects in a standardised and
+    structured way.
+-   [uv](https://docs.astral.sh/uv/): A tool for managing Python
+    environments and running commands. Some post-copy steps of this
+    template use uv.
+-   [just](https://just.systems/man/en/): A build management tool that
+    helps with running common build and check tasks.
+
+You will need to install Python and Git yourself, but the other tools can
+be installed using
+[`pipx`](https://pipxproject.github.io/pipx/)---which we strongly
+recommend---with the following command:
+
+``` bash
+pipx install copier uv rust-just
+```
+
+## Using this template
+
+You can use this template to create a new Data Package with a standard
+set of files and folders, as well as all the features and configurations
+to make it easier to build your data package more smoothly and
+effectively. First, open a Terminal and move into the directory where
+you want to create the new Data Package. Then run the following command:
+
+``` bash
+# Copy into the current directory, which is the "."
+uvx copier copy gh:seedcase-project/template-data-package .
+```
+
+::: callout-caution
+This template runs some post-copy commands using your terminal. In order
+to run them, you need to use the `--trust` option. Review the
+[`copier.yml`](https://github.com/seedcase-project/template-data-package/blob/main/copier.yaml)
+file, under the `_tasks` key to see what commands will be run after
+copying the template, so you can know and trust what the commands are
+doing. Unfortunately, this template can't be used without the `--trust`
+option.
+:::
+
+## Post-creation setup
+
+These steps are mainly for us in the Seedcase Project to set up the
+repository with the settings we use, but you can follow them if you want
+to set up your Data Package in a similar way.
+
+After copying the template, while in the directory of the new Data
+Package, run the following:
+
+``` bash
+just install-precommit
+```
+
+Next, install [`spaid`](https://github.com/seedcase-project/spaid) and
+use the following commands to run the next setup steps:
+
+``` bash
+spaid_gh_create_repo_from_local -h
+spaid_gh_set_repo_settings -h
+spaid_gh_ruleset_basic_protect_main -h
+```
+
+Some configuration is needed after copying this template to a new
+repository, including configuration external to the repository.
+
+-   The template file `.github/workflows/release-package.yml` requires
+    the
+    [auto-release-token](https://github.com/apps/auto-release-token)
+    GitHub App to be installed, as well as a GitHub secret called
+    `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
+    to be set up in the repository (or organization) settings. See this
+    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
+    for more details on how to set this up.
