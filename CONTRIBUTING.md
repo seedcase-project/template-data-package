@@ -42,3 +42,8 @@ a terminal so that the working directory is the root of this project
 ``` bash
 just run-all
 ```
+
+When testing the template, copier can only use content kept in the
+Git history. Meaning that if you make changes to the template and try
+to test it, it won't be able to test those changes. You have to commit
+the changes first in order for copier to use them.
