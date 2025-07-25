@@ -27,7 +27,6 @@ _message_after_copy: |
     $ spaid_gh_set_repo_settings -h
     $ spaid_gh_ruleset_basic_protect_main -h
 
-
   4. Configure GitHub following this
     [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens):
 
@@ -35,7 +34,7 @@ _message_after_copy: |
     - Create an `UPDATE_VERSION_TOKEN` secret
     - Create an `UPDATE_VERSION_APP_ID` variable
 
-  5. List and action all TODO items in the repository:
+  5. List and complete all TODO items in the repository:
 
     $ just list-todos
 
