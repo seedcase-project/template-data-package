@@ -67,7 +67,7 @@ test:
     --trust
   # Check that copying onto an existing data package works
   echo "Using the template in an existing package command -----------"
-  rm .cz.toml .copier-answers.yaml LICENSE-MIT.md
+  rm .cz.toml .copier-answers.yml LICENSE-MIT.md
   git add .
   git commit -m "test: copying onto an existing package"
   uvx copier copy \
