@@ -59,7 +59,7 @@ test:
   echo "Testing recopy command -----------"
   rm .cz.toml
   git add .
-  git commit -m "test: recopying from the template"
+  git commit -m "test: preparing to recopy from the template"
   uvx copier recopy \
     --vcs-ref=$commit \
     --defaults \
@@ -69,7 +69,7 @@ test:
   echo "Using the template in an existing package command -----------"
   rm .cz.toml .copier-answers.yml LICENSE-MIT.md
   git add .
-  git commit -m "test: copying onto an existing package"
+  git commit -m "test: preparing to copy onto an existing package"
   uvx copier copy \
     $template_dir $test_dir \
     --vcs-ref=$commit \
