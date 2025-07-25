@@ -29,9 +29,9 @@ on what is included in this template.
 
 Check out our
 [website](https://template-data-package.seedcase-project.org/) for more
-information, such as an how to use it
-[guide](https://template-data-package.seedcase-project.org/docs/guide/).
-For a list of changes, see our
+information, such as a
+[guide](https://template-data-package.seedcase-project.org/docs/guide/)
+for using the template. For a list of changes, see our
 [changelog](https://template-data-package.seedcase-project.org/docs/releases/)
 page.
 
