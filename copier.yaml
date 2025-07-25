@@ -14,6 +14,39 @@ _tasks:
   - command: "git commit -m 'chore: :tada: setup a new data package from the template'"
     when: "{{ _copier_operation == 'copy' }}"
 
+# Message to show after generating or regenerating the project successfully
+_message_after_copy: |
+
+  Your project "{{ package_abbrev }}" has been created successfully!
+
+  Next steps:
+
+  1. Change directory to the project root:
+
+    $ cd {{ _copier_conf.dst_path }}
+
+  2. Install the pre-commit hooks:
+    
+    $ just install-precommit
+
+  3. Install [`spaid`](https://github.com/seedcase-project/spaid) and run these setup steps:
+    
+    $ spaid_gh_create_repo_from_local -h
+    $ spaid_gh_set_repo_settings -h
+    $ spaid_gh_ruleset_basic_protect_main -h
+
+
+  4. Configure GitHub following this
+    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens):
+
+    - Install the [auto-release-token](https://github.com/apps/auto-release-token) GitHub App
+    - Create an `UPDATE_VERSION_TOKEN` secret
+    - Create an `UPDATE_VERSION_APP_ID` variable
+
+  5. List and action all TODO items in the repository:
+    
+    $ just list-todos
+
 # Questions:
 package_github_repo:
   type: str
