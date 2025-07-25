@@ -1,3 +1,15 @@
+## 0.10.4 (2025-07-25)
+
+### Fix
+
+- :bug: don't commit and add, leave that to the user (#124)
+
+## 0.10.3 (2025-07-25)
+
+### Refactor
+
+- :recycle: ignore generated `*_files/` from Quarto (#120)
+
 ## 0.10.2 (2025-07-25)
 
 ### Refactor
