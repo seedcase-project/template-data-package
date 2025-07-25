@@ -33,8 +33,8 @@ configurations in place, including for developing the Data Package.
 -   GitHub workflows for automatically adding Pull Requests and Issues
     to a project board.
 -   Pull Request template for easy creation of new Pull Requests.
--   [VS Code](https://code.visualstudio.com/) settings for common
-    settings for contributors using VS Code.
+-   [VS Code](https://code.visualstudio.com/) settings commonly
+    used by contributors working in VS Code.
 -   [EditorConfig](https://editorconfig.org/) for common cross-editor
     settings for contributors.
 -   [`CITATION.cff`](https://citation-file-format.github.io/) file for
