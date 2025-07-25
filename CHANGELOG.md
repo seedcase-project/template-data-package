@@ -1,3 +1,9 @@
+## 0.11.0 (2025-07-25)
+
+### Feat
+
+- :sparkles: add after copy message (#129)
+
 ## 0.10.4 (2025-07-25)
 
 ### Fix
