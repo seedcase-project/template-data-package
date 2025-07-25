@@ -1,3 +1,9 @@
+## 0.10.1 (2025-07-25)
+
+### Fix
+
+- :bug: comment out unused code to pass linter (#119)
+
 ## 0.10.0 (2025-07-24)
 
 ### Feat
