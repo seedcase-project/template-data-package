@@ -56,12 +56,12 @@ doing. Unfortunately, this template can't be used without the `--trust`
 option.
 :::
 
-## Using on an existing Data Package
+## Applying the template to an existing Data Package
 
 If you want to use this template on an existing Data Package, you can
-use the `copy` command of `copier` as like above to apply the template
+use the `copy` command of `copier` just like above to apply the template
 to the existing Data Package. This will add all the template's files and
-configurations to the existing Data Package the new
+configurations to the existing Data Package.
 
 ``` bash
 uvx copier copy --trust gh:seedcase-project/template-data-package .
@@ -69,16 +69,19 @@ uvx copier copy --trust gh:seedcase-project/template-data-package .
 
 It will go through a series of prompts, as in the case of creating a new
 Data Package, including asking if you want to overwrite existing files.
-The Data Package does need to be tracked by Git and in a clean state (no
-changes).
 
-## Updating from the template
+::: callout-note
+To use the `copy` command, the Data Package needs to be tracked by Git and in a clean state (no
+changes).
+:::
+
+## Applying the latest template changes
 
 There are two ways to update an existing Data Package with the latest
 changes from the template: `update` and `recopy`.
 
-Use `update` if you want to only apply any updates made to the template
-itself. `update` will compare the version of the template you used when
+Use `update` to apply template updates to your project without overwriting
+local changes. `update` will compare the version of the template you used when
 you first copied the template with the current version of the template,
 and then apply the changes that are different. This also means it won't
 overwrite any changes you made to files in your current Data Package,
