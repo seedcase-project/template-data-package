@@ -1,6 +1,6 @@
 [tool.commitizen]
 version = "0.11.0"
-bump_message = "build(version): :bookmark: update version from $current_version to $new_version [skip ci]"
+bump_message = "build(version): :bookmark: update version from $current_version to $new_version"
 version_schema = "semver"
 version_provider = "commitizen"
 update_changelog_on_bump = true
