@@ -10,7 +10,7 @@ post-creation tasks.
 
 In order to use this template, you need to install a few programs:
 
--   [Python](https://www.python.org/): Required the template tool itself
+-   [Python](https://www.python.org/): Required by the template tool itself
     (copier) and for installing and using many of the tools in this
     template.
 -   [Git](https://git-scm.com/): For version control and setting up Git
