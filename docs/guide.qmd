@@ -10,9 +10,9 @@ post-creation tasks.
 
 In order to use this template, you need to install a few programs:
 
--   [Python](https://www.python.org/): Required for installing and using
-    many of the tools in this template, and because the template itself
-    uses Python.
+-   [Python](https://www.python.org/): Required the template tool itself
+    (copier) and for installing and using many of the tools in this
+    template.
 -   [Git](https://git-scm.com/): For version control and setting up Git
     to track the newly created data package.
 -   [copier](https://copier.readthedocs.io/en/stable/#quick-start): A
@@ -71,8 +71,8 @@ It will go through a series of prompts, as in the case of creating a new
 Data Package, including asking if you want to overwrite existing files.
 
 ::: callout-note
-To use the `copy` command, the Data Package needs to be tracked by Git and in a clean state (no
-changes).
+To use the `copy` command, the Data Package needs to be tracked by Git
+and in a clean state (no changes).
 :::
 
 ## Applying the latest template changes
@@ -80,13 +80,13 @@ changes).
 There are two ways to update an existing Data Package with the latest
 changes from the template: `update` and `recopy`.
 
-Use `update` to apply template updates to your project without overwriting
-local changes. `update` will compare the version of the template you used when
-you first copied the template with the current version of the template,
-and then apply the changes that are different. This also means it won't
-overwrite any changes you made to files in your current Data Package,
-for example, if you deleted a file that was in the template, it won't be
-copied back.
+Use `update` to apply template updates to your project without
+overwriting local changes. `update` will compare the version of the
+template you used when you first copied the template with the current
+version of the template, and then apply the changes that are different.
+This also means it won't overwrite any changes you made to files in your
+current Data Package, for example, if you deleted a file that was in the
+template, it won't be copied back.
 
 Use `recopy` if you want to reapply the template from scratch, which
 will overwrite any changes you made to the files that were copied from
