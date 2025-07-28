@@ -12,10 +12,7 @@ permissions: read-all
 jobs:
   update-from-template:
     runs-on: ubuntu-latest
-    # This job outputs env variables `previous_version` and `current_version`.
-    # Only give permissions for this job.
     permissions:
-      contents: write
       pull-requests: write
     steps:
       - name: Harden the runner (Audit all outbound calls)
