@@ -1,3 +1,9 @@
+## 0.12.0 (2025-07-29)
+
+### Feat
+
+- :sparkles: justfile recipes to update from the template (#133)
+
 ## 0.11.2 (2025-07-29)
 
 ### Fix
