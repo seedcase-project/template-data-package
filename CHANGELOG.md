@@ -1,3 +1,15 @@
+## 0.11.2 (2025-07-29)
+
+### Fix
+
+- :bug: post-copy tasks should run in sequence, not be dependent (#134)
+
+## 0.11.1 (2025-07-28)
+
+### Fix
+
+- :bug: rename `properties` to `package_properties` (#132)
+
 ## 0.11.0 (2025-07-25)
 
 ### Feat
