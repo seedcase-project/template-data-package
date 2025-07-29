@@ -3,7 +3,7 @@ _subdirectory: template
 # Post-copy commands:
 _tasks:
   # Only run these commands when copying the template
-  - command: "git init -b main && uv add --dev pre-commit commitizen ruff typos && uv add polars seedcase-sprout"
+  - command: "git init -b main; uv add --dev pre-commit commitizen ruff typos; uv add polars seedcase-sprout"
     when: "{{ _copier_operation == 'copy' }}"
 
 # Message to show after generating or regenerating the project successfully

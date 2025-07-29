@@ -2,8 +2,7 @@
 
 # An opinionated template for Data Packages built with Seedcase packages
 
-<!-- [![DOI]()]() -->
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16540439.svg)](https://doi.org/10.5281/zenodo.16540439)
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true)](https://github.com/copier-org/copier)
 [![GitHub
 License](https://img.shields.io/github/license/seedcase-project/template-data-package)](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md)
@@ -60,12 +59,14 @@ follows:
 
 Johnston L.W., Brødbæk S.K., Beicher K., Vago M. Template Data Package:
 An opinionated setup for making FAIR and structured data using Seedcase
-Python packages. URL: https://template-data-package.seedcase-project.org
+Python packages. DOI: 10.5281/zenodo.16540439 URL:
+https://template-data-package.seedcase-project.org
 
 Or as a BibTeX entry:
 
     @misc{YourReferenceHere,
     author = {Johnston, Luke William and Brødbæk, Signe Kirk and Beicher, Kristiane and Vago, Marton},
+    doi = {10.5281/zenodo.16540439},
     title = {Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages.},
     url = {https://template-data-package.seedcase-project.org}
     }
