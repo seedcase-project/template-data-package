@@ -49,3 +49,11 @@ check-spelling:
 # Re-build the data package
 build:
   uv run main.py
+
+# Check for and apply updates from the template
+update-from-template:
+  uvx copier update --trust --defaults
+
+# Reset repo changes to match the template
+reset-from-template:
+  uvx copier recopy --trust --defaults
