@@ -75,10 +75,10 @@ page of the design documentation.
 #### With data to add to the resource
 
 While you can create resource properties without data, it is
-a lot more challenging. If at all possible, only create a 
+a lot more challenging. If at all possible, only create a
 resource properties object when you have data to use to
 at least pre-fill in some of the important fields.
-In order to use Sprout, the data needs to already be in a tidy format. 
+In order to use Sprout, the data needs to already be in a tidy format.
 When it is, load the data as a Polars
 data frame into the `raw_data` variable in `main.py`.
 
