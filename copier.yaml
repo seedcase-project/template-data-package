@@ -83,3 +83,8 @@ copyright_year:
   type: str
   default: "{{ copyright_year | default('%Y' | strftime) }}"
   when: false
+
+cc0_license:
+  type: bool
+  default: true
+  help: "Do you want to use the CC0 license for the data in this data package?"
