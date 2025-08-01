@@ -1,3 +1,19 @@
+## 0.14.0 (2025-08-01)
+
+### Feat
+
+- :sparkles: add CC0 license for data to template (#141)
+
+## 0.13.0 (2025-07-29)
+
+### Feat
+
+- :sparkles: add template README in `docs/` (#136)
+
+### Fix
+
+- :bug: when bumping versions, we still want the website updated too (#138)
+
 ## 0.12.0 (2025-07-29)
 
 ### Feat

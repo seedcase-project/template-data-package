@@ -12,9 +12,13 @@ maintainers = [
   # TODO: Add more maintainers as needed.
 ]
 readme = "README.md"
-# TODO: Update with a license for the data.
-license = "MIT AND "
-license-files = ["LICENSE-MIT.md", ""]
+{% if cc0_license %}
+license = "MIT AND CC0-1.0"
+license-files = ["LICENSE-MIT.md", "LICENSE.md"]
+{% else %}
+license = "MIT"
+license-files = ["LICENSE-MIT.md"]
+{% endif %}
 requires-python = ">=3.12"
 {% if package_github_repo %}
 [project.urls]
