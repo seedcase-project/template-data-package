@@ -48,6 +48,7 @@ test:
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
     --data review_team="@first-last/developers" \
+    --data cc0_license="true" \
     --data github_board_number=22
   # Run checks in the generated test data package
   cd $test_dir
@@ -67,7 +68,7 @@ test:
     --trust
   # Check that copying onto an existing data package works
   echo "Using the template in an existing package command -----------"
-  rm .cz.toml .copier-answers.yml LICENSE-MIT.md
+  rm .cz.toml .copier-answers.yml LICENSE-MIT.md LICENSE.md
   git add .
   git commit -m "test: preparing to copy onto an existing package"
   uvx copier copy \
@@ -82,6 +83,7 @@ test:
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
     --data review_team="@first-last/developers" \
+    --data cc0_license="false" \
     --data github_board_number=22
 
 # Clean up any leftover and temporary build files

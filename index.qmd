@@ -12,14 +12,6 @@ configurations in place, including for developing the Data Package.
 
 ## Features
 
-::: content-hidden
-<!-- TODO: Move this down once a license has been decided on. -->
-
--   Licensed under the open data license TODO. This is added by default,
-    but you can delete or modify it if it isn't what you want or can
-    use.
-:::
-
 -   Use [uv](https://decisions.seedcase-project.org/why-uv/) to manage
     the Data Package.
 -   Use [Polars](https://www.pola.rs/) for data manipulation.
@@ -33,8 +25,8 @@ configurations in place, including for developing the Data Package.
 -   GitHub workflows for automatically adding Pull Requests and Issues
     to a project board.
 -   Pull Request template for easy creation of new Pull Requests.
--   [VS Code](https://code.visualstudio.com/) settings commonly
-    used by contributors working in VS Code.
+-   [VS Code](https://code.visualstudio.com/) settings commonly used by
+    contributors working in VS Code.
 -   [EditorConfig](https://editorconfig.org/) for common cross-editor
     settings for contributors.
 -   [`CITATION.cff`](https://citation-file-format.github.io/) file for
@@ -44,6 +36,12 @@ configurations in place, including for developing the Data Package.
     advantage of Python's packaging ecosystem.
 -   [`pyproject.toml`](https://peps.python.org/pep-0518/) for tracking
     dependencies and project metadata.
+-   Use [MIT
+    License](https://decisions.seedcase-project.org/why-mit-license/)
+    for the code used in the Data Package made from this template.
+-   Optionally use the [CC0
+    License](https://decisions.seedcase-project.org/why-cc0-data/) for
+    the data in the Data Package made from this template.
 
 ## Want to contribute?
 
