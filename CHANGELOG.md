@@ -1,3 +1,9 @@
+## 0.15.0 (2025-08-04)
+
+### Feat
+
+- :sparkles: workflow to check for updates and make a PR with them (#135)
+
 ## 0.14.0 (2025-08-01)
 
 ### Feat
