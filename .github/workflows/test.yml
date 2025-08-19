@@ -11,23 +11,4 @@ permissions: read-all
 
 jobs:
   test-copier:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
-
-      - name: Set up uv
-        uses: astral-sh/setup-uv@d9e0f98d3fc6adb07d1e3d37f3043649ddad06a1
-        with:
-          enable-cache: true
-
-      - name: Install justfile and zsh
-        run: sudo apt install -y just zsh
-
-      - name: Set Git user
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "fake@example.com"
-
-      - name: Test and check template creation
-        run: just test
+    uses: seedcase-project/.github/.github/workflows/reusable-test-copier.yml@main
