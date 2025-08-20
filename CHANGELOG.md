@@ -1,3 +1,15 @@
+## 0.15.2 (2025-08-20)
+
+### Fix
+
+- :bug: exclude `justfile` in the `list-todos` recipe (#153)
+
+## 0.15.1 (2025-08-20)
+
+### Refactor
+
+- :construction_worker: use bash instead of zsh (#150)
+
 ## 0.15.0 (2025-08-04)
 
 ### Feat
