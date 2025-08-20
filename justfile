@@ -1,6 +1,8 @@
 @_default:
     just --list --unsorted
 
+@_tests: test
+
 # Run all build-related recipes in the justfile
 run-all: check-spelling check-commits test build-website build-readme
 
