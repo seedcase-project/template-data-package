@@ -1,3 +1,9 @@
+## 0.15.3 (2025-08-20)
+
+### Refactor
+
+- :memo: update post-copy message to latest version (#154)
+
 ## 0.15.2 (2025-08-20)
 
 ### Fix
