@@ -1,3 +1,9 @@
+## 0.16.0 (2025-11-14)
+
+### Feat
+
+- :sparkles: justfile recipe to preview docs (#173)
+
 ## 0.15.3 (2025-08-20)
 
 ### Refactor
