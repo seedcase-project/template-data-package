@@ -1,0 +1,8 @@
+# Metadata for the website
+gh:
+  org: "seedcase-project"
+  repo: "template-data-package"
+
+titles:
+  full: "Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages"
+  short: "Template Data Package"

@@ -52,6 +52,3 @@ editor:
 
 execute:
   echo: false
-
-# Metadata for the website
-repo: "template-data-package"

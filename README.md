@@ -1,16 +1,16 @@
 
 
-# An opinionated template for Data Packages built with Seedcase packages
+# Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16540439.svg)](https://doi.org/10.5281/zenodo.16540439)
-[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true)](https://github.com/copier-org/copier)
+[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true.svg)](https://github.com/copier-org/copier)
 [![GitHub
-License](https://img.shields.io/github/license/seedcase-project/template-data-package)](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md)
+License](https://img.shields.io/github/license/seedcase-project/template-data-package.svg)](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md)
 [![GitHub
-Release](https://img.shields.io/github/v/release/seedcase-project/template-data-package)](https://github.com/seedcase-project/template-data-package/releases/latest)
-[![Test](https://github.com/seedcase-project/template-data-package/actions/workflows/test.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/build-package.yml)
+Release](https://img.shields.io/github/v/release/seedcase-project/template-data-package.svg)](https://github.com/seedcase-project/template-data-package/releases/latest)
+[![Test](https://github.com/seedcase-project/template-data-package/actions/workflows/test.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/test.yml)
 [![Build
-documentation](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml)
+website](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml)
 [![CodeQL](https://github.com/seedcase-project/template-data-package/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/seedcase-project/template-data-package/actions/workflows/github-code-scanning/codeql)
 [![pre-commit.ci
 status](https://results.pre-commit.ci/badge/github/seedcase-project/template-data-package/main.svg)](https://results.pre-commit.ci/latest/github/seedcase-project/template-data-package/main)
@@ -47,8 +47,7 @@ By participating in this project you agree to abide by its terms.
 
 ## Licensing
 
-This project is licensed under the [MIT
-License](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md).
+This project is licensed under the [MIT License](LICENSE.md).
 
 ## Citing
 
