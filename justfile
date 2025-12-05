@@ -2,7 +2,7 @@
     just --list --unsorted
 
 @_checks: check-spelling check-commits
-@_tests: test
+@_tests: (test "true") (test "false")
 @_builds: build-contributors build-website build-readme
 
 # Run all build-related recipes in the justfile
@@ -44,62 +44,14 @@ check-commits:
 check-spelling:
   uvx typos
 
-# Test and check that a data package can be created from the template
-test:
-  #!/usr/bin/env bash
-  test_name="test-data-package"
-  test_dir="$(pwd)/_temp/$test_name"
-  template_dir="$(pwd)"
-  commit=$(git rev-parse HEAD)
-  rm -rf $test_dir
-  # vcs-ref means the current commit/head, not a tag.
-  uvx copier copy $template_dir $test_dir \
-    --vcs-ref=$commit \
-    --defaults \
-    --trust \
-    --data github_repo=$test_name \
-    --data github_user="first-last" \
-    --data author_given_name="First" \
-    --data author_family_name="Last" \
-    --data author_email="first.last@example.com" \
-    --data review_team="@first-last/developers" \
-    --data cc0_license="true" \
-    --data github_board_number=22
-  # Run checks in the generated test data package
-  cd $test_dir
-  git add .
-  git commit -m "test: initial copy"
-  just check-python check-spelling
-  # TODO: Find some way to test the `update` command
-  # Check that recopy works
-  echo "Testing recopy command -----------"
-  rm .cz.toml
-  git add .
-  git commit -m "test: preparing to recopy from the template"
-  uvx copier recopy \
-    --vcs-ref=$commit \
-    --defaults \
-    --overwrite \
-    --trust
-  # Check that copying onto an existing data package works
-  echo "Using the template in an existing package command -----------"
-  rm .cz.toml .copier-answers.yml LICENSE-MIT.md LICENSE.md
-  git add .
-  git commit -m "test: preparing to copy onto an existing package"
-  uvx copier copy \
-    $template_dir $test_dir \
-    --vcs-ref=$commit \
-    --defaults \
-    --trust \
-    --overwrite \
-    --data github_repo=$test_name \
-    --data github_user="first-last" \
-    --data author_given_name="First" \
-    --data author_family_name="Last" \
-    --data author_email="first.last@example.com" \
-    --data review_team="@first-last/developers" \
-    --data cc0_license="false" \
-    --data github_board_number=22
+# Test that a data package can be created from the template
+test cc0_license="true":
+  sh ./test-template.sh {{ cc0_license }}
+
+# Test template with the manual questionnaire answers
+test-manual:
+  mkdir -p _temp/manual
+  uvx copier copy --trust -r HEAD . _temp/manual/test-template
 
 # Clean up any leftover and temporary build files
 cleanup:
