@@ -3,10 +3,11 @@ format: gfm
 execute:
   echo: false
 jupyter: python3
-repo: "template-data-package"
+metadata-files:
+  - _metadata.yml
 ---
 
-# An opinionated template for Data Packages built with Seedcase packages
+# {{< meta titles.full >}}
 
 {{< include /docs/includes/_badges.qmd >}}
 
@@ -17,16 +18,18 @@ the necessary files and configurations in place, including for
 developing the Data Package. See the features section below for details
 on what is included in this template.
 
-Check out our [website](https://{{< meta repo >}}.seedcase-project.org/)
-for more information, such as a
-[guide](https://{{< meta repo >}}.seedcase-project.org/docs/guide/) for
-using the template. For a list of changes, see our
-[changelog](https://{{< meta repo >}}.seedcase-project.org/CHANGELOG/)
+Check out our
+[website](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/) for
+more information, such as a
+[guide](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/docs/guide/)
+for using the template. For a list of changes, see our
+[changelog](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/CHANGELOG)
 page.
 
 ## Contributing
 
-Check out our [contributing page](https://{{< meta repo >}}.seedcase-project.org/CONTRIBUTING/)
+Check out our [contributing
+page](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/CONTRIBUTING/)
 for information on how to contribute to the project, including how to
 set up your development environment.
 
@@ -40,8 +43,7 @@ to abide by its terms.
 
 ## Licensing
 
-This project is licensed under the [MIT
-License](https://github.com/seedcase-project/{{< meta repo >}}/blob/main/LICENSE.md).
+This project is licensed under the [MIT License](LICENSE.md).
 
 ## Citing
 
