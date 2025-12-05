@@ -1,7 +1,5 @@
 project:
   type: seedcase-theme
-  pre-render:
-    - sh ./tools/get-contributors.sh
   render:
     # Don't render anything in the template directory.
     - "!template/"
@@ -24,10 +22,10 @@ website:
         menu:
           - text: "Welcome"
             href: index.qmd
-          - text: "Releases"
-            href: docs/releases.qmd
           - text: "Contributing"
             href: CONTRIBUTING.md
+          - text: "Changelog"
+            href: CHANGELOG.md
       - text: "Guide"
         href: docs/guide.qmd
     tools:

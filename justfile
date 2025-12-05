@@ -2,9 +2,10 @@
     just --list --unsorted
 
 @_tests: test
+@_builds: build-contributors build-website build-readme
 
 # Run all build-related recipes in the justfile
-run-all: check-spelling check-commits test build-website build-readme
+run-all: check-spelling check-commits _tests _builds
 
 # Install the pre-commit hooks
 install-precommit:
@@ -45,8 +46,8 @@ test:
     --vcs-ref=$commit \
     --defaults \
     --trust \
-    --data package_abbrev=$test_name \
-    --data package_github_repo="first-last/${test_name}" \
+    --data github_repo=$test_name \
+    --data github_user="first-last" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
@@ -80,8 +81,8 @@ test:
     --defaults \
     --trust \
     --overwrite \
-    --data package_abbrev=$test_name \
-    --data package_github_repo="first-last/${test_name}" \
+    --data github_repo=$test_name \
+    --data github_user="first-last" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
@@ -100,3 +101,7 @@ build-website:
 # Re-build the README file from the Quarto version
 build-readme:
   uvx --from quarto quarto render README.qmd --to gfm
+
+# Generate a Quarto include file with the contributors
+build-contributors:
+  sh ./tools/get-contributors.sh seedcase-project/template-python-project > docs/includes/_contributors.qmd
