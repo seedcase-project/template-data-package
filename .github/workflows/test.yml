@@ -12,3 +12,5 @@ permissions: read-all
 jobs:
   test-copier:
     uses: seedcase-project/.github/.github/workflows/reusable-test-copier.yml@main
+    with:
+      test-recipe: "_tests"
