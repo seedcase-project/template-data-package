@@ -48,3 +48,7 @@ configurations in place, including for developing the Data Package.
 We would love your feedback or contributions! Head over to our [GitHub
 repository](https://github.com/seedcase-project/{{< meta repo >}}) to
 share your ideas or contribute code. Your input makes us better!
+
+## Licensing
+
+This project is licensed under the [MIT License](/LICENSE.md).
