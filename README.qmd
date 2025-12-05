@@ -17,12 +17,12 @@ the necessary files and configurations in place, including for
 developing the Data Package. See the features section below for details
 on what is included in this template.
 
-Check out our [website](https://{{< meta repo >}}.seedcase-project.org/) for more
-information, such as a
-[guide](https://{{< meta repo >}}.seedcase-project.org/docs/guide/) for using the template.
-For a list
-of changes, see our
-[changelog](https://{{< meta repo >}}.seedcase-project.org/docs/releases/) page.
+Check out our [website](https://{{< meta repo >}}.seedcase-project.org/)
+for more information, such as a
+[guide](https://{{< meta repo >}}.seedcase-project.org/docs/guide/) for
+using the template. For a list of changes, see our
+[changelog](https://{{< meta repo >}}.seedcase-project.org/CHANGELOG/)
+page.
 
 ## Contributing
 
@@ -31,8 +31,8 @@ for information on how to contribute to the project, including how to
 set up your development environment.
 
 Please note that this project is released with a [Contributor Code of
-Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).
-By participating in this project you agree to abide by its terms.
+Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
+to abide by its terms.
 
 ### Contributors
 

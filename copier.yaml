@@ -9,7 +9,7 @@ _tasks:
 # Message to show after generating or regenerating the project successfully
 _message_after_copy: |
 
-  Your project "{{ package_abbrev }}" has been created successfully!
+  Your project "{{ github_repo }}" has been created successfully!
 
   See the [guide](https://template-data-package.seedcase-project.org/docs/guide) for more detail
   on the next steps. Briefly:
@@ -49,14 +49,14 @@ _message_after_copy: |
     ```
 
 # Questions:
-package_github_repo:
+github_user:
   type: str
-  help: "What is the GitHub repository spec for the package?"
-  placeholder: "user/repo"
-  validator: |
-    {% if package_github_repo and not (package_github_repo | regex_search('^[\w.-]+\/[\w.-]+$')) %}
-    Must be in the format `user/repo` and contain only alphanumeric characters and `_`, `-`, or `.`.
-    {% endif %}
+  help: "What is the name of the GitHub user or organisation where the repository will be or is stored?"
+
+github_repo:
+  type: str
+  help: "What is the name of the GitHub repository where the data package will be or is stored? We strongly recommend using the default given."
+  default: "{{ _folder_name }}"
 
 author_given_name:
   type: str
@@ -70,16 +70,10 @@ author_email:
   type: str
   help: "What is your email address?"
 
-package_abbrev:
-  type: str
-  help: "What is the abbreviated name of the package? This could be the name of your GitHub repository and should be a short, lowercase name without spaces or special characters. For example, 'template-data-package'."
-  default: "{{ _copier_conf.dst_path | basename }}"
-
 review_team:
   type: str
   help: What GitHub team is responsible for reviewing pull requests?
-  default: >-
-    {{ "@%s/developers" % package_github_repo.split('/')[0] if package_github_repo else "" }}
+  default: "{{ '@%s/developers' % github_user if github_user else '' }}"
 
 github_board_number:
   type: str
@@ -89,12 +83,18 @@ github_board_number:
     The board number must be an integer.
     {% endif %}
 
-copyright_year:
-  type: str
-  default: "{{ copyright_year | default('%Y' | strftime) }}"
-  when: false
-
 cc0_license:
   type: bool
   default: true
   help: "Do you want to use the CC0 license for the data in this data package?"
+
+# Configurations not asked
+github_repo_spec:
+  type: str
+  default: "{{ github_user }}/{{ github_repo }}"
+  when: false
+
+copyright_year:
+  type: str
+  default: "{{ copyright_year | default('%Y' | strftime) }}"
+  when: false
