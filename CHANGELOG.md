@@ -10,6 +10,12 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.16.2 (2025-12-05)
+
+### Refactor
+
+- :recycle: update `get-contributors` (#179)
+
 ## 0.16.1 (2025-12-05)
 
 ### Refactor

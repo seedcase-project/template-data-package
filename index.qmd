@@ -49,6 +49,10 @@ We would love your feedback or contributions! Head over to our [GitHub
 repository](https://github.com/seedcase-project/{{< meta repo >}}) to
 share your ideas or contribute code. Your input makes us better!
 
+### Contributors
+
+{{< include /docs/includes/_contributors.qmd >}}
+
 ## Licensing
 
 This project is licensed under the [MIT License](/LICENSE.md).
