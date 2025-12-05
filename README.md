@@ -31,7 +31,7 @@ Check out our
 information, such as a
 [guide](https://template-data-package.seedcase-project.org/docs/guide/)
 for using the template. For a list of changes, see our
-[changelog](https://template-data-package.seedcase-project.org/docs/releases/)
+[changelog](https://template-data-package.seedcase-project.org/CHANGELOG/)
 page.
 
 ## Contributing
