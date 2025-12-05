@@ -31,7 +31,7 @@ Check out our
 information, such as a
 [guide](https://template-data-package.seedcase-project.org/docs/guide/)
 for using the template. For a list of changes, see our
-[changelog](https://template-data-package.seedcase-project.org/docs/releases/)
+[changelog](https://template-data-package.seedcase-project.org/CHANGELOG/)
 page.
 
 ## Contributing
@@ -42,8 +42,8 @@ for information on how to contribute to the project, including how to
 set up your development environment.
 
 Please note that this project is released with a [Contributor Code of
-Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).
-By participating in this project you agree to abide by its terms.
+Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
+to abide by its terms.
 
 ## Licensing
 
