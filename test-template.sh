@@ -22,7 +22,6 @@ template_dir="$(pwd)"
 #
 # 1. Template directory
 # 2. Destination directory
-# 3. VCS ref (commit, branch, tag, etc.)
 copy () {
   # `-r HEAD` means to copy from the current HEAD, including uncommitted changes
   uvx copier copy $1 $2 \
