@@ -18,7 +18,7 @@ test_name="test-package"
 test_dir="$(pwd)/_temp/$cc0_license/$test_name"
 template_dir="$(pwd)"
 
-# Needs three arguments:
+# Needs two arguments:
 #
 # 1. Template directory
 # 2. Destination directory
