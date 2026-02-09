@@ -48,3 +48,5 @@ site
 
 # Misc files
 *.log
+
+**/*.quarto_ipynb
