@@ -1,12 +1,12 @@
 # Changelog
 
-Since we follow [Conventional
-Commits](https://decisions.seedcase-project.org/why-conventional-commits),
+Since we follow
+[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits),
 we're able to automatically create a release based on the commit message
 by using
 [Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen).
-This means that releases can happen quite often, sometimes several in
-a day. It also means any individual release will not have many changes
+This means that releases can happen quite often, sometimes several in a
+day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
@@ -72,7 +72,8 @@ within it.
 
 ### Feat
 
-- :sparkles: workflow to check for updates and make a PR with them (#135)
+- :sparkles: workflow to check for updates and make a PR with them
+  (#135)
 
 ## 0.14.0 (2025-08-01)
 
@@ -88,7 +89,8 @@ within it.
 
 ### Fix
 
-- :bug: when bumping versions, we still want the website updated too (#138)
+- :bug: when bumping versions, we still want the website updated too
+  (#138)
 
 ## 0.12.0 (2025-07-29)
 
@@ -166,7 +168,8 @@ within it.
 
 ### Feat
 
-- :sparkles: increase version in `datapackage.json` file on version update (#109)
+- :sparkles: increase version in `datapackage.json` file on version
+  update (#109)
 
 ## 0.6.0 (2025-07-23)
 
@@ -196,7 +199,8 @@ within it.
 
 ### Feat
 
-- :sparkles: add recipe to template justfile to list all `TODO` items (#79)
+- :sparkles: add recipe to template justfile to list all `TODO` items
+  (#79)
 
 ## 0.3.2 (2025-07-15)
 
@@ -214,7 +218,8 @@ within it.
 
 ### Feat
 
-- :sparkles: add recipe to justfile template to (re)build the data package (#77)
+- :sparkles: add recipe to justfile template to (re)build the data
+  package (#77)
 
 ### Refactor
 
@@ -224,13 +229,15 @@ within it.
 
 ### Feat
 
-- :sparkles: add Dependabot to template for workflows and Python packages (#70)
+- :sparkles: add Dependabot to template for workflows and Python
+  packages (#70)
 - :sparkles: create template folder with initial files (#52)
 - write poetry command in just file (#7)
 
 ### Refactor
 
 - :recycle: simplify pull request template in the template (#82)
-- :recycle: `.gitignore` should be specific to data packages, not Python ones (#75)
+- :recycle: `.gitignore` should be specific to data packages, not Python
+  ones (#75)
 - :recycle: revise `pyproject.toml.jinja` to use Jinja variables (#76)
 - :recycle: match Sprout (#40)

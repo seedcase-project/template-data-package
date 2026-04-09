@@ -6,7 +6,7 @@
 @_builds: build-contributors build-website build-readme
 
 # Run all build-related recipes in the justfile
-run-all: update-quarto-theme update-template _checks _tests _builds
+run-all: update-quarto-theme format-md update-template _checks _tests _builds
 
 # Install the pre-commit hooks
 install-precommit:
@@ -24,7 +24,7 @@ update-quarto-theme:
 
 # Update files in the template from the copier parent folder
 update-template:
-  cp .pre-commit-config.yaml .editorconfig template/
+  cp .editorconfig template/
   cp .github/pull_request_template.md template/.github/
 
 # Check the commit messages on the current branch that are not on the main branch
@@ -56,6 +56,10 @@ test-manual:
 # Clean up any leftover and temporary build files
 cleanup:
   rm -rf _temp
+
+# Format Markdown files
+format-md:
+    uvx rumdl fmt --silent
 
 # Build the website using Quarto
 build-website:

@@ -16,7 +16,8 @@
     "pshaddel.conventional-branch",
     "tekumara.typos-vscode",
     "EditorConfig.EditorConfig",
-    "samuelcolvin.jinjahtml"
+    "samuelcolvin.jinjahtml",
+    "rvben.rumdl"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []
