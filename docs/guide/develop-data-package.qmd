@@ -1,7 +1,7 @@
 ---
 title: "Developing your Data Package"
 description: "How to create package properties and resources in your Data Package."
-order: 1
+order: 2
 ---
 
 In your new project generated from the `template-data-package`, the

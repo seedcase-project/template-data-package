@@ -1,0 +1,12 @@
+---
+title: "Guide"
+description: "A guide to using Template Data Package to create and develop Data Packages."
+listing:
+    contents: .
+    type: grid
+    grid-columns: 1
+    sort: "order"
+    fields:
+        - title
+        - description
+---

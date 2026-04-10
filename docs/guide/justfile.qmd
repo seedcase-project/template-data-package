@@ -1,7 +1,7 @@
 ---
 title: "Using the justfile"
 description: "How to use the justfile to manage your Data Package."
-order: 2
+order: 3
 ---
 
 The `justfile` contains scripts or "recipes" that are shorthands for
