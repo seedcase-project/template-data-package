@@ -17,6 +17,8 @@ configurations in place, including for developing the Data Package.
 -   Use [Polars](https://www.pola.rs/) for data manipulation.
 -   Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to
     create and modify the Data Package.
+-   Use [Seedcase Flower](https://flower.seedcase-project.org/) to
+    generate a website for the Data Package.
 -   Build management with [justfile](https://just.systems/man/en/).
 -   Check typos with [typos](https://github.com/crate-ci/typos).
 -   Code formatting and linting with

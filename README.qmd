@@ -62,3 +62,46 @@ Or as a BibTeX entry:
 ```{python}
 !uvx --quiet cffconvert --format bibtex
 ```
+
+## Overview of the generated Data Package
+
+### Project files and folders
+
+- `docs/`: Documentation about using and developing the Data Package.
+- `scripts/`: Python scripts for creating and managing the Data Package.
+  Files describing the data will be generated here.
+- `.copier-answers.yml`: Contains the answers you gave when copying the
+  project from the template.
+  **You should not modify this file directly.**
+- `.cz.toml`:
+  [Commitizen](https://commitizen-tools.github.io/commitizen/)
+  configuration file for managing versions and changelogs.
+- `.pre-commit-config.yaml`: [Pre-commit](https://pre-commit.com/)
+  configuration file for managing and running checks before each commit.
+- `.typos.toml`: [typos](https://github.com/crate-ci/typos) spell
+  checker configuration file.
+- `CITATION.cff`: Structured citation metadata for your project.
+- `justfile`: [`just`](https://just.systems/man/en/) configuration file
+  for scripting project tasks.
+- `main.py`: Central script file for the Data Package. This is where
+  helper scripts are invoked and work together to create and manage the
+  Data Package.
+- `pyproject.toml`: Main Python project configuration file defining
+  metadata and dependencies.
+- `ruff.toml`: [Ruff](https://docs.astral.sh/ruff/) configuration file
+  for linting and formatting Python code.
+- `uv.lock`: Lockfile used by [`uv`](https://docs.astral.sh/uv/) to
+  record exact versions of installed dependencies.
+
+### Versioning and changelog
+
+The project uses
+[Commitizen](https://commitizen-tools.github.io/commitizen/) to update
+versions and generate changelogs. Based on the
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+message, it will automatically update the version in both
+`pyproject.toml` and `datapackage.json`. The
+[Data Package](https://datapackage.org/) standard suggests using their
+version of
+[Semantic Versioning](https://datapackage.org/recipes/data-package-version/).
+So follow these conventions when making commits to this repository.
