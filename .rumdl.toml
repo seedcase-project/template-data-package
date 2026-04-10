@@ -8,9 +8,7 @@ exclude = [
   # This is auto-generated from the qmd version
   "**/README.md",
   # This has its own structure
-  "**/LICENSE.md",
-  # Generated example output (subdirectories only)
-  "docs/examples/**"
+  "**/LICENSE.md"
 ]
 
 # List style: `-`
