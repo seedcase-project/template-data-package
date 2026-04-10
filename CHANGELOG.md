@@ -10,6 +10,12 @@ day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.16.6 (2026-04-10)
+
+### Refactor
+
+- :arrow_up: updates from `just run-all`, like pre-commit hooks (#209)
+
 ## 0.16.5 (2025-12-08)
 
 ### Refactor
