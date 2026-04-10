@@ -24,7 +24,7 @@ update-quarto-theme:
 
 # Update files in the template from the copier parent folder
 update-template:
-  cp .pre-commit-config.yaml .editorconfig template/
+  cp .pre-commit-config.yaml .editorconfig .rumdl.toml template/
   cp .github/pull_request_template.md template/.github/
 
 # Check the commit messages on the current branch that are not on the main branch
