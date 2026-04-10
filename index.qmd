@@ -49,7 +49,7 @@ configurations in place, including for developing the Data Package.
 ## Want to contribute?
 
 We would love your feedback or contributions! Head over to our
-[GitHub repository](https://github.com/seedcase-project/template-data-package)
+[GitHub repository]({{< meta links.github >}})
 to share your ideas or contribute code. Your input makes us better!
 
 ### Contributors

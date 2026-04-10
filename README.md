@@ -27,17 +27,17 @@ developing the Data Package. See the features section below for details
 on what is included in this template.
 
 Check out our
-[website](https://template-data-package.seedcase-project.org/) for more
-information, such as a
-[guide](https://template-data-package.seedcase-project.org/docs/guide/)
-for using the template. For a list of changes, see our
-[changelog](https://template-data-package.seedcase-project.org/CHANGELOG.md)
+[website](https://template-data-package.seedcase-project.org) for more
+information, such as the features it provides and a
+[guide](https://template-data-package.seedcase-project.org/docs/guide)
+to using the template. For a list of changes, see our
+[changelog](https://template-data-package.seedcase-project.org/changelog)
 page.
 
 ## Contributing
 
 Check out our [contributing
-page](https://template-data-package.seedcase-project.org/CONTRIBUTING/)
+page](https://template-data-package.seedcase-project.org/contributing)
 for information on how to contribute to the project, including how to
 set up your development environment.
 

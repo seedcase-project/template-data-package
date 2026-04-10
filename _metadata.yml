@@ -6,3 +6,7 @@ gh:
 titles:
   full: "Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages"
   short: "Template Data Package"
+
+links:
+  github: "https://github.com/seedcase-project/template-data-package"
+  site: "https://template-data-package.seedcase-project.org"
