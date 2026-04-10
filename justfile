@@ -59,7 +59,7 @@ cleanup:
 
 # Format Markdown files
 format-md:
-    uvx rumdl fmt --silent
+  uvx rumdl fmt --silent
 
 # Build the website using Quarto
 build-website:

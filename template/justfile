@@ -32,7 +32,7 @@ format-python:
 
 # Format Markdown files
 format-md:
-    uvx rumdl fmt --silent
+  uvx rumdl fmt --silent
 
 # Check the commit messages on the current branch that are not on the main branch
 check-commits:
