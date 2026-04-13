@@ -82,4 +82,4 @@ preview-website: build-quartodoc
 
 # Build the documentation for the Data Package
 build-docs:
-  uv run seedcase-flower build
+  uv run seedcase-flower build --output-dir .
