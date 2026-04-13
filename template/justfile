@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-md format-python check-python check-spelling check-commits build build-docs
+run-all: install-deps format-md format-python check-python check-spelling check-commits build build-website
 
 # List all TODO items in the repository
 list-todos:
@@ -63,14 +63,14 @@ update-from-template:
 reset-from-template:
   uvx copier recopy --trust --defaults
 
-# Build the documentation website using Quarto
-build-website:
-  uv run quarto render --execute
-
-# Preview the documentation website with automatic reload on changes
-preview-website:
-  uv run quarto preview --execute
-
 # Build the documentation for the Data Package
 build-docs:
   uv run seedcase-flower build --output-dir .
+
+# Build the documentation website using Quarto
+build-website: build-docs
+  uv run quarto render --execute
+
+# Preview the documentation website with automatic reload on changes
+preview-website: build-docs
+  uv run quarto preview --execute
