@@ -4,15 +4,15 @@ description: "How to use the justfile to manage your Data Package."
 order: 3
 ---
 
-The `justfile` contains scripts or "recipes" that are shorthands for
-performing common project tasks. You can get an overview of available
-recipes by running
+The [`justfile`](https://just.systems/man/en/) contains scripts or
+"recipes" that are shorthands for performing common project tasks. You
+can get an overview of available recipes by running
 
 ``` bash
 just
 ```
 
-in the project root.
+in the project root directory.
 
 You can run a recipe by typing
 
@@ -20,9 +20,9 @@ You can run a recipe by typing
 just <recipe-name>
 ```
 
-A simple workflow would be running
+A simple workflow would be running:
 
 1. `just build` repeatedly while working on a new feature to test that
-   it's working
+   it's working.
 2. `just run-all` before submitting your work for review to make sure
-   all checks pass
+   all checks pass.

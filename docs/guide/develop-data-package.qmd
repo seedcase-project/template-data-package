@@ -17,7 +17,8 @@ page of the design documentation.
 ## Creating package properties
 
 1. Run `main.py` to create the `scripts/package_properties.py` file for
-   the properties of your Data Package.
+   the properties of your Data Package by using the recipe in the
+   [`justfile`](https://just.systems/man/en/):
 
     ``` bash
     just build
@@ -37,14 +38,15 @@ page of the design documentation.
 
 ## Creating a new resource
 
-### With data to add to the resource
+### If you already have the data
 
 While you can create resource properties without data, it is a lot more
 challenging. If at all possible, only create a resource properties
 object when you have data to use to at least pre-fill in some of the
 important fields. In order to use Sprout, the data needs to already be
-in a tidy format. When it is, load the data as a Polars data frame into
-the `raw_data` variable in `main.py`.
+in a tidy format. When it is, load the data as a
+[Polars](https://pola.rs) DataFrame into the `raw_data` variable in
+`main.py`.
 
 1. Uncomment lines up to and including the creation of resource
    properties.

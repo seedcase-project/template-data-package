@@ -1,5 +1,4 @@
 # import polars as pl
-# import seedcase_flower as fl
 import seedcase_sprout as sp
 
 # from scripts.package_properties import package_properties
@@ -28,11 +27,6 @@ def main():
 
     ## Save the properties to `datapackage.json`.
     # sp.write_properties(properties=package_properties)
-
-    ## DOCUMENTATION
-
-    ## Create the documentation for the data package.
-    # fl.build()
 
     ## BATCH DATA
 
