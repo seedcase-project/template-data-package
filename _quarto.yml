@@ -43,10 +43,5 @@ format:
     include-before-body:
     - "docs/includes/site-counter.html"
 
-editor:
-  markdown:
-    wrap: 72
-    canonical: true
-
 execute:
   echo: false

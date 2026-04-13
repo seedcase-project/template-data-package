@@ -10,19 +10,19 @@ post-creation tasks.
 
 In order to use this template, you need to install a few programs:
 
--   [Python](https://www.python.org/): Required by the template tool itself
-    (copier) and for installing and using many of the tools in this
-    template.
--   [Git](https://git-scm.com/): For version control and setting up Git
-    to track the newly created data package.
--   [copier](https://copier.readthedocs.io/en/stable/#quick-start): A
-    template tool for making new projects in a standardised and
-    structured way.
--   [uv](https://docs.astral.sh/uv/): A tool for managing Python
-    environments and running commands. Some post-copy steps of this
-    template use uv.
--   [just](https://just.systems/man/en/): A build management tool that
-    helps with running common build and check tasks.
+- [Python](https://www.python.org/): Required by the template tool
+  itself (copier) and for installing and using many of the tools in this
+  template.
+- [Git](https://git-scm.com/): For version control and setting up Git to
+  track the newly created data package.
+- [copier](https://copier.readthedocs.io/en/stable/#quick-start): A
+  template tool for making new projects in a standardised and structured
+  way.
+- [uv](https://docs.astral.sh/uv/): A tool for managing Python
+  environments and running commands. Some post-copy steps of this
+  template use uv.
+- [just](https://just.systems/man/en/): A build management tool that
+  helps with running common build and check tasks.
 
 You will need to install Python and Git yourself, but the other tools
 can be installed using
@@ -137,10 +137,10 @@ spaid_gh_ruleset_basic_protect_main -h
 Some configuration is needed after copying this template to a new
 repository, including configuration external to the repository.
 
--   The template file `.github/workflows/release-package.yml` requires
-    the [auto-release-token](https://github.com/apps/auto-release-token)
-    GitHub App to be installed, as well as a GitHub secret called
-    `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
-    to be set up in the repository (or organization) settings. See this
-    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
-    for more details on how to set this up.
+- The template file `.github/workflows/release-package.yml` requires the
+  [auto-release-token](https://github.com/apps/auto-release-token)
+  GitHub App to be installed, as well as a GitHub secret called
+  `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
+  to be set up in the repository (or organization) settings. See this
+  [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
+  for more details on how to set this up.

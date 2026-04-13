@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-python check-python check-spelling check-commits build
+run-all: install-deps format-md format-python check-python check-spelling check-commits build
 
 # List all TODO items in the repository
 list-todos:
@@ -29,6 +29,10 @@ check-python:
 format-python:
   uv run ruff check --fix .
   uv run ruff format .
+
+# Format Markdown files
+format-md:
+  uvx rumdl fmt --silent
 
 # Check the commit messages on the current branch that are not on the main branch
 check-commits:
