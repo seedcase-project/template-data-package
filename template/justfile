@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-md format-python check-python check-spelling check-commits build
+run-all: install-deps format-md format-python check-python check-spelling check-commits build build-docs
 
 # List all TODO items in the repository
 list-todos:
@@ -79,3 +79,7 @@ build-website: build-quartodoc
 # Preview the documentation website with automatic reload on changes
 preview-website: build-quartodoc
   uv run quarto preview --execute
+
+# Build the documentation for the Data Package
+build-docs:
+  uv run seedcase-flower build

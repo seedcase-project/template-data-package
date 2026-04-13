@@ -27,7 +27,7 @@ website:
           - text: "Changelog"
             href: CHANGELOG.md
       - text: "Guide"
-        href: docs/guide.qmd
+        href: docs/guide/index.qmd
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/template-data-package"
