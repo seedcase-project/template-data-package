@@ -10,6 +10,12 @@ day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.17.0 (2026-04-13)
+
+### Feat
+
+- :sparkles: add rumdl and format files (#210)
+
 ## 0.16.6 (2026-04-10)
 
 ### Refactor
