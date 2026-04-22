@@ -65,7 +65,7 @@ reset-from-template:
 
 # Build the documentation for the Data Package
 build-docs:
-  uv run seedcase-flower build --output-dir .
+  uv run seedcase-flower build
 
 # Build the documentation website using Quarto
 build-website: build-docs
