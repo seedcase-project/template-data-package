@@ -1,7 +1,6 @@
 project:
   # TODO: Change to correct project type if using extensions
   type: book
-  output-dir: _site
 
 book:
   title: "TODO: Set the title of the website"
@@ -32,8 +31,12 @@ book:
       aria-label: "GitHub icon: Source repository"
   page-footer:
     center:
-      - text: "Licensed under CC BY 4.0"
-        href: "LICENSE-CC-BY-4.0.md"
+      - text: "Code under MIT License"
+        href: "LICENSE-MIT.md"
+      {% if cc0_license -%}
+      - text: "Data under CC0 License"
+        href: "LICENSE.md"
+      {%- endif %}
 
 format:
   # TODO: Use Quarto extension if available

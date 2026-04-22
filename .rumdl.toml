@@ -9,8 +9,7 @@ exclude = [
   "**/README.md",
   # This has its own structure
   "**/LICENSE.md",
-  "**/LICENSE-CC0.md",
-  "**/LICENSE-CC-BY-4.0.md"
+  "**/LICENSE-MIT.md"
 ]
 
 # List style: `-`
