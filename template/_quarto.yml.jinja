@@ -1,0 +1,47 @@
+project:
+  # TODO: Change to correct project type if using extensions
+  type: website
+
+book:
+  title: "TODO: Set the title of the website"
+  # TODO: Set the URL of the website
+  site-url: ""
+  repo-url: "https://github.com/{{ github_repo_spec }}"
+  author:
+    - name: "{{ author_given_name }} {{ author_family_name }}"
+      affiliation: "TODO: Fill in your affiliation"
+      orcid: "TODO: Fill in your ORCID"
+  # TODO: Set favicon if relevant.
+  # favicon: ""
+  repo-branch: main
+  repo-actions: [issue, edit, source]
+  search:
+    location: navbar
+    type: textbox
+  chapters:
+    - index.qmd
+  #  - part: "Sections"
+  #    chapters:
+  #    - path/to/file.qmd
+  # appendices:
+  #  - path/to/file.qmd
+  tools:
+    - icon: github
+      href: "https://github.com/{{ github_repo_spec }}"
+      aria-label: "GitHub icon: Source repository"
+  page-footer:
+    center:
+      - text: "Code under MIT License"
+        href: "LICENSE-MIT.md"
+      {% if cc0_license -%}
+      - text: "Data under CC0 License"
+        href: "LICENSE.md"
+      {%- endif %}
+
+format:
+  # TODO: Use Quarto extension if available
+  html:
+    theme:
+      # TODO: Choose a different theme if desired
+      - litera
+      - custom-styles.scss
