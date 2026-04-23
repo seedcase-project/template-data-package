@@ -10,6 +10,12 @@ day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.19.1 (2026-04-23)
+
+### Fix
+
+- :bug: use website in quarto config (#216)
+
 ## 0.19.0 (2026-04-23)
 
 ### Feat
