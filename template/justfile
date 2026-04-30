@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-md format-python check-python check-spelling check-commits build build-website
+run-all: install-deps format-md format-python check-python check-spelling check-commits build
 
 # List all TODO items in the repository
 list-todos:
