@@ -1,2 +1,2 @@
 style = "quarto-resource-tables"
-output-dir = "."
+output-dir = "docs"

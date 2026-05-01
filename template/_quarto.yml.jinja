@@ -16,8 +16,10 @@ website:
     logo-alt: ""
     pinned: true
     left:
-      - text: "Welcome"
+      - text: "Overview"
         href: index.qmd
+      - text: "Data Package"
+        href: docs/index.qmd
     tools:
       - icon: github
         href: "https://github.com/{{ github_repo_spec }}"
@@ -25,6 +27,7 @@ website:
   sidebar:
     contents:
       - index.qmd
+      - docs/index.qmd
 
 format:
   # TODO: Use Quarto extension if available
