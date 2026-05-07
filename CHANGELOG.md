@@ -10,6 +10,12 @@ day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.19.3 (2026-05-07)
+
+### Refactor
+
+- :recycle: run `just run-all` (#221)
+
 ## 0.19.2 (2026-04-24)
 
 ### Refactor
