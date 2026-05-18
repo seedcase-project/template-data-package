@@ -10,6 +10,12 @@ day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.19.4 (2026-05-18)
+
+### Refactor
+
+- ♻️ generate README.md from qmd file (#220)
+
 ## 0.19.3 (2026-05-07)
 
 ### Refactor
