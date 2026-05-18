@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-md format-python check-python check-spelling check-commits build build-website
+run-all: install-deps format-md format-python check-python check-spelling check-commits build build-website build-readme
 
 # List all TODO items in the repository
 list-todos:
@@ -74,3 +74,7 @@ build-website: build-docs
 # Preview the documentation website with automatic reload on changes
 preview-website: build-docs
   uv run quarto preview --execute
+
+# Re-build the README file from the Quarto version
+build-readme:
+  uvx --from quarto quarto render README.qmd --to gfm
