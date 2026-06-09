@@ -42,11 +42,7 @@ check-commits:
 
 # Check for spelling errors in files
 check-spelling:
-  uvx typos
-
-# Test that a data package can be created from the template
-test cc0_license="true":
-  sh ./test-template.sh {{ cc0_license }}
+  uvx typos --config .config/typos.toml
 
 # Test template with the manual questionnaire answers
 test-manual:
