@@ -1,14 +1,7 @@
 {
-  "files.autoSave": "onFocusChange",
-  "editor.wordWrap": "off",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "always"
-  },
-  "git.autofetch": false,
-  "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "inline",
-   "conventional-branch.type": [
+  "conventional-branch.type": [
     "build",
     "ci",
     "docs",
@@ -22,18 +15,20 @@
     "perf"
   ],
   "conventional-branch.format": "{Type}/{Branch}",
-  "[quarto][qmd][jinja]": {
-    "editor.formatOnSave": false
+  "[quarto][qmd][md][jinja]": {
+    "editor.defaultFormatter": "jolars.panache"
   },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "files.associations": {
+    "justfile.jinja": "plaintext",
     "*.yml.jinja": "jinja-yaml",
     "*.cff.jinja": "jinja-yaml",
-    "*.toml.jinja": "jinja-toml"
+    "*.toml.jinja": "jinja-toml",
+    "*.qmd.jinja": "jinja-md"
   },
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
-  "python.languageServer": "Pylance",
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "conventionalCommits.emojiFormat": "emoji",
+  "conventionalCommits.promptScopes": false
 }
