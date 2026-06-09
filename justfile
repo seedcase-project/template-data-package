@@ -1,48 +1,54 @@
 @_default:
-    just --list --unsorted
-
-@_checks: check-spelling check-commits
-@_tests: (test "true") (test "false")
-@_builds: build-contributors build-website build-readme
+  just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: update-quarto-theme format-md update-template _checks _tests _builds
+run-all: update-quarto-theme sync-template-files check-all format-md test-all build-all
+
+# Run all check-related recipes
+check-all: check-spelling check-urls
+
+# Run all test-related recipes
+test-all: (test "true") (test "false")
+
+# Run all build-related recipes
+build-all: build-contributors build-website build-readme
+
+# List all TODO items in the repository
+list-todos:
+  grep -R -n \
+  --exclude-dir=.quarto \
+  --exclude-dir=template \
+  --exclude-dir=_temp \
+  --exclude-dir=_site \
+  --exclude=justfile \
+  --exclude=copier.yaml \
+  "TODO" *
 
 # Install the pre-commit hooks
 install-precommit:
-  # Install pre-commit hooks
   uvx pre-commit install
-  # Run pre-commit hooks on all files
-  uvx pre-commit run --all-files
-  # Update versions of pre-commit hooks
   uvx pre-commit autoupdate
+  uvx pre-commit run --all-files
 
-# Update the Quarto seedcase-theme extension
+# Update (or add if not present) the Quarto seedcase-theme extension
 update-quarto-theme:
-  # Add theme if it doesn't exist, update if it does
   quarto update seedcase-project/seedcase-theme --no-prompt
 
-# Update files in the template from the copier parent folder
-update-template:
+# Update files in the template from the Copier parent folder
+sync-template-files:
   cp .pre-commit-config.yaml .editorconfig template/
   cp .github/pull_request_template.md template/.github/
-
-# Check the commit messages on the current branch that are not on the main branch
-check-commits:
-  #!/usr/bin/env bash
-  branch_name=$(git rev-parse --abbrev-ref HEAD)
-  number_of_commits=$(git rev-list --count HEAD ^main)
-  if [[ ${branch_name} != "main" && ${number_of_commits} -gt 0 ]]
-  then
-    # If issue happens, try `uv tool update-shell`
-    uvx --from commitizen cz check --rev-range main..HEAD
-  else
-    echo "On 'main' or current branch doesn't have any commits."
-  fi
 
 # Check for spelling errors in files
 check-spelling:
   uvx typos --config .config/typos.toml
+
+# Check that URLs work
+check-urls:
+  lychee . \
+    --verbose \
+    --extensions md,qmd,jinja \
+    --exclude-path "_badges.qmd"
 
 # Format Markdown files
 format-md:
@@ -52,9 +58,15 @@ format-md:
   uvx rumdl fmt --silent **/*.qmd.jinja **/*.md.jinja
   uvx --from panache-cli panache format . --quiet
 
+# Test template creation with specific parameters: `cc0_license` as "true" or "false"
+test cc0_license="true":
+  sh ./test-template.sh {{ cc0_license}}
+
+# Test template creation through use of the question approach
 test-manual:
   mkdir -p _temp/manual
-  uvx copier copy --trust -r HEAD . _temp/manual/test-template
+  rm -rf _temp/manual/test-template
+  uvx copier copy -r HEAD . _temp/manual/test-template
 
 # Clean up any leftover and temporary build files
 cleanup:
@@ -66,8 +78,20 @@ build-readme:
 
 # Generate a Quarto include file with the contributors
 build-contributors:
+  sh ./tools/get-contributors.sh seedcase-project/template-data-package > docs/includes/_contributors.qmd
 
 # Build the website using Quarto
 build-website:
   uvx --from quarto quarto render
 
+# Preview the website with automatic reload on changes
+preview-website:
+  quarto preview
+
+# Check for and apply updates from the template
+update-from-template:
+  uvx copier update --defaults
+
+# Reset repo changes to match the template
+reset-from-template:
+  uvx copier recopy --defaults
