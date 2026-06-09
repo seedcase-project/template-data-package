@@ -10,6 +10,14 @@ repos:
     hooks:
       - id: gitleaks
 
+  # Use the mirror since the main `typos` repo has tags for different
+  # sub-packages, which confuses pre-commit when it tries to find the latest
+  # version
+  - repo: https://github.com/adhtruong/mirrors-typos
+    rev: v1.45.1
+    hooks:
+      - id: typos
+        args: [--config, .config/typos.toml, --force-exclude]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
