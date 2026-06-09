@@ -44,7 +44,14 @@ check-commits:
 check-spelling:
   uvx typos --config .config/typos.toml
 
-# Test template with the manual questionnaire answers
+# Format Markdown files
+format-md:
+  # Use both rumdl and panache, for different purposes
+  uvx rumdl fmt --silent
+  # `includes` option doesn't work with Jinja files, so do manually
+  uvx rumdl fmt --silent **/*.qmd.jinja **/*.md.jinja
+  uvx --from panache-cli panache format . --quiet
+
 test-manual:
   mkdir -p _temp/manual
   uvx copier copy --trust -r HEAD . _temp/manual/test-template
@@ -53,18 +60,14 @@ test-manual:
 cleanup:
   rm -rf _temp
 
-# Format Markdown files
-format-md:
-  uvx rumdl fmt --silent
-
-# Build the website using Quarto
-build-website:
-  uvx --from quarto quarto render
-
 # Re-build the README file from the Quarto version
 build-readme:
   uvx --from quarto quarto render README.qmd --to gfm
 
 # Generate a Quarto include file with the contributors
 build-contributors:
-  sh ./tools/get-contributors.sh seedcase-project/template-python-project > docs/includes/_contributors.qmd
+
+# Build the website using Quarto
+build-website:
+  uvx --from quarto quarto render
+
