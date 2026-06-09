@@ -1,0 +1,50 @@
+---
+title: "Using the template"
+description: |
+  A walk-through on how to use this template for creating a new data package
+  project or applying it to an existing data package.
+order: 2
+---
+
+This guide walks through how to use this template to create a new data package
+or apply it to an existing data package project.
+
+## Creating a new data package
+
+You can use this template to create a new data package project with a standard
+set of files and folders, as well as all the features and configurations to make
+it easier to build your data package smoothly and effectively. First, open a
+terminal and run the following command:
+
+```bash {filename="Terminal"}
+uvx copier copy gh:seedcase-project/template-data-package path/to/PROJECT-NAME
+```
+
+The `copy` command uses the template on GitHub (`gh:`) at the
+`seedcase-project/template-data-package` location. The `path/to/` is the
+location where you'd like the new project to be created and `PROJECT-NAME` is
+the name you want to give for the new data package project's directory and
+(ideally) the GitHub repository for the data package. The name should be
+something short and meaningful, ideally lowercase, with `-` instead of spaces,
+and no special characters.
+
+## Applying to an existing data package
+
+If you want to use this template on an existing data package project, you can
+use the `copy` command of `copier` just like above to apply the template to the
+existing project. This will add all the template's files and configurations to
+the existing data package.
+
+```bash {filename="Terminal"}
+uvx copier copy gh:seedcase-project/template-data-package path/to/EXISTING-PROJECT
+```
+
+See the comment above in the "Creating a new data package" section about the
+naming of the existing data package directory. It will go through a series of
+prompts, as in the case of creating a new data package project, including asking
+if you want to overwrite existing files.
+
+::: callout-note
+To use the `copy` command, the existing data package needs to be tracked by Git
+and in a clean state (no changes have been made in the working directory).
+:::
