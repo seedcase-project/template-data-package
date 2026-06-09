@@ -1,6 +1,6 @@
 
 
-# Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages
+# An opinionated template for creating and developing FAIR and modern data packages
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16540439.svg)](https://doi.org/10.5281/zenodo.16540439)
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true.svg)](https://github.com/copier-org/copier)
@@ -19,27 +19,33 @@ status](https://results.pre-commit.ci/badge/github/seedcase-project/template-dat
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-This repository contains a template for setting up a new [Data
-Package](https://datapackage.org/) following the Seedcase structure. Use
-this template to quickly get started with a new Data Package with all
-the necessary files and configurations in place, including for
-developing the Data Package. See the features section below for details
-on what is included in this template.
+This repository contains a
+[Copier](https://copier.readthedocs.io/en/stable/) template for setting
+up a new repository for a data package. We made Template Data Package to
+collect all of our packages for developing data packages into a single,
+cohesive system. Because we collaborate with several projects in
+developing data packages from the data they collect (or manage), this
+template is designed to make it easier for us (and others) to create,
+develop, and maintain those data packages.
 
 Check out our
 [website](https://template-data-package.seedcase-project.org) for more
-information, such as a
-[guide](https://template-data-package.seedcase-project.org/docs/guide/)
-for using the template. For a list of changes, see our
-[changelog](https://template-data-package.seedcase-project.org/CHANGELOG)
-page.
+information, such as the features it provides and a
+[guide](https://template-data-package.seedcase-project.org/docs/guide)
+to using the template. For a list of changes, see our
+[changelog](CHANGELOG.md) page.
+
+> [!TIP]
+>
+> This template repository was generated from the
+> [t-squared](https://github.com/seedcase-project/t-squared) Seedcase
+> template :tada:
 
 ## Contributing
 
-Check out our [contributing
-page](https://template-data-package.seedcase-project.org/CONTRIBUTING/)
-for information on how to contribute to the project, including how to
-set up your development environment.
+Check out our [contributing page](CONTRIBUTING.md) for information on
+how to contribute to the project, including how to set up your
+development environment.
 
 Please note that this project is released with a [Contributor Code of
 Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
@@ -50,10 +56,11 @@ to abide by its terms.
 The following people have contributed to this project by submitting pull
 requests :tada:
 
+[@joelostblom](https://github.com/joelostblom),
+[@K-Beicher](https://github.com/K-Beicher),
 [@lwjohnst86](https://github.com/lwjohnst86),
 [@martonvago](https://github.com/martonvago),
-[@signekb](https://github.com/signekb),
-[@joelostblom](https://github.com/joelostblom)
+[@signekb](https://github.com/signekb)
 
 ## Licensing
 
@@ -61,14 +68,11 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Citing
 
-This project is part of the Seedcase Project, which is a collaborative
-effort to create a framework for data management and analysis in
-research. If you use this project in your work, please cite it as
-follows:
+If you use this project in your work, please cite it as follows:
 
 Johnston L.W., Brødbæk S.K., Beicher K., Vago M. Template Data Package:
-An opinionated setup for making FAIR and structured data using Seedcase
-Python packages. DOI: 10.5281/zenodo.16540439 URL:
+An opinionated template for creating and developing FAIR and modern data
+packages DOI: 10.5281/zenodo.16540439 URL:
 https://template-data-package.seedcase-project.org
 
 Or as a BibTeX entry:
@@ -76,48 +80,6 @@ Or as a BibTeX entry:
     @misc{YourReferenceHere,
     author = {Johnston, Luke William and Brødbæk, Signe Kirk and Beicher, Kristiane and Vago, Marton},
     doi = {10.5281/zenodo.16540439},
-    title = {Template Data Package: An opinionated setup for making FAIR and structured data using Seedcase Python packages.},
+    title = {Template Data Package: An opinionated template for creating and developing FAIR and modern data packages},
     url = {https://template-data-package.seedcase-project.org}
     }
-
-## Overview of the generated Data Package
-
-### Project files and folders
-
-- `docs/`: Documentation about using and developing the Data Package.
-- `scripts/`: Python scripts for creating and managing the Data Package.
-  Files describing the data will be generated here.
-- `.copier-answers.yml`: Contains the answers you gave when copying the
-  project from the template. **You should not modify this file
-  directly.**
-- `.cz.toml`:
-  [Commitizen](https://commitizen-tools.github.io/commitizen/)
-  configuration file for managing versions and changelogs.
-- `.pre-commit-config.yaml`: [Pre-commit](https://pre-commit.com/)
-  configuration file for managing and running checks before each commit.
-- `.typos.toml`: [typos](https://github.com/crate-ci/typos) spell
-  checker configuration file.
-- `CITATION.cff`: Structured citation metadata for your project.
-- `justfile`: [`just`](https://just.systems/man/en/) configuration file
-  for scripting project tasks.
-- `main.py`: Central script file for the Data Package. This is where
-  helper scripts are invoked and work together to create and manage the
-  Data Package.
-- `pyproject.toml`: Main Python project configuration file defining
-  metadata and dependencies.
-- `ruff.toml`: [Ruff](https://docs.astral.sh/ruff/) configuration file
-  for linting and formatting Python code.
-- `uv.lock`: Lockfile used by [`uv`](https://docs.astral.sh/uv/) to
-  record exact versions of installed dependencies.
-
-### Versioning and changelog
-
-The project uses
-[Commitizen](https://commitizen-tools.github.io/commitizen/) to update
-versions and generate changelogs. Based on the [Conventional
-Commits](https://www.conventionalcommits.org/en/v1.0.0/) message, it
-will automatically update the version in both `pyproject.toml` and
-`datapackage.json`. The [Data Package](https://datapackage.org/)
-standard suggests using their version of [Semantic
-Versioning](https://datapackage.org/recipes/data-package-version/). So
-follow these conventions when making commits to this repository.
