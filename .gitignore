@@ -35,7 +35,7 @@ __pycache__/
 docs/.quarto/
 *_files/
 *.ipynb
-*.quarto_ipynb
+**/*.quarto_ipynb
 
 # Quartodoc
 objects.json
@@ -49,4 +49,5 @@ site
 # Misc files
 *.log
 
-**/*.quarto_ipynb
+# Cache folders
+*_cache/
