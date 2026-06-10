@@ -56,7 +56,7 @@ echo "Testing copy for new projects when: 'cc0_license'='$cc0_license' ---------
     git commit --quiet -m "test: initial copy" &&
     # Check that recopy works -----
     echo "Testing recopy when: 'cc0_license'='$cc0_license' -----------" &&
-    rm .cz.toml &&
+    rm .gitignore &&
     git add . &&
     git commit --quiet -m "test: preparing to recopy from the template" &&
     uvx copier recopy \
@@ -67,7 +67,7 @@ echo "Testing copy for new projects when: 'cc0_license'='$cc0_license' ---------
       --trust &&
     # Check that copying onto an existing package works -----
     echo "Testing copy in existing projects when: 'cc0_license'='$cc0_license' -----------" &&
-    rm .cz.toml .copier-answers.yml &&
+    rm .gitignore .copier-answers.yml &&
     git add . &&
     git commit --quiet -m "test: preparing to copy onto an existing package" &&
     copy $template_dir $test_dir
