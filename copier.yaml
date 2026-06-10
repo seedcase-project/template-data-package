@@ -89,6 +89,11 @@ cc0_license:
   help: "Do you want to use the CC0 license for the data in this data package?"
 
 # Configurations not asked
+github_repo_snake_case:
+  type: str
+  default: "{{github_repo | replace('-', '_') | replace('.', '_')}}"
+  when: false
+
 github_repo_spec:
   type: str
   default: "{{ github_user }}/{{ github_repo }}"
