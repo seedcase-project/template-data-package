@@ -31,7 +31,6 @@ copy () {
     --data author_given_name="First" \
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
-    --data review_team="@first-last/developers" \
     --data cc0_license=$cc0_license \
     --data github_board_number=22 \
     --overwrite \
