@@ -21,6 +21,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.22.1](https://github.com/seedcase-project/template-data-package/compare/0.22.0..0.22.1) - 2026-06-10
+
+### ♻️ Refactor
+
+- Minor improvements to DevEx files, from t-squared
+  [#246](https://github.com/seedcase-project/template-data-package/pull/246) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d82f934](https://github.com/seedcase-project/template-data-package/commit/d82f934baca99d5b8732041e0d46a77cd6e3ea3b))
+
 ## [0.22.0](https://github.com/seedcase-project/template-data-package/compare/0.21.1..0.22.0) - 2026-06-10
 
 ### ✨ Features
