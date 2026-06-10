@@ -21,6 +21,26 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.22.0](https://github.com/seedcase-project/template-data-package/compare/0.21.1..0.22.0) - 2026-06-10
+
+### ✨ Features
+
+- Add Panache Markdown formatter
+  [#247](https://github.com/seedcase-project/template-data-package/pull/247) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([8b0fbae](https://github.com/seedcase-project/template-data-package/commit/8b0fbae0faa859d54063d5e76db62c8c30f1d398))
+
+### ♻️ Refactor
+
+- Remove scope from Dependabot and pre-commit updates
+  [#249](https://github.com/seedcase-project/template-data-package/pull/249) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([6678705](https://github.com/seedcase-project/template-data-package/commit/6678705722a95b5b0739f185f4b08b09b75ad12d))
+- Use full workflows, not reusable ones
+  [#248](https://github.com/seedcase-project/template-data-package/pull/248) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a5ba84c](https://github.com/seedcase-project/template-data-package/commit/a5ba84ccf8c6f7fe5fb2416f7ae064c78b4c8f47))
+
 ## [0.21.1](https://github.com/seedcase-project/template-data-package/compare/0.21.0..0.21.1) - 2026-06-10
 
 ### ♻️ Refactor
