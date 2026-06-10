@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
 
-# Needs one argument:
+# Needs these arguments:
 #
 # 1. cc0_license: true or false
+# 2. hosting_provider: netlify or gh-pages
 
 # Argument naming -----
 cc0_license="${1}"
+hosting_provider="${2}"
 
 if [ -z "$cc0_license" ]; then
   echo "Usage: sh $0 <cc0_license>"
   echo "Example: sh $0 true"
+  exit 1
+fi
+
+if [ -z "$hosting_provider" ]; then
+  echo "Usage: sh $0 <cc0_license> <hosting_provider>"
+  echo "Example: sh $0 true netlify"
   exit 1
 fi
 
@@ -33,7 +41,7 @@ copy () {
     --data author_email="first.last@example.com" \
     --data review_team="@first-last/developers" \
     --data cc0_license=$cc0_license \
-    --data github_board_number=22 \
+    --data hosting_provider=$hosting_provider \
     --overwrite \
     --skip-tasks \
     --trust
