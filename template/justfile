@@ -32,7 +32,9 @@ format-python:
 
 # Format Markdown files
 format-md:
+  # Use both rumdl and panache, for different purposes
   uvx rumdl fmt --silent
+  uvx --from panache-cli panache format . --quiet
 
 # Check for spelling errors in files
 check-spelling:
