@@ -3,7 +3,7 @@ _subdirectory: template
 # Post-copy commands:
 _tasks:
   # Only run these commands when copying the template
-  - command: "git init -b main; uv add --dev pre-commit commitizen ruff typos; uv add polars seedcase-sprout seedcase-flower"
+  - command: "git init -b main; uv add --dev pre-commit ruff typos; uv add polars seedcase-sprout seedcase-flower"
     when: "{{ _copier_operation == 'copy' }}"
 
 # Message to show after generating or regenerating the project successfully
@@ -69,11 +69,6 @@ author_family_name:
 author_email:
   type: str
   help: "What is your email address?"
-
-review_team:
-  type: str
-  help: What GitHub team is responsible for reviewing pull requests?
-  default: "{{ '@%s/developers' % github_user if github_user else '' }}"
 
 cc0_license:
   type: bool
