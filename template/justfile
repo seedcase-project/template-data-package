@@ -49,7 +49,7 @@ check-commits:
 
 # Check for spelling errors in files
 check-spelling:
-  uv run typos
+  uvx typos --config .config/typos.toml
 
 # Re-build the data package
 build:

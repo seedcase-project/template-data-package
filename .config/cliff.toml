@@ -107,7 +107,7 @@ commit_preprocessors = [
   { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "[#${2}](https://github.com/seedcase-project/template-data-package/pull/${2})" },
   # Check spelling of the commit message using https://github.com/crate-ci/typos.
   # If the spelling is incorrect, it will be fixed automatically.
-  { pattern = '.*', replace_command = 'uvx typos --write-changes -' },
+  { pattern = '.*', replace_command = 'uvx typos --config .config/typos.toml --write-changes -' },
   # Remove gitmoji, both actual UTF emoji and :emoji:
   { pattern = ' *(:\w+:|[\p{Emoji_Presentation}\p{Extended_Pictographic}](?:\u{FE0F})?\u{200D}?) *', replace = "" },
 ]
