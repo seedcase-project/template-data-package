@@ -75,18 +75,17 @@ review_team:
   help: What GitHub team is responsible for reviewing pull requests?
   default: "{{ '@%s/developers' % github_user if github_user else '' }}"
 
-github_board_number:
-  type: str
-  help: "What is the number of the GitHub project board to add issues and PRs to?"
-  validator: |
-    {% if github_board_number and not github_board_number.isdigit() %}
-    The board number must be an integer.
-    {% endif %}
-
 cc0_license:
   type: bool
   default: true
   help: "Do you want to use the CC0 license for the data in this data package?"
+
+hosting_provider:
+  type: str
+  help: "What hosting provider will you use for the package's website?"
+  choices:
+    - netlify
+    - gh-pages
 
 # Configurations not asked
 github_repo_snake_case:
