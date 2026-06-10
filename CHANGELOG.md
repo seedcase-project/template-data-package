@@ -21,6 +21,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.21.1](https://github.com/seedcase-project/template-data-package/compare/0.21.0..0.21.1) - 2026-06-10
+
+### ♻️ Refactor
+
+- Use Cocogitto and git-cliff instead of Commitizen
+  [#245](https://github.com/seedcase-project/template-data-package/pull/245) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([add1283](https://github.com/seedcase-project/template-data-package/commit/add128312b4aac2d51ff211cb5663327c5268826))
+
 ## [0.21.0](https://github.com/seedcase-project/template-data-package/compare/0.20.0..0.21.0) - 2026-06-10
 
 ### ✨ Features

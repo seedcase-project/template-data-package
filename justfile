@@ -8,7 +8,7 @@ run-all: update-quarto-theme sync-template-files check-all format-md test-all bu
 check-all: check-spelling check-urls
 
 # Run all test-related recipes
-test-all: (test "true") (test "false")
+test-all: (test "true" "netlify") (test "false" "gh-pages")
 
 # Run all build-related recipes
 build-all: build-contributors build-website build-readme
@@ -58,9 +58,9 @@ format-md:
   uvx rumdl fmt --silent **/*.qmd.jinja **/*.md.jinja
   uvx --from panache-cli panache format . --quiet
 
-# Test template creation with specific parameters: `cc0_license` as "true" or "false"
-test cc0_license="true":
-  sh ./test-template.sh {{ cc0_license}}
+# Test template creation with specific parameters: `cc0_license` and `hosting_provider`
+test cc0_license="true" hosting_provider="netlify":
+  sh ./test-template.sh {{ cc0_license }} {{ hosting_provider }}
 
 # Test template creation through use of the question approach
 test-manual:

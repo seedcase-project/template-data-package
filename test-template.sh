@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
 
-# Needs one argument:
+# Needs these arguments:
 #
 # 1. cc0_license: true or false
+# 2. hosting_provider: netlify or gh-pages
 
 # Argument naming -----
 cc0_license="${1}"
+hosting_provider="${2}"
 
 if [ -z "$cc0_license" ]; then
   echo "Usage: sh $0 <cc0_license>"
   echo "Example: sh $0 true"
+  exit 1
+fi
+
+if [ -z "$hosting_provider" ]; then
+  echo "Usage: sh $0 <cc0_license> <hosting_provider>"
+  echo "Example: sh $0 true netlify"
   exit 1
 fi
 
@@ -32,7 +40,7 @@ copy () {
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
     --data cc0_license=$cc0_license \
-    --data github_board_number=22 \
+    --data hosting_provider=$hosting_provider \
     --overwrite \
     --skip-tasks \
     --trust
@@ -55,7 +63,7 @@ echo "Testing copy for new projects when: 'cc0_license'='$cc0_license' ---------
     git commit --quiet -m "test: initial copy" &&
     # Check that recopy works -----
     echo "Testing recopy when: 'cc0_license'='$cc0_license' -----------" &&
-    rm .cz.toml &&
+    rm .gitignore &&
     git add . &&
     git commit --quiet -m "test: preparing to recopy from the template" &&
     uvx copier recopy \
@@ -66,7 +74,7 @@ echo "Testing copy for new projects when: 'cc0_license'='$cc0_license' ---------
       --trust &&
     # Check that copying onto an existing package works -----
     echo "Testing copy in existing projects when: 'cc0_license'='$cc0_license' -----------" &&
-    rm .cz.toml .copier-answers.yml &&
+    rm .gitignore .copier-answers.yml &&
     git add . &&
     git commit --quiet -m "test: preparing to copy onto an existing package" &&
     copy $template_dir $test_dir
