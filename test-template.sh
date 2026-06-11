@@ -11,15 +11,9 @@ cc0_license="${1}"
 hosting_provider="${2}"
 for_seedcase="${3}"
 
-if [ -z "$cc0_license" ]; then
-  echo "Usage: sh $0 <cc0_license>"
-  echo "Example: sh $0 true"
-  exit 1
-fi
-
-if [ -z "$hosting_provider" ]; then
-  echo "Usage: sh $0 <cc0_license> <hosting_provider>"
-  echo "Example: sh $0 true netlify"
+if [ $# -ne 3 ]; then
+  echo "Usage: sh $0 <cc0_license> <hosting_provider> <for_seedcase>"
+  echo "Example: sh $0 true netlify true"
   exit 1
 fi
 
