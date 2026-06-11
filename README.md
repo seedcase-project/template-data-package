@@ -8,7 +8,7 @@
 License](https://img.shields.io/github/license/seedcase-project/template-data-package.svg)](https://github.com/seedcase-project/template-data-package/blob/main/LICENSE.md)
 [![GitHub
 Release](https://img.shields.io/github/v/release/seedcase-project/template-data-package.svg)](https://github.com/seedcase-project/template-data-package/releases/latest)
-[![Test](https://github.com/seedcase-project/template-data-package/actions/workflows/test.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/test.yml)
+[![Checks](https://github.com/seedcase-project/template-data-package/actions/workflows/checks.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/checks.yml)
 [![Build
 website](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml/badge.svg)](https://github.com/seedcase-project/template-data-package/actions/workflows/build-website.yml)
 [![CodeQL](https://github.com/seedcase-project/template-data-package/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/seedcase-project/template-data-package/actions/workflows/github-code-scanning/codeql)
