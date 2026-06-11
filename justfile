@@ -59,8 +59,8 @@ format-md:
   uvx --from panache-cli panache format . --quiet
 
 # Test template creation with specific parameters: `cc0_license` and `hosting_provider`
-test cc0_license="true" hosting_provider="netlify":
-  sh ./test-template.sh {{ cc0_license }} {{ hosting_provider }}
+test cc0_license="true" hosting_provider="netlify" for_seedcase="true":
+  sh ./test-template.sh {{ cc0_license }} {{ hosting_provider }} {{ for_seedcase }}
 
 # Test template creation through use of the question approach
 test-manual:
