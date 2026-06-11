@@ -21,6 +21,22 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.23.0](https://github.com/seedcase-project/template-data-package/compare/0.22.1..0.23.0) - 2026-06-11
+
+### ✨ Features
+
+- Add Ruff pre-commit hook
+  [#250](https://github.com/seedcase-project/template-data-package/pull/250) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([44efd5a](https://github.com/seedcase-project/template-data-package/commit/44efd5a4612fd6300667edf82046b25d509e13ea))
+
+### ♻️ Refactor
+
+- Remove and simplify the questions asked
+  [#251](https://github.com/seedcase-project/template-data-package/pull/251) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([00f27cf](https://github.com/seedcase-project/template-data-package/commit/00f27cf3d2c97cc806b7d8b4bb5269e1f8a3dd3f))
+
 ## [0.22.1](https://github.com/seedcase-project/template-data-package/compare/0.22.0..0.22.1) - 2026-06-10
 
 ### ♻️ Refactor
