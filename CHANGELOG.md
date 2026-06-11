@@ -21,6 +21,44 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.24.0](https://github.com/seedcase-project/template-data-package/compare/0.23.0..0.24.0) - 2026-06-11
+
+### ✨ Features
+
+- Add community health files
+  [#254](https://github.com/seedcase-project/template-data-package/pull/254) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e4d2204](https://github.com/seedcase-project/template-data-package/commit/e4d220415a5fa9412440762574cd6df0e244758f))
+- Add workflows to run checks
+  [#256](https://github.com/seedcase-project/template-data-package/pull/256) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([14a9096](https://github.com/seedcase-project/template-data-package/commit/14a909696135490d1e22779c9d1ad5bd9adcf869))
+- Expand on justfile recipes that match our work
+  [#255](https://github.com/seedcase-project/template-data-package/pull/255) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([17c16ff](https://github.com/seedcase-project/template-data-package/commit/17c16ff823bcbacb929662ac91bc7b56a283730a))
+
+### ♻️ Refactor
+
+- Include more URLs in `pyproject.toml`
+  [#257](https://github.com/seedcase-project/template-data-package/pull/257) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([229609b](https://github.com/seedcase-project/template-data-package/commit/229609be3928c7903ffee3878afcd8b8fd285202))
+
+### 📝 Documentation
+
+- Correct link to checks badge
+  [#253](https://github.com/seedcase-project/template-data-package/pull/253) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([91bb7ef](https://github.com/seedcase-project/template-data-package/commit/91bb7ef494c7d2ad4f908cab248b40f4f8ef7154))
+
+### 🧪 Tests
+
+- Improve arg checks in test script
+  [#252](https://github.com/seedcase-project/template-data-package/pull/252) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a48ac16](https://github.com/seedcase-project/template-data-package/commit/a48ac1692acd28ecda0a01b43cf4d47f40406a90))
+
 ## [0.23.0](https://github.com/seedcase-project/template-data-package/compare/0.22.1..0.23.0) - 2026-06-11
 
 ### ✨ Features
