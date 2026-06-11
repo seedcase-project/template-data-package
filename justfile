@@ -36,7 +36,7 @@ update-quarto-theme:
 
 # Update files in the template from the Copier parent folder
 sync-template-files:
-  cp .pre-commit-config.yaml .editorconfig template/
+  cp .pre-commit-config.yaml .editorconfig CODE_OF_CONDUCT.md template/
   cp .github/pull_request_template.md template/.github/
 
 # Check for spelling errors in files
