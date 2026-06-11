@@ -4,7 +4,7 @@
 License](https://img.shields.io/github/license/{{< meta gh.org >}}/{{< meta gh.repo >}}.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/LICENSE.md)
 [![GitHub
 Release](https://img.shields.io/github/v/release/{{< meta gh.org >}}/{{< meta gh.repo >}}.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/releases/latest)
-[![Test](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/test.yml/badge.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/test.yml)
+[![Checks](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/checks.yml/badge.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/checks.yml)
 [![Build
 website](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/build-website.yml/badge.svg)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/build-website.yml)
 [![CodeQL](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/actions/workflows/github-code-scanning/codeql)
