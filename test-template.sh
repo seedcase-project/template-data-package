@@ -4,10 +4,12 @@
 #
 # 1. cc0_license: true or false
 # 2. hosting_provider: netlify or gh-pages
+# 3. for_seedcase: true or false
 
 # Argument naming -----
 cc0_license="${1}"
 hosting_provider="${2}"
+for_seedcase="${3}"
 
 if [ -z "$cc0_license" ]; then
   echo "Usage: sh $0 <cc0_license>"
@@ -22,8 +24,8 @@ if [ -z "$hosting_provider" ]; then
 fi
 
 # Set up variables and functions for the test -----
-test_name="test-package"
-test_dir="$(pwd)/_temp/$cc0_license/$test_name"
+test_name="${cc0_license}-${hosting_provider}-${for_seedcase}"
+test_dir="$(pwd)/_temp/auto/$test_name"
 template_dir="$(pwd)"
 
 # Needs two arguments:
@@ -36,14 +38,10 @@ copy () {
     -r HEAD \
     --defaults \
     --data github_user="first-last" \
-    --data author_given_name="First" \
-    --data author_family_name="Last" \
-    --data author_email="first.last@example.com" \
     --data cc0_license=$cc0_license \
+    --data for_seedcase=$for_seedcase \
     --data hosting_provider=$hosting_provider \
-    --overwrite \
-    --skip-tasks \
-    --trust
+    --overwrite
 }
 
 # Pre-test setup -----
@@ -54,7 +52,7 @@ mkdir -p $test_dir
 # Check initial creation -----
 # TODO: Find some way to test the `update` command
 # Any step that fails will exit the script with an error and not continue
-echo "Testing copy for new projects when: 'cc0_license'='$cc0_license' -----------"
+echo "Testing copy for new projects when: 'cc0_license'='$cc0_license', 'hosting_provider'='$hosting_provider', 'for_seedcase'='$for_seedcase' -----------"
 (
   cd $test_dir &&
     copy $template_dir $test_dir &&
@@ -62,18 +60,16 @@ echo "Testing copy for new projects when: 'cc0_license'='$cc0_license' ---------
     git add . &&
     git commit --quiet -m "test: initial copy" &&
     # Check that recopy works -----
-    echo "Testing recopy when: 'cc0_license'='$cc0_license' -----------" &&
+    echo "Testing recopy when: 'cc0_license'='$cc0_license', 'hosting_provider'='$hosting_provider', 'for_seedcase'='$for_seedcase' -----------" &&
     rm .gitignore &&
     git add . &&
     git commit --quiet -m "test: preparing to recopy from the template" &&
     uvx copier recopy \
       -r HEAD \
       --defaults \
-      --overwrite \
-      --skip-tasks \
-      --trust &&
+      --overwrite &&
     # Check that copying onto an existing package works -----
-    echo "Testing copy in existing projects when: 'cc0_license'='$cc0_license' -----------" &&
+    echo "Testing copy in existing projects when: 'cc0_license'='$cc0_license', 'hosting_provider'='$hosting_provider', 'for_seedcase'='$for_seedcase' -----------" &&
     rm .gitignore .copier-answers.yml &&
     git add . &&
     git commit --quiet -m "test: preparing to copy onto an existing package" &&

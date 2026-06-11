@@ -1,74 +1,32 @@
 _subdirectory: template
 
-# Post-copy commands:
-_tasks:
-  # Only run these commands when copying the template
-  - command: "git init -b main; uv add --dev pre-commit ruff typos; uv add polars seedcase-sprout seedcase-flower"
-    when: "{{ _copier_operation == 'copy' }}"
-
 # Message to show after generating or regenerating the project successfully
 _message_after_copy: |
 
-  Your project "{{ github_repo }}" has been created successfully!
-
-  See the [guide](https://template-data-package.seedcase-project.org/docs/guide) for more detail
-  on the next steps. Briefly:
-
-  1. Change directory to the project root:
-
-    ``` bash
-    cd {{ _copier_conf.dst_path | realpath }}
-    ```
-
-  2. Install the pre-commit hooks:
-
-    ``` bash
-    just install-precommit
-    ```
-
-  3. Install [`spaid`](https://github.com/seedcase-project/spaid) and run these setup steps:
-
-    ``` bash
-    spaid_gh_create_repo_from_local -h
-    spaid_gh_set_repo_settings -h
-    spaid_gh_ruleset_basic_protect_main -h
-    ```
-
-  4. Configure GitHub following this
-    [guide](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens):
-
-    - Install the [auto-release-token](https://github.com/apps/auto-release-token)
-      and [add-to-board-token](https://github.com/apps/add-to-board-token) GitHub Apps
-    - Create an `UPDATE_VERSION_TOKEN` and `ADD_TO_BOARD_TOKEN` secret for the GitHub Apps
-    - Create an `UPDATE_VERSION_APP_ID` and `ADD_TO_BOARD_APP_ID` variable of the GitHub Apps' IDs
-
-  5. List and complete all TODO items in the repository:
-
-    ``` bash
-    just list-todos
-    ```
+  Your project "{{ github_repo }}" has been created successfully!  See
+  the template's guide as well as the "TODO.md" file in the newly created
+  project for more details on the next steps.
 
 # Questions:
+for_seedcase:
+  type: bool
+  help: "Is this package part of the Seedcase Project?"
+  default: false
+
 github_user:
   type: str
-  help: "What is the name of the GitHub user or organisation where the repository will be or is stored?"
+  help: |
+    What is the name of the GitHub user or organization where the
+    package repository will be or is stored?
+  default: >-
+    {{ "seedcase-project" if for_seedcase else "" }}
 
 github_repo:
   type: str
-  help: "What is the name of the GitHub repository where the data package will be or is stored? We strongly recommend using the default given."
+  help: |
+    What is the name of the GitHub repository where the package will be or
+    is stored? We strongly recommend using the default given.
   default: "{{ _folder_name }}"
-
-author_given_name:
-  type: str
-  help: "What is your first/given name?"
-
-author_family_name:
-  type: str
-  help: "What is your last/family name?"
-
-author_email:
-  type: str
-  help: "What is your email address?"
 
 cc0_license:
   type: bool
