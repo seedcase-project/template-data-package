@@ -21,6 +21,22 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.24.1](https://github.com/seedcase-project/template-data-package/compare/0.24.0..0.24.1) - 2026-06-11
+
+### 🐛 Fixes
+
+- Clarify to commit files in `TODO.md`
+  [#259](https://github.com/seedcase-project/template-data-package/pull/259) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([390162a](https://github.com/seedcase-project/template-data-package/commit/390162a549acd4e9fdba1ff9f5ea205c04bf8f7f))
+
+### 💄 Styling
+
+- Fix and format Markdown files
+  [#260](https://github.com/seedcase-project/template-data-package/pull/260) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ed16fbb](https://github.com/seedcase-project/template-data-package/commit/ed16fbbf1b68a4c935268603398f0aa2086910da))
+
 ## [0.24.0](https://github.com/seedcase-project/template-data-package/compare/0.23.0..0.24.0) - 2026-06-11
 
 ### ✨ Features
