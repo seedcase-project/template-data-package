@@ -74,6 +74,7 @@ cleanup:
 
 # Re-build the README file from the Quarto version
 build-readme:
+  # Needs to use uvx to run Python chunks
   uvx --from quarto quarto render README.qmd --to gfm
 
 # Generate a Quarto include file with the contributors
@@ -82,7 +83,7 @@ build-contributors:
 
 # Build the website using Quarto
 build-website:
-  uvx --from quarto quarto render
+  quarto render
 
 # Preview the website with automatic reload on changes
 preview-website:
