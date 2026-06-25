@@ -21,6 +21,37 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.24.2](https://github.com/seedcase-project/template-data-package/compare/0.24.1..0.24.2) - 2026-06-25
+
+### 🐛 Fixes
+
+- Correct some Jinja formatting issues
+  [#267](https://github.com/seedcase-project/template-data-package/pull/267) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e176d69](https://github.com/seedcase-project/template-data-package/commit/e176d690ad28f958df9e413dd5c4f4f0cff3c15e))
+- Remove leftover lines when workflow was reusable
+  [#266](https://github.com/seedcase-project/template-data-package/pull/266) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([cd18f0f](https://github.com/seedcase-project/template-data-package/commit/cd18f0f410986d4d2b1041bb1e3ee244db4ad238))
+- Use lowercase for true in `pyproject.toml`
+  [#265](https://github.com/seedcase-project/template-data-package/pull/265) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c981026](https://github.com/seedcase-project/template-data-package/commit/c98102622a66bd79750d07b0bf55781da1a23b9b))
+
+### ♻️ Refactor
+
+- Remove use of `uvx` for quarto, isn't needed
+  [#263](https://github.com/seedcase-project/template-data-package/pull/263) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a91e8df](https://github.com/seedcase-project/template-data-package/commit/a91e8dfb11a610b5d6dd43f4f1663b0d956c9f88))
+
+### 💄 Styling
+
+- Update Quarto theme
+  [#264](https://github.com/seedcase-project/template-data-package/pull/264) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([dcee57c](https://github.com/seedcase-project/template-data-package/commit/dcee57c966e71971b203298382fa19f9993dd658))
+
 ## [0.24.1](https://github.com/seedcase-project/template-data-package/compare/0.24.0..0.24.1) - 2026-06-11
 
 ### 🐛 Fixes
