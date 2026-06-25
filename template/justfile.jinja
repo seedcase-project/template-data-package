@@ -32,7 +32,7 @@ install-precommit:
   uvx pre-commit autoupdate
   uvx pre-commit run --all-files
 
-{%- if for_seedcase %}
+{% if for_seedcase -%}
 # Update the Quarto seedcase-theme extension
 update-quarto-theme:
   # Add theme if it doesn't exist, update if it does
@@ -95,7 +95,7 @@ build-contributors:
 
 # Re-build the README file from the Quarto version
 build-readme:
-  uvx --from quarto quarto render README.qmd --to gfm
+  quarto render README.qmd --to gfm
 
 # Build the documentation for the data package
 build-metadata-docs:
@@ -103,11 +103,11 @@ build-metadata-docs:
 
 # Build the documentation website using Quarto
 build-website: build-metadata-docs
-  uvx quarto render
+  quarto render
 
 # Preview the documentation website with automatic reload on changes
-preview-website: build-quartodoc
-  uvx quarto preview
+preview-website:
+  quarto preview
 
 # Check for and apply updates from the template
 update-from-template:
