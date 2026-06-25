@@ -12,14 +12,12 @@ jobs:
   build-website:
     runs-on: ubuntu-latest
     {%- if hosting_provider == 'gh-pages' %}
-    with:
-      hosting-provider: gh-pages
     permissions:
       contents: write
       pages: write
     {%- endif %}
     concurrency:
-      group: build-website-python-group
+      group: build-website-group
       cancel-in-progress: true
     env:
         QUARTO_PYTHON: ".venv/bin/python3"
@@ -64,19 +62,17 @@ jobs:
 
       {% if hosting_provider == 'netlify' -%}
       - name: Publish to Netlify (and render)
-        if: {{ "${{ inputs.hosting-provider == 'netlify' }}" }}
         uses: quarto-dev/quarto-actions/publish@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         with:
           target: netlify
-          NETLIFY_AUTH_TOKEN: {{ '${{ secrets.netlify-token }}' }}
+          # TODO: Ensure this is set in the repo settings.
+          NETLIFY_AUTH_TOKEN: {{ '${{ secrets.NETLIFY_AUTH_TOKEN }}' }}
 
       {%- elif hosting_provider == 'gh-pages' -%}
-      # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see above).
       - name: Publish to GitHub Pages (and render)
-        if: {{ "${{ inputs.hosting-provider == 'gh-pages' }}" }}
         uses: quarto-dev/quarto-actions/publish@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         with:
           target: gh-pages
         env:
-          GITHUB_TOKEN: {{ '${{ secrets.github-token }}' }}
+          GITHUB_TOKEN: {{ '${{ secrets.GITHUB_TOKEN }}' }}
       {%- endif %}
