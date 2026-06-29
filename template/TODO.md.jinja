@@ -31,8 +31,8 @@
   `gh repo create {{ github_repo_spec }} --source=. --public`. {%- endif %} {%
   if hosting_provider == "netlify" -%}
 - Connect the repository to Netlify and turn off the builds on Netlify, since
-  you will be using GitHub Actions to build and deploy the website. {%- elif
-  hosting_provider == "gh-pages" -%}
+  you will be using GitHub Actions to build and deploy the website. {% elif
+  hosting_provider == "gh-pages" %}
 - Run `quarto publish gh-pages` to setup and start publishing the website to
   GitHub Pages. {%- endif %}
 - If relevant, connect [pre-commit.ci](https://pre-commit.ci/) to the repository
