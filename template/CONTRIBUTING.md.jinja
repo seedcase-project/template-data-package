@@ -53,6 +53,9 @@ just check-all
 just build-datapackage
 ```
 
+Which runs some checks (like formatting and code checks) and builds the data
+package (like regenerating the `datapackage.json` file).
+
 And once you're ready to create a pull request, you run:
 
 ```bash
@@ -199,16 +202,17 @@ the `raw_data` variable in `main.py`.
    properties of the new resource.
 
 4. Open `src/{{ github_repo_snake_case }}/resource_properties_<name>.py` and
-   fill in all required fields. Also fill in any optional fields you find
-   useful. You can always update these later. Make sure to save the file.
+   follow the instructions inside. For example, fill in all required fields and
+   any optional fields you find useful. You can always update these later. Make
+   sure to save the file.
 
 5. In `src/{{ github_repo_snake_case }}/package_properties.py`, import your new
-   resource properties by uncommenting and updating it with the name of your
+   resource properties by uncommenting and updating the code with the name of your
    resource. Also uncomment the `resources` field and update the name of the
    resource properties in the array to match the name of your new resource.
 
-6. In `main.py`, import your new resource properties by uncommenting it and
-   updating it with the name of your resource.
+6. In `main.py`, import your new resource properties by uncommenting and
+   updating the code with the name of your resource.
 
 7. Uncomment everything else in the `main.py` file and rename the
    `resource_properties` variable to the name of the new resource properties you
@@ -217,7 +221,5 @@ the `raw_data` variable in `main.py`.
 8. Rerun `main.py`. This will:
 
    - Update `datapackage.json`.
-   - Create a `resources/` folder containing a folder for your new resource. In
-     here, you will find a `batch/` folder with the individual data batches
-     you've uploaded for this resource and a `data.parquet` file containing all
-     resource data.
+   - Create a `resources/` folder containing a folder for your new resource with
+     a Parquet file for each resource.
