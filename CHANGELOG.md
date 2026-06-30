@@ -21,6 +21,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.25.0](https://github.com/seedcase-project/template-data-package/compare/0.24.2..0.25.0) - 2026-06-30
+
+### ✨ Features
+
+- Expand on CONTRIBUTING and merge in guides into it
+  [#258](https://github.com/seedcase-project/template-data-package/pull/258) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([0e2765b](https://github.com/seedcase-project/template-data-package/commit/0e2765bfb12ab46a765dfb19952a71e86b5a72a0))
+
 ## [0.24.2](https://github.com/seedcase-project/template-data-package/compare/0.24.1..0.24.2) - 2026-06-25
 
 ### 🐛 Fixes
