@@ -28,6 +28,7 @@
     "*.toml.jinja": "jinja-toml",
     "*.qmd.jinja": "jinja-md"
   },
+  "typos.config": ".config/typos.toml",
   "files.insertFinalNewline": true,
   "conventionalCommits.emojiFormat": "emoji",
   "conventionalCommits.promptScopes": false
