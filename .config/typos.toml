@@ -5,5 +5,7 @@ extend-exclude = [
   ".quarto/*",
   "_site/*",
   "*.svg",
+  # If creating releases and using git-cliff, the hashes in the CHANGELOG can
+  # falsely trigger typos.
   "CHANGELOG.md",
 ]

@@ -16,13 +16,17 @@ build-all: build-contributors build-website build-readme
 # List all TODO items in the repository
 list-todos:
   grep -R -n \
+  --exclude-dir=*_cache \
+  --exclude-dir=.git \
   --exclude-dir=.quarto \
-  --exclude-dir=template \
-  --exclude-dir=_temp \
+  --exclude-dir=.venv \
   --exclude-dir=_site \
-  --exclude=justfile \
+  --exclude-dir=_temp \
+  --exclude-dir=template \
   --exclude=copier.yaml \
-  "TODO" *
+  --exclude=json.code-snippets \
+  --exclude=justfile \
+  "TODO" .
 
 # Install the pre-commit hooks
 install-precommit:
@@ -45,17 +49,12 @@ check-spelling:
 
 # Check that URLs work
 check-urls:
-  lychee . \
-    --verbose \
-    --extensions md,qmd,jinja \
-    --exclude-path "_badges.qmd"
+  lychee . --config .config/lychee.toml
 
 # Format Markdown files
 format-md:
   # Use both rumdl and panache, for different purposes
   uvx rumdl fmt --silent
-  # `includes` option doesn't work with Jinja files, so do manually
-  uvx rumdl fmt --silent **/*.md.jinja
   uvx --from panache-cli panache format . --quiet
 
 # Test template creation with specific parameters: `cc0_license` and `hosting_provider`
@@ -87,7 +86,7 @@ build-website:
 
 # Preview the website with automatic reload on changes
 preview-website:
-  quarto preview
+  uvx --from quarto quarto preview
 
 # Check for and apply updates from the template
 update-from-template:
