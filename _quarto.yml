@@ -19,13 +19,13 @@ website:
         href: index.qmd
       - text: "Guide"
         href: docs/guide/index.qmd
+    right:
+      - text: "<img src='/_extensions/seedcase-project/seedcase-theme/logos/seedcase/a-part-of.svg' alt='Main Seedcase website' height='30px'>"
+        href: "https://seedcase-project.org"
     tools:
       - icon: github
         href: "https://github.com/seedcase-project/template-data-package"
         aria-label: "GitHub icon: Source repository"
-      - icon: house
-        href: "https://seedcase-project.org"
-        aria-label: "House icon: Main website for the Seedcase Project"
   sidebar:
     - id: overview
       pinned: true
@@ -42,8 +42,8 @@ website:
           contents:
             - docs/guide/installing.qmd
             - docs/guide/using.qmd
-            - docs/guide/updating.qmd
             - docs/guide/next-steps.qmd
+            - docs/guide/updating.qmd
 
 format:
   seedcase-theme-html:
