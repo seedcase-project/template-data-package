@@ -11,7 +11,7 @@ permissions: read-all
 jobs:
   build-website:
     runs-on: ubuntu-latest
-    {%- if hosting_provider == 'gh-pages' %}
+    {% if hosting_provider == 'gh-pages' -%}
     permissions:
       contents: write
       pages: write
@@ -65,7 +65,7 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         with:
           target: netlify
-          # TODO: Ensure this is set in the repo settings.
+          # TODO: Confirm this is configured correctly for your GitHub repo.
           NETLIFY_AUTH_TOKEN: {{ '${{ secrets.NETLIFY_AUTH_TOKEN }}' }}
 
       {%- elif hosting_provider == 'gh-pages' -%}
