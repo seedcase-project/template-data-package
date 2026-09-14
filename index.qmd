@@ -14,6 +14,8 @@ configuration files to make developing and building data packages easier.
 - Use [uv](https://decisions.seedcase-project.org/why-uv/) to manage the Data
   Package.
 - Use [Polars](https://www.pola.rs/) for data manipulation.
+- Use [pytask](https://decisions.seedcase-project.org/why-pytask/) to manage
+  individual Python steps in the data package build process.
 - Use [Seedcase Sprout](https://sprout.seedcase-project.org/) to create and
   modify the data package.
 - Use [Seedcase Flower](https://flower.seedcase-project.org/) to generate a
