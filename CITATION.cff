@@ -5,18 +5,21 @@ abstract: |
   using Seedcase packages, such as Seedcase Sprout and Flower, as well as the
   Frictionless Data Package standard.
 authors:
-  - family-names: Johnston
-    given-names: Luke William
-    orcid: "https://orcid.org/0000-0003-4169-2616"
-    affiliation: "Steno Diabetes Center Aarhus"
-  - family-names: Brødbæk
-    given-names: Signe Kirk
-    affiliation: "Steno Diabetes Center Aarhus"
-    orcid: "https://orcid.org/0009-0000-2208-7088"
   - family-names: Beicher
     given-names: Kristiane
     affiliation: "Steno Diabetes Center Aarhus"
     orcid: "https://orcid.org/0000-0001-7556-9566"
+  - family-names: Brødbæk
+    given-names: Signe Kirk
+    affiliation: "Steno Diabetes Center Aarhus"
+    orcid: "https://orcid.org/0009-0000-2208-7088"
+  - family-names: Johnston
+    given-names: Luke William
+    orcid: "https://orcid.org/0000-0003-4169-2616"
+    affiliation: "Steno Diabetes Center Aarhus"
+  - family-names: Ostblom
+    given-names: Joel
+    orcid: "https://orcid.org/0000-0003-0051-3239"
   - family-names: Vago
     given-names: Marton
     affiliation: "Steno Diabetes Center Aarhus"
