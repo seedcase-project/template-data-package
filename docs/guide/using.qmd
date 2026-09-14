@@ -1,48 +1,62 @@
 ---
 title: "Using the template"
 description: |
-  A walk-through on how to use this template for creating a new data package
-  project or applying it to an existing data package.
+  A walk-through on how to use this template for creating a new data package or
+  applying it to an existing data package.
 order: 2
 ---
 
 This guide walks through how to use this template to create a new data package
-or apply it to an existing data package project.
+or apply it to an existing data package.
 
 ## Creating a new data package
 
-You can use this template to create a new data package project with a standard
-set of files and folders, as well as all the features and configurations to make
-it easier to build your data package smoothly and effectively. First, open a
-terminal and run the following command:
+You can use this template to create a new data package with a standard set of
+files and folders, as well as all the features and configurations to make it
+easier to build your data package smoothly and effectively. First, open a
+terminal and change your working directory to a location you want to create the
+new data package in, e.g. `Documents/`:
 
 ```bash {filename="Terminal"}
-uvx copier copy gh:seedcase-project/template-data-package path/to/PROJECT-NAME
+cd Documents
+```
+
+Next, copy and paste the following command, replacing the `NAME` with the name
+you want for your new data package. The `NAME` is the name you want to give for
+the new data package's directory and (ideally) the GitHub repository for the
+data package. The name should be something short and meaningful, ideally
+lowercase, with `-` instead of spaces, and no special characters.
+
+```bash {filename="Terminal"}
+uvx copier copy gh:seedcase-project/template-data-package NAME
 ```
 
 The `copy` command uses the template on GitHub (`gh:`) at the
-`seedcase-project/template-data-package` location. The `path/to/` is the
-location where you'd like the new project to be created and `PROJECT-NAME` is
-the name you want to give for the new data package project's directory and
-(ideally) the GitHub repository for the data package. The name should be
-something short and meaningful, ideally lowercase, with `-` instead of spaces,
-and no special characters.
+`seedcase-project/template-data-package` location.
 
 ## Applying to an existing data package
 
-If you want to use this template on an existing data package project, you can
-use the `copy` command of `copier` just like above to apply the template to the
-existing project. This will add all the template's files and configurations to
-the existing data package.
+If you want to use this template on an existing data package, you can use the
+`copy` command of `copier` just like above to apply the template to the existing
+data package. This will add all the template's files and configurations to the
+existing data package. First, open a terminal and move your working directory to
+the existing data package's directory:
 
 ```bash {filename="Terminal"}
-uvx copier copy gh:seedcase-project/template-data-package path/to/EXISTING-PROJECT
+cd Documents/EXISTING-DATA-PACKAGE
+```
+
+Next, copy and paste the command below. The `.` means "use the template in the
+current directory":
+
+```bash {filename="Terminal"}
+uvx copier copy gh:seedcase-project/template-data-package .
 ```
 
 See the comment above in the "Creating a new data package" section about the
 naming of the existing data package directory. It will go through a series of
-prompts, as in the case of creating a new data package project, including asking
-if you want to overwrite existing files.
+prompts, as in the case of creating a new data package, including asking if you
+want to overwrite existing files.
 
 ::: callout-note
 To use the `copy` command, the existing data package needs to be tracked by Git
