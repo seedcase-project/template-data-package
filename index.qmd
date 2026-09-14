@@ -42,6 +42,8 @@ configuration files to make developing and building data packages easier.
 - Optionally use the [CC0
   License](https://decisions.seedcase-project.org/why-cc0-data/) for the data in
   the data package made from this template.
+- Follows the "raw, staging, resource" flow of data, from source locations to
+  final resource.
 
 ## Want to contribute?
 
