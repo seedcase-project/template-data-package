@@ -21,6 +21,53 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.25.1](https://github.com/seedcase-project/template-data-package/compare/0.25.0..0.25.1) - 2026-09-14
+
+### 🐛 Fixes
+
+- Use uv when building Quarto website
+  [#295](https://github.com/seedcase-project/template-data-package/pull/295) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([917fd1c](https://github.com/seedcase-project/template-data-package/commit/917fd1c3e60dd81baa5e17ff4c1685607c1e1ced))
+- Don't check csv files for typos, too many false positives
+  [#296](https://github.com/seedcase-project/template-data-package/pull/296) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([b7b2dbc](https://github.com/seedcase-project/template-data-package/commit/b7b2dbc292d87833ded4275b3fc3f6015565158e))
+- Forgot to add Panache to VS Code extensions
+  [#297](https://github.com/seedcase-project/template-data-package/pull/297) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([1c6f3b1](https://github.com/seedcase-project/template-data-package/commit/1c6f3b1eac58e49b877987d2676b910b6d109427))
+- Add TODO items and data published to `CITATION.cff`
+  [#298](https://github.com/seedcase-project/template-data-package/pull/298) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([b94877a](https://github.com/seedcase-project/template-data-package/commit/b94877a65b044621b464bef35eda38f5495d4dc8))
+- Correct vscode path to typos config file
+  [#293](https://github.com/seedcase-project/template-data-package/pull/293) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([624784a](https://github.com/seedcase-project/template-data-package/commit/624784a4b005fa2ba242ab6d708776a51f4b42cb))
+- Correctly remove Jinja if start with `-%`
+  [#299](https://github.com/seedcase-project/template-data-package/pull/299) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([17301b4](https://github.com/seedcase-project/template-data-package/commit/17301b44a6ac26d756987cb8c210cd869de1b478))
+
+### ♻️ Refactor
+
+- Move Ruff import sorting down into `[python]` section
+  [#294](https://github.com/seedcase-project/template-data-package/pull/294) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([77332fe](https://github.com/seedcase-project/template-data-package/commit/77332feeff0e36e1661185dbbd3bab698a2d4598))
+
+### 👩‍💻 Miscellaneous
+
+- Minor improvements to `CITATION.cff` file
+  [#291](https://github.com/seedcase-project/template-data-package/pull/291) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([79a3b11](https://github.com/seedcase-project/template-data-package/commit/79a3b11d9e0e9bbcd951450be6f00aefa6e1295a))
+- Add Joel as author and sort the list
+  [#292](https://github.com/seedcase-project/template-data-package/pull/292) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([8e766ec](https://github.com/seedcase-project/template-data-package/commit/8e766ec65d4a623862459a2721399671e78c5c01))
+
 ## [0.25.0](https://github.com/seedcase-project/template-data-package/compare/0.24.2..0.25.0) - 2026-06-30
 
 ### ✨ Features
