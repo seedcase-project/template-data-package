@@ -21,6 +21,29 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.26.1](https://github.com/seedcase-project/template-data-package/compare/0.26.0..0.26.1) - 2026-09-14
+
+### ♻️ Refactor
+
+- Switch to use Pyrefly for type checking
+  [#307](https://github.com/seedcase-project/template-data-package/pull/307) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([f0b0bd7](https://github.com/seedcase-project/template-data-package/commit/f0b0bd73bd51a7f0882bd518c1f1f9dbeebfc566))
+
+### 📝 Documentation
+
+- Update docs from t-squared
+  [#305](https://github.com/seedcase-project/template-data-package/pull/305) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([467cc7a](https://github.com/seedcase-project/template-data-package/commit/467cc7ab8fe4ab52765963f9d51a85436f7a508f))
+
+### 👩‍💻 Miscellaneous
+
+- Update config files and `justfile` from t-squared
+  [#306](https://github.com/seedcase-project/template-data-package/pull/306) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([dda2292](https://github.com/seedcase-project/template-data-package/commit/dda22928de51b592a29f89bda14f77043306a2fc))
+
 ## [0.26.0](https://github.com/seedcase-project/template-data-package/compare/0.25.1..0.26.0) - 2026-09-14
 
 ### ✨ Features
