@@ -23,7 +23,9 @@ configuration files to make developing and building data packages easier.
 - Build management with [justfile](https://just.systems/man/en/).
 - Check typos with [typos](https://github.com/crate-ci/typos).
 - Code formatting and linting with
-  [ruff](https://decisions.seedcase-project.org/why-ruff/).
+  [Ruff](https://decisions.seedcase-project.org/why-ruff/).
+- Code checking with
+  [Pyrefly](https://decisions.seedcase-project.org/why-pyrefly/).
 - Pre-commit hooks with [pre-commit](https://pre-commit.com/).
 - GitHub workflows for automatically adding Pull Requests and Issues to a
   project board.

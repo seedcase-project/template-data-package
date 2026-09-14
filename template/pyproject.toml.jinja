@@ -33,6 +33,11 @@ changelog = "https://github.com/{{ github_repo_spec }}/blob/main/CHANGELOG.md"
 [tool.ruff]
 extend = ".config/ruff.toml"
 
-[tool.mypy]
-python_version = 3.12
-strict = true
+[tool.pyrefly]
+project-includes = ["src/"]
+min-severity = "warn"
+python-version = "3.12.0"
+preset = "strict"
+python-interpreter-path = ".venv/bin/python"
+# Use inline `# type: ignore` comments, which can be useful.
+permissive-ignores = true

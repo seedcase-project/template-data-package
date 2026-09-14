@@ -26,7 +26,12 @@ justfile with uv. Once you've installed uv, install justfile by running:
 
 ```bash
 uv tool install rust-just
+uv tool install pyrefly
+uv tool install ruff
 ```
+
+We install Ruff and Pyrefly to make these tools available to other tools and VS
+Code.
 
 We keep all our development workflows in the `justfile`, so you can explore it
 to see what commands are available. To see a list of commands available, run:
