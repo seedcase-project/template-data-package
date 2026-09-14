@@ -26,7 +26,12 @@ justfile with uv. Once you've installed uv, install justfile by running:
 
 ```bash
 uv tool install rust-just
+uv tool install pyrefly
+uv tool install ruff
 ```
+
+We install Ruff and Pyrefly to make these tools available to other tools and VS
+Code.
 
 We keep all our development workflows in the `justfile`, so you can explore it
 to see what commands are available. To see a list of commands available, run:
@@ -54,9 +59,9 @@ Git messages. Using this convention allows us to be able to automatically create
 a release based on the commit message by using
 [Cocogitto](https://decisions.seedcase-project.org/why-semantic-release-with-cocogitto/).
 If you don't use Conventional Commits when making a commit, we will revise the
-pull request title to follow that format, as we use squash merges when merging
-pull requests, so all other commits in the pull request will be squashed into
-one commit.
+pull request title to follow that format. That's because we use squash merges
+when merging pull requests, so all other commits in the pull request will be
+squashed into one commit.
 
 ## :file_folder: Explanation of files and folders
 
