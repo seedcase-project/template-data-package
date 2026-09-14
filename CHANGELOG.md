@@ -21,6 +21,23 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.26.0](https://github.com/seedcase-project/template-data-package/compare/0.25.1..0.26.0) - 2026-09-14
+
+### ✨ Features
+
+- Add `raw/` and `staging/` directories
+  [#302](https://github.com/seedcase-project/template-data-package/pull/302) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([5fea5d2](https://github.com/seedcase-project/template-data-package/commit/5fea5d219253a31d71a43ecc05b2749fe7b1aa0b))
+- Add pytask to `src/` as a build manager
+  [#304](https://github.com/seedcase-project/template-data-package/pull/304) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([8cd030d](https://github.com/seedcase-project/template-data-package/commit/8cd030d8b7f494f7ad747d715d1c8857605c1e66))
+- Add Git LFS config files
+  [#303](https://github.com/seedcase-project/template-data-package/pull/303) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([9726d77](https://github.com/seedcase-project/template-data-package/commit/9726d77e04b8637d1f7c8139472c7c73a4ac70c9))
+
 ## [0.25.1](https://github.com/seedcase-project/template-data-package/compare/0.25.0..0.25.1) - 2026-09-14
 
 ### 🐛 Fixes
