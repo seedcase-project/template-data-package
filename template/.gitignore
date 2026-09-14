@@ -44,8 +44,10 @@ _site
 _book
 public
 site
-docs/resources
-docs/index.qmd
+
+# Auto-generated from Flower
+docs/metadata/resources
+docs/metadata/index.qmd
 
 # Misc files
 *.log
