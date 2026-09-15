@@ -41,3 +41,9 @@ preset = "strict"
 python-interpreter-path = ".venv/bin/python"
 # Use inline `# type: ignore` comments, which can be useful.
 permissive-ignores = true
+
+# Setting up markers for phases of a build pipeline
+[tool.pytask.ini_options.markers]
+metadata = "Tasks to process and build the metadata for the data package."
+raw = "Tasks to download and save data (and maybe metadata) from different source locations into 'raw/'."
+staging = "Tasks to process data from 'raw/' to 'staging/'."
