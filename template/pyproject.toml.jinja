@@ -42,6 +42,10 @@ python-interpreter-path = ".venv/bin/python"
 # Use inline `# type: ignore` comments, which can be useful.
 permissive-ignores = true
 
+[tool.seedcase-flower]
+style = "quarto-resource-tables"
+output-dir = "docs/metadata"
+
 # Setting up markers for phases of a build pipeline
 [tool.pytask.ini_options.markers]
 metadata = "Tasks to process and build the metadata for the data package."
