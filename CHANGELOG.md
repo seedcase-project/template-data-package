@@ -21,6 +21,68 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.27.0](https://github.com/seedcase-project/template-data-package/compare/0.26.1..0.27.0) - 2026-09-15
+
+### ✨ Features
+
+- Add build package recipes to justfile
+  [#315](https://github.com/seedcase-project/template-data-package/pull/315) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d2fa07a](https://github.com/seedcase-project/template-data-package/commit/d2fa07a4bb8ff264bf7a8523e0b3ccf53b6cceb1))
+- Add release justfile recipe and minor edits to workflows
+  [#316](https://github.com/seedcase-project/template-data-package/pull/316) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d1796b1](https://github.com/seedcase-project/template-data-package/commit/d1796b191fa257005790b683a3bc088d35950ee7))
+
+### 🐛 Fixes
+
+- Use Flower to build metadata website, not quartodoc
+  [#310](https://github.com/seedcase-project/template-data-package/pull/310) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([601b84f](https://github.com/seedcase-project/template-data-package/commit/601b84fd219d55a66b68b7431a4e217553a141eb))
+- Use `format-all` in `run-all` rather than separate steps
+  [#314](https://github.com/seedcase-project/template-data-package/pull/314) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c73efe1](https://github.com/seedcase-project/template-data-package/commit/c73efe1ad65064d2072bdfe2962b75092d1310aa))
+- Remove empty lines in `_quarto.yml`
+  [#321](https://github.com/seedcase-project/template-data-package/pull/321) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([bb40640](https://github.com/seedcase-project/template-data-package/commit/bb40640618af22d92af23e6ab5da3dbd929a59c6))
+- Remove duplicate license section in README
+  [#318](https://github.com/seedcase-project/template-data-package/pull/318) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([4af8a9d](https://github.com/seedcase-project/template-data-package/commit/4af8a9d6f39147e0b29dc7605ef52e231964bb9b))
+
+### ♻️ Refactor
+
+- Switch to using pytask not `main.py`
+  [#311](https://github.com/seedcase-project/template-data-package/pull/311) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e213087](https://github.com/seedcase-project/template-data-package/commit/e21308793d620e20f4d558575e9889b08d79d6a3))
+- Search all files for TODO items
+  [#312](https://github.com/seedcase-project/template-data-package/pull/312) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([7ae2362](https://github.com/seedcase-project/template-data-package/commit/7ae236204a396f80025a84ebf45ed78df6c7bb35))
+- Use `lychee.toml` for config of URL checking
+  [#313](https://github.com/seedcase-project/template-data-package/pull/313) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([07d7ea2](https://github.com/seedcase-project/template-data-package/commit/07d7ea2e981f263e924b90e0d27b1c7eae9591fe))
+- Heavily update `CONTRIBUTING.md` to match practices
+  [#320](https://github.com/seedcase-project/template-data-package/pull/320) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([7e53fc3](https://github.com/seedcase-project/template-data-package/commit/7e53fc31b8b4e1c62aaefc14ff9adbca0c5de07d))
+- Heavily update the `TODO.md` with better instructions
+  [#319](https://github.com/seedcase-project/template-data-package/pull/319) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([b8c1f7f](https://github.com/seedcase-project/template-data-package/commit/b8c1f7fbbb2507a66aea1007e3ba100fa355e03e))
+
+### 👩‍💻 Miscellaneous
+
+- Don't copy over pre-commit file, is different in template
+  [#317](https://github.com/seedcase-project/template-data-package/pull/317) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d35a8ed](https://github.com/seedcase-project/template-data-package/commit/d35a8ed2cd98f7785e0bb2d271223e2d8674b84f))
+
 ## [0.26.1](https://github.com/seedcase-project/template-data-package/compare/0.26.0..0.26.1) - 2026-09-14
 
 ### ♻️ Refactor
