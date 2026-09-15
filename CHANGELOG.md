@@ -21,6 +21,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.27.1](https://github.com/seedcase-project/template-data-package/compare/0.27.0..0.27.1) - 2026-09-15
+
+### ♻️ Refactor
+
+- Move Flower config into `pyproject.toml` and save to `docs/metadata/`
+  [#308](https://github.com/seedcase-project/template-data-package/pull/308) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([fb38af4](https://github.com/seedcase-project/template-data-package/commit/fb38af4d4da2f927a01b169e11cdff8b36b325a2))
+
 ## [0.27.0](https://github.com/seedcase-project/template-data-package/compare/0.26.1..0.27.0) - 2026-09-15
 
 ### ✨ Features
