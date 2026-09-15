@@ -3,7 +3,7 @@
 
 # Run all build-related recipes in the justfile
 {%- if for_seedcase %}
-run-all: install-deps update-quarto-theme format-python format-md check-all build-all
+run-all: install-deps update-quarto-theme format-all check-all build-all
 {%- else %}
 run-all: install-deps format-all check-all build-all
 {%- endif %}
