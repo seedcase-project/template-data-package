@@ -21,6 +21,19 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.27.2](https://github.com/seedcase-project/template-data-package/compare/0.27.1..0.27.2) - 2026-09-15
+
+### 🐛 Fixes
+
+- Typo in `TODO.md`
+  [#323](https://github.com/seedcase-project/template-data-package/pull/323) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([011c7fe](https://github.com/seedcase-project/template-data-package/commit/011c7feec58a3e44e518bcb3dd341ae6b53d4b2a))
+- Typo in `CONTRIBUTING.md`
+  [#324](https://github.com/seedcase-project/template-data-package/pull/324) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([b9235a1](https://github.com/seedcase-project/template-data-package/commit/b9235a1473f599c17608fcdc57e042f03f524db4))
+
 ## [0.27.1](https://github.com/seedcase-project/template-data-package/compare/0.27.0..0.27.1) - 2026-09-15
 
 ### ♻️ Refactor
