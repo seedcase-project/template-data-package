@@ -39,11 +39,7 @@ abide by its terms.
 
 ## Licensing
 
-This project is licensed under the [MIT License](LICENSE.md).
-
-## Licensing
-
-Code in this project is licensed under the [MIT License](LICENSE-MIT.md).
+The code in this project is licensed under the [MIT License](LICENSE.md).
 
 <!-- TODO: Set the appropriate license for the data, default is CC0 -->
 <!-- Data in this project is licensed under the [CC0 License](LICENSE.md). -->
