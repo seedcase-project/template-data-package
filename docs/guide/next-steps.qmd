@@ -196,6 +196,7 @@ project. Connecting GitHub to Zenodo is very easy, check out Zenodo's
 [guide](https://help.zenodo.org/docs/github/archive-software/github-upload/) on
 it.
 
+::: content-hidden
 ## Setting up GoatCounter
 
 If you want to use [GoatCounter](https://www.goatcounter.com) for website
@@ -205,3 +206,4 @@ logging into your account. Under "Sites", click "Add new site" and fill in the
 form with your website's unique name. You can use the auto-filled name in the
 `docs/includes/site-counter.html` file, which has the format of
 "orgname-reponame", or you can create your own site name.
+:::
