@@ -21,6 +21,26 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.27.3](https://github.com/seedcase-project/template-data-package/compare/0.27.2..0.27.3) - 2026-09-16
+
+### 🐛 Fixes
+
+- Use correct path to ignore for `docs/metadata`
+  [#327](https://github.com/seedcase-project/template-data-package/pull/327) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([858fc96](https://github.com/seedcase-project/template-data-package/commit/858fc968c5800c995c72797128bd6ed83f18d26b))
+- Add docstrings and return to `build.py`
+  [#328](https://github.com/seedcase-project/template-data-package/pull/328) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([6a67a7a](https://github.com/seedcase-project/template-data-package/commit/6a67a7ad8529a68d7be7096deeadff0f33af06f9))
+
+### ♻️ Refactor
+
+- Remove mention of GoatCounter (not needed)
+  [#326](https://github.com/seedcase-project/template-data-package/pull/326) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([3b0cc4f](https://github.com/seedcase-project/template-data-package/commit/3b0cc4f4bce061ef3f7f8e3d612db65b8b52168e))
+
 ## [0.27.2](https://github.com/seedcase-project/template-data-package/compare/0.27.1..0.27.2) - 2026-09-15
 
 ### 🐛 Fixes
