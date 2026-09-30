@@ -30,6 +30,10 @@ repository = "https://github.com/{{ github_repo_spec }}"
 issues = "https://github.com/{{ github_repo_spec }}/issues"
 changelog = "https://github.com/{{ github_repo_spec }}/blob/main/CHANGELOG.md"
 
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13"]
+build-backend = "uv_build"
+
 [tool.ruff]
 extend = ".config/ruff.toml"
 
