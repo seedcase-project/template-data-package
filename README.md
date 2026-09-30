@@ -56,10 +56,10 @@ to abide by its terms.
 The following people have contributed to this project by submitting pull
 requests :tada:
 
+[@fruvago](https://github.com/fruvago),
 [@joelostblom](https://github.com/joelostblom),
 [@K-Beicher](https://github.com/K-Beicher),
 [@lwjohnst86](https://github.com/lwjohnst86),
-[@martonvago](https://github.com/martonvago),
 [@signekb](https://github.com/signekb)
 
 ## Licensing
@@ -70,7 +70,7 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 If you use this project in your work, please cite it as follows:
 
-Beicher K., Brødbæk S.K., Johnston L.W., Ostblom J., Vago M. (2025).
+Beicher K., Brødbæk S.K., Johnston L.W., Ostblom J., Vago F. (2025).
 Template Data Package: An opinionated template for creating and
 developing FAIR and modern data packages DOI: 10.5281/zenodo.16540439
 URL: https://template-data-package.seedcase-project.org
@@ -78,7 +78,7 @@ URL: https://template-data-package.seedcase-project.org
 Or as a BibTeX entry:
 
     @misc{YourReferenceHere,
-    author = {Beicher, Kristiane and Brødbæk, Signe Kirk and Johnston, Luke William and Ostblom, Joel and Vago, Marton},
+    author = {Beicher, Kristiane and Brødbæk, Signe Kirk and Johnston, Luke William and Ostblom, Joel and Vago, Fruzsina},
     doi = {10.5281/zenodo.16540439},
     month = {7},
     title = {Template Data Package: An opinionated template for creating and developing FAIR and modern data packages},
