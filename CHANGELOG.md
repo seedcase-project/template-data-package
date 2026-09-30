@@ -21,6 +21,40 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.27.4](https://github.com/seedcase-project/template-data-package/compare/0.27.3..0.27.4) - 2026-09-30
+
+### 🐛 Fixes
+
+- Run check workflows only on pull requests
+  [#331](https://github.com/seedcase-project/template-data-package/pull/331) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([058d2c8](https://github.com/seedcase-project/template-data-package/commit/058d2c82e5beb69381a41ceb1c325580416cf4c4))
+- Add back `build-system`, pytask needs it in `pyproject.toml`
+  [#333](https://github.com/seedcase-project/template-data-package/pull/333) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([3c0571e](https://github.com/seedcase-project/template-data-package/commit/3c0571e2f582e1e1898b4bd8e81b61d3e6996ade))
+
+### 📝 Documentation
+
+- Switch to Fru's name
+  [#332](https://github.com/seedcase-project/template-data-package/pull/332) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([fe1f82e](https://github.com/seedcase-project/template-data-package/commit/fe1f82e31f1454832e38825abf1ba4eda1dab00c))
+
+### 💄 Styling
+
+- Update Quarto theme
+  [#334](https://github.com/seedcase-project/template-data-package/pull/334) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e99b5fd](https://github.com/seedcase-project/template-data-package/commit/e99b5fdf49dcef85950e4b8174f8e3352a4ad23c))
+
+### 👩‍💻 Miscellaneous
+
+- Don't sync `pull_request_template.md`, it has different content
+  [#335](https://github.com/seedcase-project/template-data-package/pull/335) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e09d5ce](https://github.com/seedcase-project/template-data-package/commit/e09d5ce746d1f11c3386d57aace4f1af60771a11))
+
 ## [0.27.3](https://github.com/seedcase-project/template-data-package/compare/0.27.2..0.27.3) - 2026-09-16
 
 ### 🐛 Fixes
@@ -464,7 +498,7 @@ changelog.
 
 - Make rumdl exclude stricter
   [#226](https://github.com/seedcase-project/template-data-package/pull/226) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([83e6c69](https://github.com/seedcase-project/template-data-package/commit/83e6c699a5b6f97495edbb240b54644cb7636aed))
 
 ## [0.19.5](https://github.com/seedcase-project/template-data-package/compare/0.19.4..0.19.5) - 2026-05-18
@@ -473,7 +507,7 @@ changelog.
 
 - Generate data package pages in docs
   [#222](https://github.com/seedcase-project/template-data-package/pull/222) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([a031cb5](https://github.com/seedcase-project/template-data-package/commit/a031cb59625a468f93b03c5a3426f72b661e0df1))
 
 ## [0.19.4](https://github.com/seedcase-project/template-data-package/compare/0.19.3..0.19.4) - 2026-05-18
@@ -482,7 +516,7 @@ changelog.
 
 - Generate README.md from qmd file
   [#220](https://github.com/seedcase-project/template-data-package/pull/220) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([ba8b55f](https://github.com/seedcase-project/template-data-package/commit/ba8b55f782b7f1d136931102210543faeda53641))
 
 ## [0.19.3](https://github.com/seedcase-project/template-data-package/compare/0.19.2..0.19.3) - 2026-05-07
@@ -491,7 +525,7 @@ changelog.
 
 - Run `just run-all`
   [#221](https://github.com/seedcase-project/template-data-package/pull/221) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([f448c20](https://github.com/seedcase-project/template-data-package/commit/f448c2059fca0ee4cda441a60e4bcab4cd8a56e7))
 
 ## [0.19.2](https://github.com/seedcase-project/template-data-package/compare/0.19.1..0.19.2) - 2026-04-24
@@ -500,7 +534,7 @@ changelog.
 
 - Exclude generated files from formatting
   [#217](https://github.com/seedcase-project/template-data-package/pull/217) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([b902e05](https://github.com/seedcase-project/template-data-package/commit/b902e05ee6275074fa67e0812d3406f6c6e72130))
 
 ## [0.19.1](https://github.com/seedcase-project/template-data-package/compare/0.19.0..0.19.1) - 2026-04-23
@@ -509,7 +543,7 @@ changelog.
 
 - Use website in quarto config
   [#216](https://github.com/seedcase-project/template-data-package/pull/216) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([f535939](https://github.com/seedcase-project/template-data-package/commit/f535939288004e3ed1521ef8eb4d2d1bcaf356c5))
 
 ## [0.19.0](https://github.com/seedcase-project/template-data-package/compare/0.18.0..0.19.0) - 2026-04-23
@@ -518,7 +552,7 @@ changelog.
 
 - Set up website in template
   [#213](https://github.com/seedcase-project/template-data-package/pull/213) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([94b8c70](https://github.com/seedcase-project/template-data-package/commit/94b8c70918182aa6983fc069555df37428ab553f))
 
 ## [0.18.0](https://github.com/seedcase-project/template-data-package/compare/0.17.0..0.18.0) - 2026-04-13
@@ -527,7 +561,7 @@ changelog.
 
 - Integrate Flower
   [#211](https://github.com/seedcase-project/template-data-package/pull/211) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([4ea9934](https://github.com/seedcase-project/template-data-package/commit/4ea993464fc504ae3dea85b4a4d7d2dd19cac4d4))
 
 ## [0.17.0](https://github.com/seedcase-project/template-data-package/compare/0.16.6..0.17.0) - 2026-04-13
@@ -536,7 +570,7 @@ changelog.
 
 - Add rumdl and format files
   [#210](https://github.com/seedcase-project/template-data-package/pull/210) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([88d8b1e](https://github.com/seedcase-project/template-data-package/commit/88d8b1ed5cb0f84fafaf574a8a8ff061740fab77))
 
 ## [0.16.6](https://github.com/seedcase-project/template-data-package/compare/0.16.5..0.16.6) - 2026-04-10
@@ -545,7 +579,7 @@ changelog.
 
 - Updates from `just run-all`, like pre-commit hooks
   [#209](https://github.com/seedcase-project/template-data-package/pull/209) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([25be026](https://github.com/seedcase-project/template-data-package/commit/25be026b2ec5575ae6960d211d52cac06b965c62))
 
 ### 👩‍💻 Miscellaneous
@@ -565,7 +599,7 @@ changelog.
 
 - Move test to own file
   [#185](https://github.com/seedcase-project/template-data-package/pull/185) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([d7d8838](https://github.com/seedcase-project/template-data-package/commit/d7d8838820ffbf9e0e9b70e333b3f20ae185d087))
 
 ## [0.16.4](https://github.com/seedcase-project/template-data-package/compare/0.16.3..0.16.4) - 2025-12-05
@@ -574,7 +608,7 @@ changelog.
 
 - Move metadata to metadata file
   [#178](https://github.com/seedcase-project/template-data-package/pull/178) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([c8b1e8f](https://github.com/seedcase-project/template-data-package/commit/c8b1e8f9e6943161b8b0232facd4516747657bcd))
 
 ## [0.16.3](https://github.com/seedcase-project/template-data-package/compare/0.16.2..0.16.3) - 2025-12-05
@@ -583,7 +617,7 @@ changelog.
 
 - Update and run justfile recipes
   [#182](https://github.com/seedcase-project/template-data-package/pull/182) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([d3e92c8](https://github.com/seedcase-project/template-data-package/commit/d3e92c8cd28cc4b8e7c20c5e23b6105638c7f6f3))
 
 ## [0.16.2](https://github.com/seedcase-project/template-data-package/compare/0.16.1..0.16.2) - 2025-12-05
@@ -592,7 +626,7 @@ changelog.
 
 - Update `get-contributors`
   [#179](https://github.com/seedcase-project/template-data-package/pull/179) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([774698e](https://github.com/seedcase-project/template-data-package/commit/774698e551ecb54232da3613c2f6b39fdd26a19f))
 
 ## [0.16.1](https://github.com/seedcase-project/template-data-package/compare/0.16.0..0.16.1) - 2025-12-05
@@ -601,23 +635,23 @@ changelog.
 
 - Move releases to changelog
   [#177](https://github.com/seedcase-project/template-data-package/pull/177) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([48b25b1](https://github.com/seedcase-project/template-data-package/commit/48b25b196d2f0bbc47381e85ab4498ac82beac85))
 - Update supporting files
   [#180](https://github.com/seedcase-project/template-data-package/pull/180) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([317bacd](https://github.com/seedcase-project/template-data-package/commit/317bacd96efd48d6be90d6fc072337654f481352))
 - Update workflows
   [#181](https://github.com/seedcase-project/template-data-package/pull/181) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([222a9d4](https://github.com/seedcase-project/template-data-package/commit/222a9d4291ab397feda2a9955e8beeeaa78a1c37))
 - Update remaining config files
   [#183](https://github.com/seedcase-project/template-data-package/pull/183) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([4e54f2b](https://github.com/seedcase-project/template-data-package/commit/4e54f2b96a852a61574f82693299e046f1dbe8da))
 - Update copier vars
   [#184](https://github.com/seedcase-project/template-data-package/pull/184) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([48eae8f](https://github.com/seedcase-project/template-data-package/commit/48eae8f53222b671f0ffaac6ca5ee5ea083ad8be))
 
 ## [0.16.0](https://github.com/seedcase-project/template-data-package/compare/0.15.2..0.16.0) - 2025-11-14
@@ -633,14 +667,14 @@ changelog.
 
 - Update post-copy message to latest version
   [#154](https://github.com/seedcase-project/template-data-package/pull/154) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([ad7fea0](https://github.com/seedcase-project/template-data-package/commit/ad7fea0b76683b3935d28fd9538f7e3174c65cc2))
 
 ### 👷 CI/CD
 
 - Use `reusable-test-copier` workflow
   [#152](https://github.com/seedcase-project/template-data-package/pull/152) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([9c75343](https://github.com/seedcase-project/template-data-package/commit/9c75343bb04e60b76c374d5ca77a669318112e16))
 
 ### ❤️ New contributors
@@ -668,7 +702,7 @@ changelog.
 
 - Use bash instead of zsh
   [#150](https://github.com/seedcase-project/template-data-package/pull/150) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([d86cebe](https://github.com/seedcase-project/template-data-package/commit/d86cebe0160cccf576c2da2089e007e0e290cb1e))
 
 ### ❤️ New contributors
@@ -706,7 +740,7 @@ changelog.
 
 - Add template README in `docs/`
   [#136](https://github.com/seedcase-project/template-data-package/pull/136) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([b2bca19](https://github.com/seedcase-project/template-data-package/commit/b2bca1994ec738450220d2efa6e8444f8a8025ca))
 
 ### 🐛 Fixes
@@ -745,7 +779,7 @@ changelog.
 
 - Rename `properties` to `package_properties`
   [#132](https://github.com/seedcase-project/template-data-package/pull/132) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([aa1b745](https://github.com/seedcase-project/template-data-package/commit/aa1b7451706442e48de7c91a6e32ff72bf353cfa))
 
 ### 📝 Documentation
@@ -768,7 +802,7 @@ changelog.
 
 - Add after copy message
   [#129](https://github.com/seedcase-project/template-data-package/pull/129) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([d8fef45](https://github.com/seedcase-project/template-data-package/commit/d8fef45962192b85131837d8c8b93a00fe3942a4))
 
 ### 📝 Documentation
@@ -863,7 +897,7 @@ changelog.
 
 - Add locked var for copyright year
   [#115](https://github.com/seedcase-project/template-data-package/pull/115) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([7db3f6a](https://github.com/seedcase-project/template-data-package/commit/7db3f6a2d10fa4092c843f923c5015548c3e29a0))
 
 ### 👩‍💻 Miscellaneous
@@ -944,7 +978,7 @@ changelog.
 
 - Add validator for `package_github_repo`
   [#93](https://github.com/seedcase-project/template-data-package/pull/93) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([eb76c03](https://github.com/seedcase-project/template-data-package/commit/eb76c031624322264fb226c63e02d7685c66a5d8))
 
 ## [0.5.1](https://github.com/seedcase-project/template-data-package/compare/0.5.0..0.5.1) - 2025-07-23
@@ -953,7 +987,7 @@ changelog.
 
 - Tweak copier settings
   [#91](https://github.com/seedcase-project/template-data-package/pull/91) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([e0c85ef](https://github.com/seedcase-project/template-data-package/commit/e0c85ef35637e953e386e80817c31dc5fc27a273))
 
 ## [0.5.0](https://github.com/seedcase-project/template-data-package/compare/0.4.1..0.5.0) - 2025-07-15
@@ -1058,7 +1092,7 @@ changelog.
 
 - Match Sprout
   [#40](https://github.com/seedcase-project/template-data-package/pull/40) by
-  [`@martonvago`](https://github.com/martonvago)
+  [`@fruvago`](https://github.com/fruvago)
   ([3db545e](https://github.com/seedcase-project/template-data-package/commit/3db545e4ca3e916b6391f76edac4e6e10b256a7f))
 - Revise `pyproject.toml.jinja` to use Jinja variables
   [#76](https://github.com/seedcase-project/template-data-package/pull/76) by
@@ -1212,8 +1246,8 @@ changelog.
 
 - `@pre-commit-ci[bot]` started making automated contributions
 
-- [`@martonvago`](https://github.com/martonvago) made their first contribution
-  in [#40](https://github.com/seedcase-project/template-data-package/pull/40)
+- [`@fruvago`](https://github.com/fruvago) made their first contribution in
+  [#40](https://github.com/seedcase-project/template-data-package/pull/40)
 
 - [`@K-Beicher`](https://github.com/K-Beicher) made their first contribution in
   [#15](https://github.com/seedcase-project/template-data-package/pull/15)
